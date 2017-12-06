@@ -1,0 +1,27 @@
+\expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\SubFile{hoge}
+	\input{../thesis/thesis}
+	\begin{document}
+	\setcounter{chapter}{3}
+  \fi
+  %-------------------------------------------------------------------------------
+  \cleardoublepage
+\chapter{単語集合間の関連度計算手法}
+
+\label{impl:chapter}
+
+\section{序言}
+\label{impl:introduction}
+
+\section{結言}
+\label{impl:conclusion}
+
+ %-------------------------------------------------------------------------------
+ \expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\BibFile{hoge}
+	\input{../Bibliography/chapter}
+  \fi
+  %-------------------------------------------------------------------------------
+  \expandafter\ifx\csname MasterFile\endcsname\relax
+  \end{document}
+  \fi

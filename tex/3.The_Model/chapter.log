@@ -1,0 +1,600 @@
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  22 SEP 2017 19:04
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**chapter.tex
+(./chapter.tex
+pLaTeX2e <2016/11/29> (based on LaTeX2e <2017/01/01> patch level 1)
+Babel <3.9r> and hyphenation patterns for 22 language(s) loaded.
+(../thesis/thesis.tex
+(/usr/local/texlive/2016basic/texmf-dist/tex/platex/base/jreport.cls
+Document Class: jreport 2016/11/22 v1.7b Standard pLaTeX class
+\c@@paper=\count82
+(/usr/local/texlive/2016basic/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2016/11/22 v1.7b Standard pLaTeX file (size option)
+)
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\c@figure=\count90
+\c@table=\count91
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 653.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count92
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 99.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L
+3/ChoF)
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+) (../dspc.sty) (../slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box41
+\@slashboxb=\box42
+\@slashboxc=\box43
+\@slashboxwd=\count93
+\@slashboxht=\count94
+\@slashsepl=\dimen123
+\@slashsepr=\dimen124
+) (/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count95
+\FV@InFile=\read1
+\FV@TabBox=\box44
+\c@FancyVerbLine=\count96
+\FV@StepNumber=\count97
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/here.sty)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count98
+\float@exts=\toks16
+\float@box=\box45
+\@float@everytoks=\toks17
+\@floatcapt=\box46
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count99
+\multirow@dima=\skip53
+\bigstrutjot=\dimen125
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen126
+))
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen127
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen128
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks19
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks20
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks21
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+\symboldmincho=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count112
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
+Package: algpseudocode 
+
+(/Users/YoshinoKai/Library/texmf/tex/latex/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count113
+\c@ALG@rem=\count114
+\c@ALG@nested=\count115
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count116
+\c@ALG@blocknr=\count117
+\c@ALG@storecount=\count118
+\c@ALG@tmpcounter=\count119
+\ALG@tmplength=\skip59
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/Users/YoshinoKai/Library/texmf/tex/latex/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box49
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen135
+\enit@toks=\toks24
+\enit@inbox=\box50
+\enitdp@description=\count120
+)
+(/Users/YoshinoKai/Library/texmf/tex/latex/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+\c@linenumber=\count121
+)
+No file chapter.aux.
+\openout1 = `chapter.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+第 3 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
+
+LaTeX Warning: Citation `shi2015convolutional' on page 1 undefined on input lin
+e 17.
+
+
+LaTeX Warning: Citation `shi2015convolutional' on page 1 undefined on input lin
+e 21.
+
+
+LaTeX Warning: Reference `model:multi_channel' on page 1 undefined on input lin
+e 26.
+
+
+LaTeX Warning: Reference `model:dcca' on page 1 undefined on input line 27.
+
+
+LaTeX Warning: Reference `model:conclusion' on page 1 undefined on input line 2
+8.
+
+[1
+
+
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 34.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 34.
+
+
+LaTeX Warning: Reference `fig:the_model_spatiotemporal' on page 2 undefined on 
+input line 36.
+
+File: ../images/3.The_Model/the_model_spatiotemporal.pdf Graphic file (type pdf
+)
+<../images/3.The_Model/the_model_spatiotemporal.pdf>
+
+LaTeX Warning: Reference `relwork:multi_view_multi_modal_cnn' on page 2 undefin
+ed on input line 46.
+
+
+LaTeX Warning: Citation `zhang2015deep' on page 2 undefined on input line 46.
+
+
+LaTeX Warning: Reference `fig:the_model_multi_modal' on page 2 undefined on inp
+ut line 49.
+
+File: ../images/3.The_Model/the_model_multi_modal.pdf Graphic file (type pdf)
+<../images/3.The_Model/the_model_multi_modal.pdf>
+
+LaTeX Warning: Reference `relwork:conv_lstm' on page 2 undefined on input line 
+62.
+
+File: ../images/3.The_Model/conv_lstm_tensor.pdf Graphic file (type pdf)
+<../images/3.The_Model/conv_lstm_tensor.pdf>
+
+LaTeX Warning: Reference `fig:conv_lstm_tensor' on page 2 undefined on input li
+ne 70.
+
+
+LaTeX Warning: Citation `shi2015convolutional' on page 2 undefined on input lin
+e 75.
+
+
+LaTeX Warning: Reference `relwork:cnn_patch' on page 2 undefined on input line 
+77.
+
+
+LaTeX Warning: Reference `relwork:conv_lstm' on page 2 undefined on input line 
+78.
+
+
+LaTeX Warning: Citation `shi2015convolutional' on page 2 undefined on input lin
+e 78.
+
+
+LaTeX Warning: Reference `fig:the_model_patch' on page 2 undefined on input lin
+e 79.
+
+File: ../images/3.The_Model/the_model_patch.pdf Graphic file (type pdf)
+<../images/3.The_Model/the_model_patch.pdf> [2
+
+] [3]
+
+LaTeX Warning: Reference `model:multi_channel_concat' on page 4 undefined on in
+put line 97.
+
+[4]
+
+LaTeX Warning: Reference `fig:the_model_patch' on page 5 undefined on input lin
+e 107.
+
+
+LaTeX Warning: Reference `relwork:multi_view' on page 5 undefined on input line
+ 109.
+
+
+LaTeX Warning: Reference `relwork:cnn_localnorm' on page 5 undefined on input l
+ine 112.
+
+
+LaTeX Warning: Reference `eq:cnn_localnorm_sub' on page 5 undefined on input li
+ne 113.
+
+
+LaTeX Warning: Reference `eq:cnn_localnorm_div2' on page 5 undefined on input l
+ine 113.
+
+
+LaTeX Warning: Reference `relwork:conv_lstm' on page 5 undefined on input line 
+119.
+
+
+LaTeX Warning: Citation `zhang2015deep' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 5 undefined on i
+nput line 121.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
+
+
+LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 5 undefined on i
+nput line 122.
+
+File: ../images/3.The_Model/the_model_conv_lstm_lrn.pdf Graphic file (type pdf)
+
+<../images/3.The_Model/the_model_conv_lstm_lrn.pdf>
+LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Reference `relwork:cnn_localnorm' on page 5 undefined on input l
+ine 132.
+
+
+LaTeX Warning: Reference `eq:cnn_localnorm_sub' on page 5 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Reference `eq:cnn_localnorm_div2' on page 5 undefined on input l
+ine 132.
+
+[5]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 134.
+
+
+LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 6 undefined on i
+nput line 137.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop1' on page 6 undefined on 
+input line 137.
+
+
+LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 6 undefined on i
+nput line 152.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop2' on page 6 undefined on 
+input line 152.
+
+[6]
+
+LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 7 undefined on i
+nput line 167.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop3' on page 7 undefined on 
+input line 167.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop1' on page 7 undefined on 
+input line 179.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop2' on page 7 undefined on 
+input line 179.
+
+
+LaTeX Warning: Reference `eq:the_model_conv_lstm_prop3' on page 7 undefined on 
+input line 179.
+
+[7]
+
+LaTeX Warning: Citation `shi2015convolutional' on page 8 undefined on input lin
+e 185.
+
+
+LaTeX Warning: Reference `model:conv_lstm' on page 8 undefined on input line 18
+5.
+
+File: ../images/3.The_Model/the_model_encoding_forecasting.pdf Graphic file (ty
+pe pdf)
+<../images/3.The_Model/the_model_encoding_forecasting.pdf>
+
+LaTeX Warning: Reference `fig:the_model_encoding_forecasting' on page 8 undefin
+ed on input line 193.
+
+
+LaTeX Warning: Reference `eq:the_model_formula' on page 8 undefined on input li
+ne 196.
+
+[8
+
+]
+
+LaTeX Warning: Reference `relwork:conv_lstm_1x1_conv' on page 9 undefined on in
+put line 209.
+
+
+LaTeX Warning: Reference `eq:the_model_formula' on page 9 undefined on input li
+ne 212.
+
+[9]
+
+LaTeX Warning: Reference `model:dcca_howto' on page 10 undefined on input line 
+221.
+
+
+LaTeX Warning: Reference `model:dcca_convlstm' on page 10 undefined on input li
+ne 222.
+
+
+LaTeX Warning: Reference `model:dcca-pretrain_convlstm' on page 10 undefined on
+ input line 222.
+
+
+LaTeX Warning: Citation `andrew2013deep' on page 10 undefined on input line 226
+.
+
+[10
+
+]
+
+LaTeX Warning: Reference `eq:model_dcca_objective' on page 11 undefined on inpu
+t line 243.
+
+
+LaTeX Warning: Reference `eq:model_dcca_objective' on page 11 undefined on inpu
+t line 255.
+
+[11]
+
+LaTeX Warning: Reference `eq:model_dcca_corr_approx' on page 12 undefined on in
+put line 259.
+
+
+LaTeX Warning: Reference `eq:model_dcca_corr_approx' on page 12 undefined on in
+put line 265.
+
+
+LaTeX Warning: Reference `fig:model_dcca' on page 12 undefined on input line 27
+1.
+
+File: ../images/3.The_Model/the_model_dcca.pdf Graphic file (type pdf)
+<../images/3.The_Model/the_model_dcca.pdf>
+
+LaTeX Warning: Reference `eq:model_dcca' on page 12 undefined on input line 281
+.
+
+
+LaTeX Warning: Reference `eq:model_dcca' on page 12 undefined on input line 291
+.
+
+[12]
+
+LaTeX Warning: Reference `fig:model_dcca_pretrain' on page 13 undefined on inpu
+t line 299.
+
+File: ../images/3.The_Model/the_model_dcca_pretrain.pdf Graphic file (type pdf)
+
+<../images/3.The_Model/the_model_dcca_pretrain.pdf>
+
+LaTeX Warning: Reference `eq:model_dcca_pretrain' on page 13 undefined on input
+ line 307.
+
+
+LaTeX Warning: Reference `eq:model_dcca_pretrain' on page 13 undefined on input
+ line 318.
+
+[13]
+
+LaTeX Warning: Reference `fig:model_dcca_finetune' on page 14 undefined on inpu
+t line 320.
+
+
+LaTeX Warning: Reference `eq:model_dcca_finetune' on page 14 undefined on input
+ line 320.
+
+File: ../images/3.The_Model/the_model_dcca_finetune.pdf Graphic file (type pdf)
+
+<../images/3.The_Model/the_model_dcca_finetune.pdf> [14]
+
+LaTeX Warning: Reference `eq:model_dcca_finetune' on page 15 undefined on input
+ line 335.
+
+
+LaTeX Warning: Citation `shi2015convolutional' on page 15 undefined on input li
+ne 344.
+
+(../Bibliography/chapter.tex
+No file chapter.bbl.
+) [15] (./chapter.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred when \ifx on line 353 was incomplete) 
+Here is how much of TeX's memory you used:
+ 3152 strings out of 494899
+ 43806 string characters out of 6175707
+ 108342 words of memory out of 5000000
+ 6569 multiletter control sequences out of 15000+600000
+ 21757 words of font info for 85 fonts, out of 8000000 for 9000
+ 107 hyphenation exceptions out of 8191
+ 29i,13n,43p,428b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on chapter.dvi (15 pages, 34312 bytes).

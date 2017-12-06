@@ -1,0 +1,135 @@
+\documentclass[a4j,12pt,twoside,openany]{jreport}
+%\nofiles %tocファイルを更新させない
+%\documentclass[12pt,a4j,twoside,openany]{jsbook}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{../dspc} % ベースラインスキップの指定
+\usepackage{../slashbox} % 表に斜線を入れる
+%\usepackage{../mediabb}
+\usepackage{fancyvrb} % Verbatim環境
+\usepackage{fancyhdr} % Headerの下線付き章見出し
+\usepackage{here} % float[H]
+\usepackage{multirow}
+\usepackage{hhline} % 表の罫線の角を美しくする
+\usepackage{amsmath} %コレがないとcasesが動かない
+\usepackage{amsfonts} % 数学用フォント
+\usepackage{bm} % 数式環境での bold
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage[flushleft]{threeparttable} % 脚注付きテーブル
+\usepackage{enumitem}
+\usepackage{comment}
+
+
+\setlength{\evensidemargin}{5pt}
+\setlength{\oddsidemargin}{40pt}
+%\setlength{\headheight}{16.5pt}
+%%\setlength{\headheight}{30pt}
+\setcounter{secnumdepth}{3}
+\setlist[description]{leftmargin=2\parindent,labelindent=\parindent}
+
+\makeatletter
+\def\@makechapterhead#1{%
+	\vspace*{50\p@}%
+	{
+		\parindent \z@ \raggedright \normalfont
+		\ifnum \c@secnumdepth >\m@ne
+		% \if@mainmatter
+			\huge\bfseries\@chapapp\thechapter\@chappos
+			\par\nobreak
+			\vskip 20\p@
+		% \fi
+		\fi
+		\interlinepenalty\@M
+		\Huge\bfseries #1\par\nobreak
+		\vskip 40\p@
+	}
+}
+
+%新しいコマンド定義
+\newcounter{linenumber}
+\newenvironment{listing}{%
+  \begin{list}{%
+    \small\arabic{linenumber}:}{%
+      \usecounter{linenumber}%
+      \setlength{\baselineskip}{18pt}%
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}}}%
+ {\end{list}}
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\newcommand{\norm}[1]{\left\| #1 \right\|}
+\newcommand{\cc}[1]{\multicolumn{1}{|c|}{#1}}
+\newcommand{\circled}[1]{\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {#1}}}}
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\makeatother
+%===============================================================================
+\expandafter\ifx\csname SubFile\endcsname\relax
+\begin{document}
+\def\MasterFile{hoge}
+%-------------------------------------------------------------------------------
+%\maketitle
+\thispagestyle{empty}
+\input{../hyoushi/title}
+%\addcontentsline{toc}{chapter}{表紙}
+\thispagestyle{empty}
+\mbox{}\newpage
+%===============================================================================
+%\frontmatter
+%===============================================================================
+%\mainmatter
+%-------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\cleardoublepage
+\input{../0.Abstract/chapter}
+%-------------------------------------------------------------------------------
+\clearpage
+\addcontentsline{toc}{chapter}{目次}
+\tableofcontents
+
+\clearpage
+\addcontentsline{toc}{chapter}{図目次}
+\listoffigures
+
+\clearpage
+\addcontentsline{toc}{chapter}{表目次}
+\listoftables
+
+%-------------------------------------------------------------------------------
+
+%=====================
+\pagestyle{fancy} % Headerをつける
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ \ \ #1}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\lhead{}
+\chead{}
+\lfoot{}
+\rfoot{}%-------------------------------------------------------------------------------
+\input{../1.Introduction/chapter}
+%-------------------------------------------------------------------------------
+\input{../2.Related_Work/chapter}
+%-------------------------------------------------------------------------------
+\input{../3.The_Model/chapter}
+%-------------------------------------------------------------------------------
+\input{../4.Implementation/chapter}
+%-------------------------------------------------------------------------------
+\input{../5.Experiments/chapter}
+%-------------------------------------------------------------------------------
+\input{../6.Conclusion/chapter}
+
+%===============================================================================
+\pagestyle{plain}
+%-------------------------------------------------------------------------------
+\input{../7.Acknowledgement/chapter} %謝辞
+%-------------------------------------------------------------------------------
+\def\BibFile{../Bibliograhoy/database2}
+\input{../Bibliography/chapter} %参考文献
+% %===============================================================================
+\appendix
+\input{../A.Mypaper/chapter} % 投稿論文リスト
+\input{../B.SIG-CCI2/chapter} %
+\input{../C.IJCAI-16/chapter} %
+%===============================================================================
+\end{document}
+\fi

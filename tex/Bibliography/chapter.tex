@@ -1,0 +1,15 @@
+\expandafter\ifx\csname BibFile\endcsname\relax
+    \def\SubFile{hoge}
+    \input{../thesis/thesis}
+    \begin{document}
+\fi
+%-------------------------------------------------------------------------------
+\renewcommand{\bibname}{参考文献}
+
+\bibliographystyle{plain}
+\bibliography{../Bibliography/database2}%\citeによる引用がないファイル(このファイルも含む)では一覧が現れることはない。一覧を見るには基本的に thesis.tex をコンパイルするしかない
+%-------------------------------------------------------------------------------
+
+\expandafter\ifx\csname BibFile\endcsname\relax
+    \end{document}
+\fi

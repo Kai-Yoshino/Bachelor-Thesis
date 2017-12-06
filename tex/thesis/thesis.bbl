@@ -1,0 +1,101 @@
+\begin{thebibliography}{10}
+
+\bibitem{fastText}
+et~al Bojanowski, Piotr.
+\newblock "enriching word vectors with subword information".
+\newblock {\em arXiv preprint arXiv:1607.04606}, 2016.
+
+\bibitem{lexRank}
+Gunes Erkan and Dragomir~R. Radev.
+\newblock "lexrank: Graph-based lexical centrality as salience in text
+  summarization".
+\newblock {\em Journal of Artificial Intelligence Research}, pages 457--479,
+  2004.
+
+\bibitem{firth1957hypothesis}
+John~R Firth.
+\newblock A synopsis of linguistic theory, 1930-1955.
+\newblock {\em Studies in linguistic analysis}, 1957.
+
+\bibitem{okapiBM25}
+E~Garcia.
+\newblock "a tutorial on okapi bm25".
+\newblock 2011.
+
+\bibitem{texttiling}
+Marti~A Hearst.
+\newblock Texttiling: Segmenting text into multi-paragraph subtopic passages.
+\newblock {\em Computational linguistics}, 23(1):33--64, 1997.
+
+\bibitem{idf}
+Karen~Sparck Jones.
+\newblock "a statistical interpretation of termspecificity and its application
+  in retrieval".
+\newblock {\em Journal of Documentation}, 28:11--21, 1972.
+
+\bibitem{fastText2}
+Armand Joulin, Edouard Grave, Piotr Bojanowski, and Tomas Mikolov.
+\newblock Bag of tricks for efficient text classification.
+\newblock {\em arXiv preprint arXiv:1607.01759}, 2016.
+
+\bibitem{levy2014neural}
+Omer Levy and Yoav Goldberg.
+\newblock Neural word embedding as implicit matrix factorization.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2177--2185, 2014.
+
+\bibitem{embedTopic2}
+Quanzhi Li, Sameena Shah, Xiaomo Liu, Armineh Nourbakhsh, and Rui Fang.
+\newblock Tweetsift: Tweet topic classification based on entity knowledge base
+  and topic enhanced word embedding.
+\newblock In {\em Proceedings of the 25th ACM International on Conference on
+  Information and Knowledge Management}, pages 2429--2432. ACM, 2016.
+
+\bibitem{tf}
+Hans~Peter. Luhn.
+\newblock "a statistical approach to mechanized encoding and searching of
+  literary information.".
+\newblock {\em IBM Journal of research and development}, pages 309--317, 1957.
+
+\bibitem{word2vec}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{pageRank1999}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Technical report, Stanford InfoLab, 1999.
+
+\bibitem{seq2seq}
+Oriol~Vinyals Sutskever, Ilya and Quoc~V. Le.
+\newblock "sequence to sequence learning with neural networks.".
+\newblock {\em Advances in neural information processing systems.}, 2014.
+
+\bibitem{facilitation}
+田中~恵 伊藤~孝紀, 深町~駿平, 伊藤 孝行, and 秀島 栄三.
+\newblock "ファシリテータに着目した合意形成支援システムの検証と評価".
+\newblock {\em デザイン学研究}, pages 67--76, 2015.
+
+\bibitem{collagreeTest}
+伊藤孝行 and et~al.
+\newblock "多人数ワークショップのための意見集約支援システム collagree
+  の試作と評価実験".
+\newblock {\em 日本経営工学会論文誌}, pages 83--108, 2015.
+
+\bibitem{discSupport2}
+小谷哲郎, 関一也, 松居辰則, and 岡本敏雄.
+\newblock 好意的発言影響度を取り入れた議論支援システムの開発.
+\newblock {\em 人工知能学会論文誌}, 19(2):95--104, 2004.
+
+\bibitem{embedTopic1}
+中野哲寛 and 荒木雅弘.
+\newblock 雑談対話システムにおける単語分散表現を用いた話題展開手法.
+\newblock {\em 言語処理学会第 21 回年次大会発表論文集}, pages 269--272, 2015.
+
+\bibitem{textSegmentation1}
+別所克人 et~al.
+\newblock 単語の概念ベクトルを用いたテキストセグメンテーション.
+\newblock {\em 情報処理学会論文誌}, 42(11):2650--2662, 2001.
+
+\end{thebibliography}

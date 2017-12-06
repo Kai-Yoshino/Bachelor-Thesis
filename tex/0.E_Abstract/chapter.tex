@@ -1,0 +1,13 @@
+\expandafter\ifx\csname MasterFile\endcsname\relax
+\def\SubFile{hoge}
+\input{../thesis/thesis}
+\begin{document}
+\fi
+%-------------------------------------------------------------------------------
+\cleardoublepage
+\chapter*{ABSTRACT}\addcontentsline{toc}{chapter}{ABSTRACT}
+
+%-------------------------------------------------------------------------------
+\expandafter\ifx\csname MasterFile\endcsname\relax
+\end{document}
+\fi

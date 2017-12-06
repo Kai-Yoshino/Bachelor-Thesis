@@ -1,0 +1,405 @@
+\expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\SubFile{hoge}
+	\input{../thesis/thesis}
+	\begin{document}
+	\setcounter{chapter}{1}
+  \fi
+  %-------------------------------------------------------------------------------
+  \cleardoublepage
+\chapter{関連研究}
+\label{relwork:chapter}
+
+\section{序言}
+\label{relwork:introduction}
+%本章では，Web 上での議論の可視化や構造化に関する関連研究や議論の可視化や構造化を行いながら議論を行うシステムについて述べる．
+本研究を構成する重要な要素として，COLLAGREE，議論支援，話題遷移検出，重み付け，分散表現 が挙げられる．本章では各要素について説明しながら関連研究を紹介する．
+
+%本章では，COLLAGREEの概要，話題に沿って文章の分割を行う関連研究や話題の遷移検出に関する研究，及び関連研究に対する本研究の位置付けについて述べる.
+%背景や要素技術、要素技術を使用した関連研究、その後類似研究について述べる
+
+本章の構成を以下に示す．まず，\ref{rel:collagree}節では，COLLAGREEの概要について簡単に述べる．\ref{rel:argSupport}節では，既存の議論支援に関する研究について述べる．\ref{rel:topic}節では話題に関する本研究の見方や既存の話題に関する研究について述べる．次に，\ref{rel:part:weight}節では本研究の重要な要素である重み付けについて述べる．\ref{rel:part:vec}節では本研究のもう１つの重要な要素である分散表現及び分散表現を使用した話題関連研究について述べる．最後に，\ref{rel:conclusion}節で本章のまとめを示す．
+
+\clearpage
+\section{COLLAGREE}
+\label{rel:collagree}
+\subsection{概要}
+COLLAGREEは掲示板のような議論プラットフォームをベースにしており，各ユーザーが自由なタイミングで意見を投稿，返信できる．
+こうした議論掲示板は基本的には１つの議論テーマに対して関連するテーマを扱った複数のスレッドから構成される．スレッドとはある特定の話題・論点に関する１つのまとまりを指す．例えば，図\ref{Fig:thread1}のようにスレッドを立てたユーザーの発言が親意見となり，他のユーザーが子意見として親意見に返信し，子意見に対して孫意見が存在する場合もある．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=0.5\textwidth]{../images/2.Related_Work/COLLAGREE_thread.png}
+  \caption{COLLAGREEのスレッドの例}
+  \label{Fig:thread1}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+しかし，スレッドや返信は必ずしも正しく使われるとは限らず，単なるチャットと同様に扱われてしまいスレッドが乱立してしまうこともある．
+
+\subsection{ファシリテーター}
+COLLAGREEではファシリテーターと呼ばれる人物が議論のマネジメントを行っている．
+ファシリテーターは"促進者"を意味し，議論そのものには参加せず、あくまで中立的な立場から活動の支援を行うようにし，自分の意見を述べたり自ら意思決定をすることはない．
+基本的な役割として"議論の内容の整理"，"議論の脱線防止"，"意見の促し"等が挙げられる．
+伊藤ら\cite{facilitation}によってファシリテーターの存在や手腕が合意形成に強く影響を与えることが示されている．
+
+%\subsection{COLLAGREEでの議論支援機能}
+%\paragraph{ポイント式議論支援}\ \\
+%Itoら\cite{discSupport1-1}はCOLLAGREE上インセンティブとして参加者の活動の活発化や，重要投稿の把握の支援を目的として，議論ポイントと呼ばれるシステムを導入した．参加者の投稿や投稿に対する返信や賛同に沿ってポイントを参加者に付与する．
+%また，高橋ら\cite{discSupport1-2}は質の高い投稿を促すために，議論ポイントを発展させて投稿された意見の質を評価する手法を提案した．投稿された意見中の名詞と以前に出現したキーワードとの一致度を計算し，一致していれば議論を収束させるものとして，一致していなければ議論を発散させるものとしてポイントを与える．
+
+%本研究は上記の研究とは違い，議論の活性化や一般参加者らに対する支援ではなく，ファシリテーターに対する支援を主目的としている．
+%\paragraph{議論可視化支援}\ \\
+\begin{comment}
+仙石ら\cite{argTree}は議論内容把握支援，合意形成支援，およびファシリテーション支援を目的として議論ツリーの実装を行った．ツリー図をCOLLAGREE に応用したものを仙石らが呼んだもので，ツリー図とはファシリテーターが参加者に議論のポイントと各意見の関係を一致させるために，参加者の意見を文字や図形を用いて分かりやすく描く図の１つである．図\ref{Fig:argTree1}に議論ツリーの例を示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/argTree1.png}
+  \caption{議論ツリー}
+  \label{Fig:argTree1}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+\end{comment}
+%議論ツリーは投稿をノードとし，エッジは基本的に投稿間の返信関係を基に自動的に作られる．そして，より正確な議論ツリーを作成するためにファシリテーターが手動で議論ツリー編集するというハイブリッド方式が導入されている．
+
+%本研究は可視化を主目的に置いておらず，また全自動を目指しており，ファシリテーターによる作業が全くない点で異なる．
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\section{議論支援}
+\label{rel:argSupport}
+議論は収束を目標として互いの意見を述べ合うことで，何かを決定する際において重要な社会活動である．故に注目が集まり，COLLAGREE以外でも議論内容の把握支援を行い，議論の進行を支援するための研究が行われている．
+小谷ら\cite{discSupport2}は好意的発言影響度を取り入れた議論支援システムを開発した．システムは議論中の発言の意図や内容に加えて，発言に対するリアクション(同意、非同意、意見)などから議論進行をモニタリングしている．モニタリングの結果を基にして議論の活性化や深化に対して参加者が果たしている役割を"好意的発言影響度"として定量化して表示する．
+
+本研究はファシリテーターに対する支援を目的としており，一般参加者や学習者の議論活性化及び収束に向けた支援が目的ではない．
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\section{話題遷移検出}
+\label{rel:topic}
+話題に関連する研究は長い間行われており，古くは「会話分析」という学問に始まる．
+会話分析は会話を始めとする相互行為の組織(構造)を明らかにしようとする社会学の研究分野であり，相互行為の分析法も取り扱う．1960年代に Harvey Sacks と Emanuel A.schegloff によって創案された．
+%
+話題というものは、本来流れの一時点で簡単に区切ることのできるものではない．しかし、研究によっては話題内容と連鎖組織及び言語形式との関連についての分析を行うことがある．筒井\cite{zatsudan}は話題を区切るのに次のように基準を立てた．
+\begin{enumerate}
+  \item それまで話題となっていた対象や事態とは異なる，新しい対象や事態への言及\label{enum:zatsudan1}
+  \item すでに言及された対象や事態の異なる側面への言及
+  \item すでに言及された対象や事態の異なる時間における様相への言及
+  \item すでに言及された対象や事態について，それと同種の対象や事態への言及
+  \item すでに言及された個別の対象や事態の一般化\label{enum:zatsudan5}
+\end{enumerate}
+本研究では上記の基準を参考に話題変化の判定の評価の基準を設けている．
+
+話題の遷移に基づいた文章の分割は人間によるテキスト全体の内容の把握の容易化や複数のテキストに対する自動分類や検索の精度向上のために研究されている．以下では話題の遷移に関する関連研究について述べる．
+\subsection{テキストセグメンテーション}
+テキストセグメンテーションは複数のトピックが混合的に書かれている非構造的である文書をトピックに応じて分割する手法である．
+\paragraph{TextTiling}\ \\
+Hearstら\cite{texttiling}は複数の単語を連結した２つのブロックをテキストの初めから末尾まで動かしていきブロック間の類似度を計算する手法(TextTiling)を提案した．類似度はブロック間で共通して使われる単語数などで計算する．図\ref{Fig:textTilingFigure}に手法の簡単な流れを示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/textTiling-figure.png}
+  \caption{TextTilingの流れ}
+  \label{Fig:textTilingFigure}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+計算された類似度をグラフにすると図\ref{Fig:textTilingGraph}のようになる．縦軸はブロック間の類似度，横軸はブロック間の番号を表し，グラフ中の番号は段落番号，垂直線は選出された文の境界位置を表す．グラフは各ブロック間の類似度を繋いだものと，更に平滑化したものの２つが描かれている．
+グラフの谷のような場所は左右のブロック間の類似度が下がる場所を表し，使われる単語が変わったこと，すなわちトピックが変わったことを意味し，谷の付近に境界を設けることで文書をトピックごとに区切ることを可能としている．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/textTiling-graph.png}
+  \caption{TextTilingのグラフ}
+  \label{Fig:textTilingGraph}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+\paragraph{テキストセグメンテーションを使用した関連研究}\ \\
+別所\cite{textSegmentation1}は単語の共起頻度行列を特異値分解で次元を削減して作成した単語の概念ベクトルを用いて新聞記事の分割を行っている．ブロック間の類似度を計算する際にブロック中の単語の内，自立語にのみ概念ベクトルを付与し左右のブロックの和ベクトル(または重心ベクトル)の余弦測度を求め，類似度(または結束度)としている．
+
+テキストセグメンテーションは基本的にある地点$A$で話題に沿って分割をするか考える際に，地点$A$より先の情報を使うことができる．すなわち，ある程度の文章が現れてから話題が変わったかどうかの判定をしており，リアルタイムでの動作を想定していない．
+本研究はリアルタイムでの動作を想定し，ある発言$B$が話題の変化を起こすかどうか判定する際に$B$より先の情報を使うことなく判定している点で異なる．
+%
+\subsection{トピックモデル}
+トピックモデルは，確率モデルの一種にあたり，文章中の「単語が出現する確率」を推定している．単語が出現する確率をうまく推定することができれば，似たような単語が出てくる文章が把握できる．
+すなわち，トピックモデルとは「文書における単語の出現確率」を推定するモデルといえる．
+\paragraph{ユニグラムモデル}\ \\
+図は四角の箱が文書を表し，中身の色がトピックを表す．
+ユニグラムモデルは，すべてのボックスが同じ青色である．全ての文書の単語は，一つのトピックから生成されたものと仮定するモデルである．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/topicModel-unigram.png}
+  \caption{ユニグラムモデル}
+  \label{Fig:unigram}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+\paragraph{混合ユニグラムモデル}\ \\
+混合ユニグラムモデルは，各ボックスの色が異なっている．つまり，各文書に一つのトピックがあり，そのトピックから文書の単語が生成されると仮定するモデルである．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/topicModel-mixUnigram.png}
+  \caption{混合ユニグラムモデル}
+  \label{Fig:mixUnigram}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+\paragraph{LDA}\ \\
+LDA(Latent Dirichlet Allocation)では，ボックスの中で色が異なっている．つまり，各文書は複数のトピックで構成されていて，各トピックの単語分布を合算した形で単語が生成されていると仮定を行う．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/topicModel-LDA.png}
+  \caption{LDA}
+  \label{Fig:LDA}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+トピックモデルは基本的に学習の際にトピックの数を指定する必要があり，指定に伴いトピック数が制限されてしまう．すなわち，トピックの数によっては変化に対応できない話題が存在することがあり得る．本研究は分散表現を用いており，トピック数の指定がない点で異なる．
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\section{重み付け}
+\label{rel:part:weight}
+重み付けは情報検索を主とする分野で使われる方法で，蓄積された情報中の語の索引語，すなわち特定の情報の特徴を表し検索の手掛かりとなる語，としての重要度を数値的に表現し，それぞれの語の重要度に応じて重みを付け，集計して総合評価を出す手法である．出された総合評価はスコア等と呼ばれる．一般的に語の重要度は整数または実数値で与えられる．自動的な重み付けにおいては語の出現頻度情報や出現位置を利用して数値を与える．
+本研究で行う重み付けは下記の２種類の重み付けを基にしている．
+\subsection{Okapi BM25}
+Okapi BM25\cite{okapiBM25} は出現頻度情報を用いる重み付け手法の代表の１つである．Okapi BM25 ではTF(Term Frequency 単語の出現頻度)\cite{tf}，IDF(Inverse Document Frequency 逆文書頻度)\cite{idf}，DL(Document Length 文書長)の３つを用いて重要度の計算を行う．
+各用語について説明を行う．
+\paragraph{TF}\ \\
+TFは単語の出現頻度を表し，文書中において出現頻度の高い単語は重要であるという考え方に基づく．ある単語$t_i$の文書$D_j$中における出現頻度重み$tf_{i,j}$は式(\ref{eq:tf})のようにして求められる．
+\begin{equation}
+\begin{aligned}
+\label{eq:tf}
+tf_{i,j} & = \frac{n_{ij}}{ \sum_{k} n_{kj} }
+\end{aligned}
+\end{equation}
+ここで$n_{ij}$は文書$d_{j}$における単語$t_{i}$の出現回数，$\sum _{k} n_{kj} $は文書$d_{j}$におけるすべての単語の出現回数の和である．
+\paragraph{IDF}\ \\
+IDFは逆文書頻度を表し，多くの文書において出現頻度の高い単語は重要ではないという考え方に基づく．IDFは多くの文書に出現する語，すなわち一般的な語の重要度を下げ，特定の文書にしか出現しない単語の重要度を上げる役割を果たす．ある単語$t_i$の逆文書頻度重み$idf_{i}$は式(\ref{eq:idf})のようにして求められる．
+\begin{equation}
+\begin{aligned}
+\label{eq:idf}
+idf_{i} & = \log{ \frac{ |D| }{ | \{ d: d \ni t_i \}  |} } %+1は本研究ではしない
+\end{aligned}
+\end{equation}
+ここで$|D|$は総文書数，$| \{ d: d \ni t_i \}  |$は単語$t_i$を含む文書数である．
+\paragraph{DL}\ \\
+DLは文書長を表し，ある単語の出現回数が同じ2つの文書について，総単語数の少ない文書と多い文書では，前者のほうがより価値があるという考え方に基づく．
+ある文書$d_j$の文書長重み$ndl_j$は式(\ref{eq:dl})のようにして求められる．
+\begin{equation}
+\begin{aligned}
+\label{eq:dl}
+ndl_{j} & = \frac{dl_j}{ave(dl)}
+\end{aligned}
+\end{equation}
+ここで$dl_j$は文書$d_j$の総単語数，$ave(dl)$はすべての文書の平均$dl$を表す．
+%Okapi BM25
+\\
+上記の３つの重みを用いてOkapi BM25は(\ref{eq:bm25})のように単語$t_i$の文書$D_j$中における統合重み$cw_{ij}$を求める．
+\begin{equation}
+\begin{aligned}
+\label{eq:bm25}
+cw_{ij} & = \frac{tf_{i,j} \cdot idf_{i} \cdot (k_1+ 1)}{k_1 \cdot (1 - b + b \cdot ndl_{j}  ) + tf_{i,j}  }
+\end{aligned}
+\end{equation}
+ここで定数$k_1$と$b$について説明する．２つの定数はどちらもチューニングの役割を果すもので$k_1$は単語の出現頻度による影響を，$b$は文書の長さによる影響を調節する．
+\subsection{LexRank}
+Erkanら\cite{lexRank}によって考案されたLexRankはGoogleのPageRank\cite{pageRank1999}を使用した文章要約アルゴリズムで，文の類似度を計算して次の２つの基準に基いて文の重要度を計算する．
+\begin{enumerate}
+  \item 多くの文に類似する文は重要な文である．
+  \item 重要な文に類似する文は重要な文である．
+\end{enumerate}
+LexRankでいう類似度は簡単にいえば2文がどれだけ共通の単語を持つかということを表し，文をTF-IDFを用いてベクトル化してCosineを求めることで類似度としており，式\ref{eq:cosine}に沿ってベクトル$x$と$y$のCosineが計算される．
+\begin{equation}
+\begin{aligned}
+\label{eq:cosine}
+{\rm idf-modified-cosine}(x,y) & = \frac{\sum_{w \in x,y} tf_{w,x} tf_{w,y} (idf_w)^2} {\sqrt{ \sum_{x_i \in x} ( tf_{x_i,x} idf_{x_i} )^2  } \times \sqrt{ \sum_{y_i \in y} ( tf_{y_i,y} idf_{y_i} )^2  }}
+\end{aligned}
+\end{equation}
+
+文の間のCosine類似度をグラフとして可視化すると図\ref{Fig:lexGraph1}のようになる．各エッジは文の間のCosine類似度を表し，$dXsY$は文書XのY番目の文を示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/lexRank-graph.png}
+  \caption{類似度グラフの例}
+  \label{Fig:lexGraph1}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+その後，Cosine類似度が閾値を超えたかどうかを基に隣接行列が作成される．隣接行列はグラフを表現するために用いられる行列で，あるノード$v$と$w$の間にエッジの有無が行列の$(v,w)$成分に割り当てられる．
+隣接行列の各要素を類似している文の数で割り，確率行列に変換した後，\textbf{Algorithm\ref{algo:powMethod}}に従って行列の固有ベクトル$\bm{p}$が計算される．求められた固有ベクトルがLexRankスコアとなる．
+\begin{algorithm}
+\caption{べき乗法の計算アルゴリズム} \label{algo:powMethod}
+\begin{algorithmic}[1]
+	\State input : 確率的かつ既約かつ非周期的な行列$\bm{M}$
+	\State input : 行列サイズ $N$, 誤差許容値$~ \epsilon$
+	\State output: 固有ベクトル $\bm{p}$
+	\State $\bm{p}_{0}=  \frac{1}{N} \bm{1};$
+	\State $t=0;$
+	\Repeat
+		\State $t=t+1;$
+		\State $\bm{p}_{t} = \bm{M}^{\mathrm{T}} \bm{p}_{t-1};$
+		\State $\delta = \| \bm{p}_{t} - \bm{p}_{t-1} \| ;$
+	\Until $ \delta < \epsilon$
+	\State \textbf{return} $\bm{p}_{t};$
+\end{algorithmic}
+\end{algorithm}
+
+LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\ref{algo:lexRank}}に示す．
+\ref{algo:lexRank:for1-b}$\sim$\ref{algo:lexRank:for1-e}行目では隣接行列が作成されており，\ref{algo:lexRank:for3-b}$\sim$\ref{algo:lexRank:pw}行目ではLexRankが計算されている．
+\begin{algorithm}
+\caption{LexRankスコアの計算アルゴリズム} \label{algo:lexRank}
+\begin{algorithmic}[1]
+	\State $Input: n 個の文からなる配列 S, コサイン類似度の閾値 t$
+	\State $Output: 各文のLexRankスコアを格納した配列L$
+	\State $Array ~~ CosineMatrix[n][n];$
+	\State $Array ~~ Degree[n];$
+	\State $Array ~~ L[n];$
+	 \For{$i \gets 1 ~  to  ~ n $}\label{algo:lexRank:for1-b}
+	 	\For{$j \gets 1 ~ to ~ n $}\label{algo:lexRank:for2-b}
+			\State $CosineMatrix[i][j]$ = idf-modified-cosine$(S[i], S[j]);$\label{algo:lexRank:cos}
+			\If{$CosineMatrix[i][j] > t $}
+				\State $CosineMatrix[i][j] = 1;$
+				\State $Degree[i]++;$
+			\Else
+			 	\State $CosineMatrix[i][j] = 0;$
+			\EndIf
+		\EndFor\label{algo:lexRank:for2-e}
+	 \EndFor\label{algo:lexRank:for1-e}
+        \For{$i \gets 1 ~ to ~ n$}\label{algo:lexRank:for3-b}
+    		\For{$j \gets 1 ~ to ~ n$}\label{algo:lexRank:for4-b}
+         		\State $CosineMatrix[i][j] = CosineMatrix[i][j] / Degree[i];$
+    		\EndFor\label{for4}\label{algo:lexRank:for4-e}
+	\EndFor\label{for3}\label{algo:lexRank:for3-e}
+	\State L = PowerMethod$(CosineMatrix, n, ε);$\label{algo:lexRank:pw}
+	\State \textbf{return} L
+\end{algorithmic}
+\end{algorithm}
+
+%また，LexRankには Continuous LexRank が存在し，9行目の閾値がない
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+\section{分散表現}
+\label{rel:part:vec}
+分散表現は単語を低次元または高次元の実数ベクトルで表現する技術でHarris\cite{firth1957hypothesis}が提唱した"分布仮説"("同じ文脈で出現する単語は類似した味を持つ傾向があり，単語はその単語とともに出現する単語等によって特徴づけられる．"という考え方)に基づく．
+\subsection{単語文脈行列}
+\label{rel:wordEmbed:WordParagraphMat}
+単語文脈行列は分散表現の最も基本的な形式で図\ref{Fig:WordParagraphMat}のような形の行列で表される．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/WordParagraphMatrix2.png}
+  \caption{単語文脈行列}
+  \label{Fig:WordParagraphMat}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+行列中の各要素$M_{ij}$は単語$i$と文脈$j$の共起頻度を表しており，例として青い四角はtrainとrideが72回共起したことを表している．各行$M_i$は単語$i$の意味ベクトルを表し，例として赤い四角は"beer"の単語ベクトルを表している．
+
+また，単語の類似度を式\ref{eq:cosineSim}のように単語の意味ベクトルのコサイン類似度で求めることができる．
+\begin{equation}
+\begin{aligned}
+\label{eq:cosineSim}
+cos \theta & = \frac{M_i \cdot M_j}{ | M_i | | M_j |}
+\end{aligned}
+\end{equation}
+
+式\ref{eq:cosineSim}を図\ref{Fig:WordParagraphMat}の行列に適応させるとbeerとwineのコサイン類似度は約$0.941$，beerとtrainのコサイン類似度は約$0.387$となり，trainよりもwineの方がbeerに類似していることが分かる．
+\subsection{word2vec}
+\ref{rel:wordEmbed:WordParagraphMat}節で説明した単語文脈行列から得られる単語ベクトルは単語の類似度を求めることは出来たが，他の数学的処理には対応していなかった．
+Mikolovら\cite{word2vec}が開発したword2vecはニューラルネットワークを用いて分散表現の生成を行う手法で，CBOWとskip-gramの２種類の学習方法が存在する．図\ref{Fig:CBOW}，図ref{Fig:skip-gram}はそれぞれCBOWとskip-gramの構造を表す．
+\begin{figure}[htbp]
+	\begin{center}
+	\begin{tabular}{c}
+      	% 1
+      		\begin{minipage}{0.5\textwidth}
+       		 \begin{center}
+ 	 		\includegraphics[width=\hsize]{../images/2.Related_Work/CBOW.png}
+  			\caption{CBOW}
+ 	 		\label{Fig:CBOW}
+ 		 	\vspace{-10pt}
+ 		\end{center}
+		\end{minipage}
+	% 2
+      		\begin{minipage}{0.5\textwidth}
+       		 \begin{center}
+ 	 		\includegraphics[width=\hsize]{../images/2.Related_Work/skip-gram.png}
+  			\caption{skip-gram}
+ 	 		\label{Fig:skip-gram}
+ 		 	\vspace{-10pt}
+ 		\end{center}
+		\end{minipage}
+	\end{tabular}
+	 \end{center}
+\end{figure}
+
+CBOWは周辺の単語$W(t-2) \cdots  W(t+2)$を入力として，現在の単語$W(t)$を予測することを目指して学習する．逆にskip-gramは現在の単語を入力として，周辺の単語を予測することを目指して学習する．どちらの手法でも中間層と単語の変換処理が行われており，学習によって得られる単語と中間層での数値が対応した行列が単語の分散表現モデルとなる．
+
+word2vecが従来の手法と比べて大きく異なる点は　ニューラルネットによる学習で単語の類似度の計算に加えて，ベクトルの加減算が単語の意味の加減算に対応しているということである．また，従来の手法を用いた単語ベクトルよりも類推精度が高いことがLevyら\cite{levy2014neural}によって示されている．
+例えば，$X=vector("biggest") - vector("big") + vector("small")$として計算されたベクトル$X$に最も類似したベクトルを探すことでbiggestがbigに類似しているのと同じ意味でsmallに類似している単語smallestを見つけることができる．ただし，分散表現モデルが十分に訓練されていることが前提である．
+
+\subsection{fastText}
+fastText\cite{fastText}\cite{fastText2}はword2vecを発展させた手法でより大きな語彙や多くの稀な単語に対応することができ，学習の速度を上昇させることにも成功している．
+
+fastTextはskip-gramモデルを採用しており，学習の際に単語だけでなく部分語(単語を構成する文字のまとまり)についても考慮する．以下に単語$w_t$が与えられた時に予測した文脈単語$w_c$の間のスコア関数を示す．
+\begin{equation}
+\begin{aligned}
+\label{eq:para_scoreF_1}
+s(w_t , w_c) & = \bm{ u }^{\mathrm{T}}_{w_t} \bm{v}_{w_c}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\label{eq:para_scoreF_2}
+s(w_t , w_c) & =  \sum_{g \in \mathcal{G}_w} \bm{ z }^{\mathrm{T}}_{g} \bm{v}_{w_c}
+\end{aligned}
+\end{equation}
+
+式\ref{eq:para_scoreF_1}はfastText以前の手法でのスコア関数を表し，式\ref{eq:para_scoreF_2}はfastTextでのスコア関数を表す．$\bm{u}_{w_{t}}$，$\bm{v}_{w_c}$はそれぞれ単語$w_t$，$w_c$を実数ベクトルで表したもので，式\ref{eq:para_scoreF_2}において$\mathcal{G}_w$，$\bm{z}_{g}$はそれぞれ単語$w$のn-gramの集合とn-gram $g$を実数ベクトルで表現したものを表す．
+式\ref{eq:para_scoreF_1}では単語と文脈単語の間のスカラー積をスコアとしているが，式\ref{eq:para_scoreF_2}では単語のn-gramと文脈単語の間のスカラー積の合計をスコアとしている．
+式\ref{eq:para_scoreF_2}の手法を用いることで従来のモデルでは考慮されていなかった"活用形"を考慮できるようになった．例として，単語 goとgoesとgoingは全てgoの活用形であるが字面は異なるので従来のモデルでは異なる単語として学習されていたが，fastTextでは部分語である"go"を３つ全てで学習することで意味の近しい単語として学習することが可能となることが挙げられる．
+
+本研究では分散表現の手法としてfastTextを使用している．
+\subsection{分散表現を使用した話題関連研究}
+分散表現は関連語を導出できることから分散表現を話題関連に用いる研究が行われている．
+中野ら\cite{embedTopic1}は分散表現を用いて雑談対話システムでのシステム側の応答生成を行っている．
+図\ref{Fig:embedTopic1}に話題展開システムの構造を示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/embedTopic1.png}
+  \caption{話題展開システムの構造}
+  \label{Fig:embedTopic1}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+システムではユーザ発話を形態素解析して検出された単語を単語分散表現による類似語検索から得られた結果と入れ替えることでシステム応答の生成を行っている．
+
+また，Liら\cite{embedTopic2}は分散表現を用いてTwitterのツイートをトピックカテゴリに分類する分類器 TweetSift を提案している．
+図\ref{Fig:embedTopic1}にトピックカテゴリの予測のワークフローを示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/TweetSift.png}
+  \caption{TweetSiftによるトピック予測のワークフロー}
+  \label{Fig:tweetSift}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+図の右のフローではツイートデータとスクレイピングで作成された知識ベースを用いて知識ベース特徴を生成している．
+図の左のフローでは前処理を行ったツイートと作成済み分散表現モデルを用いて分散表現特徴を生成している．
+２つの特徴を用いてSMO(Sequential Minimal Optimization)によってトピックが予測されている．
+Liらの研究で用いられる分散表現は学習の際に単語だけでなく，LDAを用いて予測した単語のトピックも使用されている．
+
+本研究はWeb上での議論を対象としており，対話やSNSを対象としていない点で異なる．また，中野らの研究とは文の生成を行わない点でも異なり，Liらの研究とは分散表現の学習の際にトピックを用いていない点でも異なる．
+
+\section{結言}
+\label{rel:conclusion}
+本章では，COLLAGREEや他の議論プラットフォームでの議論支援研究を紹介し，本研究との違いを説明した，また，本研究と類似した研究や本研究での重要な要素，及び要素を使用した関連研究についても説明し，本研究の立ち位置を明らかにした．
+
+ %-------------------------------------------------------------------------------
+ \expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\BibFile{hoge}
+	\input{../Bibliography/chapter}
+  \fi
+  %-------------------------------------------------------------------------------
+  \expandafter\ifx\csname MasterFile\endcsname\relax
+  \end{document}
+  \fi

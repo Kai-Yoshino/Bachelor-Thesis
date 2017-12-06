@@ -1,0 +1,26 @@
+\expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\SubFile{hoge}
+  \input{../thesis/thesis}
+  \begin{document}
+	\setcounter{chapter}{2}
+  \fi
+  %-------------------------------------------------------------------------------
+  \cleardoublepage
+%\chapter{時空間データのマルチモーダル学習モデル}
+\chapter{発言データの要約手法}
+%
+\label{model:chapter}
+
+\section{序言}
+\label{model:introduction}
+\section{結言}
+\label{model:conclusion}
+ %-------------------------------------------------------------------------------
+ \expandafter\ifx\csname MasterFile\endcsname\relax
+	\def\BibFile{hoge}
+	\input{../Bibliography/chapter}
+  \fi
+  %-------------------------------------------------------------------------------
+  \expandafter\ifx\csname MasterFile\endcsname\relax
+  \end{document}
+  \fi
