@@ -13,12 +13,12 @@
 \contentsline {subsection}{\numberline {2.2.2}ファシリテーター}{15}
 \contentsline {section}{\numberline {2.3}議論支援}{15}
 \contentsline {section}{\numberline {2.4}話題遷移検出}{16}
-\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{16}
+\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{17}
 \contentsline {paragraph}{TextTiling}{17}
-\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{17}
+\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{19}
 \contentsline {subsection}{\numberline {2.4.2}トピックモデル}{19}
 \contentsline {paragraph}{ユニグラムモデル}{19}
-\contentsline {paragraph}{混合ユニグラムモデル}{19}
+\contentsline {paragraph}{混合ユニグラムモデル}{20}
 \contentsline {paragraph}{LDA}{20}
 \contentsline {section}{\numberline {2.5}重み付け}{21}
 \contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{21}
@@ -30,26 +30,33 @@
 \contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{27}
 \contentsline {subsection}{\numberline {2.6.2}word2vec}{28}
 \contentsline {subsection}{\numberline {2.6.3}fastText}{29}
-\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した関連研究}{30}
+\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{30}
 \contentsline {section}{\numberline {2.7}結言}{32}
-\contentsline {chapter}{\numberline {第3章}発言データの要約手法}{33}
+\contentsline {chapter}{\numberline {第3章}通知システム}{33}
 \contentsline {section}{\numberline {3.1}序言}{33}
-\contentsline {section}{\numberline {3.2}結言}{33}
-\contentsline {chapter}{\numberline {第4章}単語集合間の関連度計算手法}{35}
-\contentsline {section}{\numberline {4.1}序言}{35}
-\contentsline {section}{\numberline {4.2}結言}{35}
-\contentsline {chapter}{\numberline {第5章}COLLAGREEの議論データを用いた評価実験}{37}
-\contentsline {section}{\numberline {5.1}序言}{37}
-\contentsline {section}{\numberline {5.2}使用データ}{38}
-\contentsline {subsection}{\numberline {5.2.1}議論データ}{38}
-\contentsline {subsection}{\numberline {5.2.2}}{39}
-\contentsline {section}{\numberline {5.3}結言}{39}
-\contentsline {chapter}{\numberline {第6章}結論}{41}
-\contentsline {section}{\numberline {6.1}序言}{41}
-\contentsline {section}{\numberline {6.2}今後の課題・展望}{41}
-\contentsline {section}{\numberline {6.3}本研究のまとめ}{41}
-\contentsline {chapter}{謝辞}{43}
-\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{51}
-\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{51}
-\contentsline {section}{\numberline {A.2}投稿論文一覧}{51}
-\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{53}
+\contentsline {section}{\numberline {3.2}システムの動作の流れ}{33}
+\contentsline {section}{\numberline {3.3}システム詳細}{35}
+\contentsline {subsection}{\numberline {3.3.1}発言データ}{35}
+\contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{36}
+\contentsline {paragraph}{時間差評価値}{36}
+\contentsline {paragraph}{返信距離}{37}
+\contentsline {paragraph}{総合類似度}{37}
+\contentsline {section}{\numberline {3.4}結言}{38}
+\contentsline {chapter}{\numberline {第4章}単語集合間の関連度計算手法}{39}
+\contentsline {section}{\numberline {4.1}序言}{39}
+\contentsline {section}{\numberline {4.2}結言}{39}
+\contentsline {chapter}{\numberline {第5章}COLLAGREEの議論データを用いた評価実験}{41}
+\contentsline {section}{\numberline {5.1}序言}{41}
+\contentsline {section}{\numberline {5.2}使用データ}{42}
+\contentsline {subsection}{\numberline {5.2.1}議論データ}{42}
+\contentsline {subsection}{\numberline {5.2.2}}{43}
+\contentsline {section}{\numberline {5.3}結言}{43}
+\contentsline {chapter}{\numberline {第6章}結論}{45}
+\contentsline {section}{\numberline {6.1}序言}{45}
+\contentsline {section}{\numberline {6.2}今後の課題・展望}{45}
+\contentsline {section}{\numberline {6.3}本研究のまとめ}{45}
+\contentsline {chapter}{謝辞}{47}
+\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{55}
+\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{55}
+\contentsline {section}{\numberline {A.2}投稿論文一覧}{55}
+\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{57}

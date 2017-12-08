@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  22 SEP 2017 19:04
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  8 DEC 2017 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -193,9 +193,6 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@float@every@algorithm=\toks23
 \c@algorithm=\count112
 )
-(/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
-Package: algpseudocode 
-
 (/Users/YoshinoKai/Library/texmf/tex/latex/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
@@ -210,7 +207,9 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count118
 \c@ALG@tmpcounter=\count119
 \ALG@tmplength=\skip59
-)
+) (/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
+Package: algpseudocode 
+
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/Users/YoshinoKai/Library/texmf/tex/latex/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -229,8 +228,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 
 Excluding comment 'comment')
 \c@linenumber=\count121
-)
-No file chapter.aux.
+) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -249,352 +247,86 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 第 3 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 17.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
-
-LaTeX Warning: Citation `shi2015convolutional' on page 1 undefined on input lin
-e 17.
-
-
-LaTeX Warning: Citation `shi2015convolutional' on page 1 undefined on input lin
-e 21.
-
-
-LaTeX Warning: Reference `model:multi_channel' on page 1 undefined on input lin
-e 26.
-
-
-LaTeX Warning: Reference `model:dcca' on page 1 undefined on input line 27.
-
-
-LaTeX Warning: Reference `model:conclusion' on page 1 undefined on input line 2
-8.
-
-[1
-
-
-
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 34.
-
-
-LaTeX Warning: Reference `fig:the_model_spatiotemporal' on page 2 undefined on 
-input line 36.
-
-File: ../images/3.The_Model/the_model_spatiotemporal.pdf Graphic file (type pdf
-)
-<../images/3.The_Model/the_model_spatiotemporal.pdf>
-
-LaTeX Warning: Reference `relwork:multi_view_multi_modal_cnn' on page 2 undefin
-ed on input line 46.
-
-
-LaTeX Warning: Citation `zhang2015deep' on page 2 undefined on input line 46.
-
-
-LaTeX Warning: Reference `fig:the_model_multi_modal' on page 2 undefined on inp
-ut line 49.
-
-File: ../images/3.The_Model/the_model_multi_modal.pdf Graphic file (type pdf)
-<../images/3.The_Model/the_model_multi_modal.pdf>
-
-LaTeX Warning: Reference `relwork:conv_lstm' on page 2 undefined on input line 
-62.
-
-File: ../images/3.The_Model/conv_lstm_tensor.pdf Graphic file (type pdf)
-<../images/3.The_Model/conv_lstm_tensor.pdf>
-
-LaTeX Warning: Reference `fig:conv_lstm_tensor' on page 2 undefined on input li
-ne 70.
-
-
-LaTeX Warning: Citation `shi2015convolutional' on page 2 undefined on input lin
-e 75.
-
-
-LaTeX Warning: Reference `relwork:cnn_patch' on page 2 undefined on input line 
-77.
-
-
-LaTeX Warning: Reference `relwork:conv_lstm' on page 2 undefined on input line 
-78.
-
-
-LaTeX Warning: Citation `shi2015convolutional' on page 2 undefined on input lin
-e 78.
-
-
-LaTeX Warning: Reference `fig:the_model_patch' on page 2 undefined on input lin
-e 79.
-
-File: ../images/3.The_Model/the_model_patch.pdf Graphic file (type pdf)
-<../images/3.The_Model/the_model_patch.pdf> [2
-
-] [3]
-
-LaTeX Warning: Reference `model:multi_channel_concat' on page 4 undefined on in
-put line 97.
-
-[4]
-
-LaTeX Warning: Reference `fig:the_model_patch' on page 5 undefined on input lin
-e 107.
-
-
-LaTeX Warning: Reference `relwork:multi_view' on page 5 undefined on input line
- 109.
-
-
-LaTeX Warning: Reference `relwork:cnn_localnorm' on page 5 undefined on input l
-ine 112.
-
-
-LaTeX Warning: Reference `eq:cnn_localnorm_sub' on page 5 undefined on input li
-ne 113.
-
-
-LaTeX Warning: Reference `eq:cnn_localnorm_div2' on page 5 undefined on input l
-ine 113.
-
-
-LaTeX Warning: Reference `relwork:conv_lstm' on page 5 undefined on input line 
-119.
-
-
-LaTeX Warning: Citation `zhang2015deep' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 5 undefined on i
-nput line 121.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
-
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
-
-
-LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 5 undefined on i
-nput line 122.
-
-File: ../images/3.The_Model/the_model_conv_lstm_lrn.pdf Graphic file (type pdf)
-
-<../images/3.The_Model/the_model_conv_lstm_lrn.pdf>
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
-
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
 
-LaTeX Warning: Reference `relwork:cnn_localnorm' on page 5 undefined on input l
-ine 132.
+<../images/3.The_Model/WholeModel.png>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 54.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 54.
+ [1
 
 
-LaTeX Warning: Reference `eq:cnn_localnorm_sub' on page 5 undefined on input li
-ne 132.
 
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
 
-LaTeX Warning: Reference `eq:cnn_localnorm_div2' on page 5 undefined on input l
-ine 132.
-
-[5]
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 134.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 57.
 
+Overfull \hbox (64.67207pt too wide) in paragraph at lines 70--77
+[][][][] 
+ []
 
-LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 6 undefined on i
-nput line 137.
+[3]
 
+LaTeX Warning: Reference `impl:chapter' on page 4 undefined on input line 87.
 
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop1' on page 6 undefined on 
-input line 137.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+[4]
 
+LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 109.
 
-LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 6 undefined on i
-nput line 152.
 
+LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 109.
 
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop2' on page 6 undefined on 
-input line 152.
-
-[6]
-
-LaTeX Warning: Reference `fig:the_model_conv_lstm_lrn' on page 7 undefined on i
-nput line 167.
-
-
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop3' on page 7 undefined on 
-input line 167.
-
-
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop1' on page 7 undefined on 
-input line 179.
-
-
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop2' on page 7 undefined on 
-input line 179.
-
-
-LaTeX Warning: Reference `eq:the_model_conv_lstm_prop3' on page 7 undefined on 
-input line 179.
-
-[7]
-
-LaTeX Warning: Citation `shi2015convolutional' on page 8 undefined on input lin
-e 185.
-
-
-LaTeX Warning: Reference `model:conv_lstm' on page 8 undefined on input line 18
-5.
-
-File: ../images/3.The_Model/the_model_encoding_forecasting.pdf Graphic file (ty
-pe pdf)
-<../images/3.The_Model/the_model_encoding_forecasting.pdf>
-
-LaTeX Warning: Reference `fig:the_model_encoding_forecasting' on page 8 undefin
-ed on input line 193.
-
-
-LaTeX Warning: Reference `eq:the_model_formula' on page 8 undefined on input li
-ne 196.
-
-[8
-
-]
-
-LaTeX Warning: Reference `relwork:conv_lstm_1x1_conv' on page 9 undefined on in
-put line 209.
-
-
-LaTeX Warning: Reference `eq:the_model_formula' on page 9 undefined on input li
-ne 212.
-
-[9]
-
-LaTeX Warning: Reference `model:dcca_howto' on page 10 undefined on input line 
-221.
-
-
-LaTeX Warning: Reference `model:dcca_convlstm' on page 10 undefined on input li
-ne 222.
-
-
-LaTeX Warning: Reference `model:dcca-pretrain_convlstm' on page 10 undefined on
- input line 222.
-
-
-LaTeX Warning: Citation `andrew2013deep' on page 10 undefined on input line 226
-.
-
-[10
-
-]
-
-LaTeX Warning: Reference `eq:model_dcca_objective' on page 11 undefined on inpu
-t line 243.
-
-
-LaTeX Warning: Reference `eq:model_dcca_objective' on page 11 undefined on inpu
-t line 255.
-
-[11]
-
-LaTeX Warning: Reference `eq:model_dcca_corr_approx' on page 12 undefined on in
-put line 259.
-
-
-LaTeX Warning: Reference `eq:model_dcca_corr_approx' on page 12 undefined on in
-put line 265.
-
-
-LaTeX Warning: Reference `fig:model_dcca' on page 12 undefined on input line 27
-1.
-
-File: ../images/3.The_Model/the_model_dcca.pdf Graphic file (type pdf)
-<../images/3.The_Model/the_model_dcca.pdf>
-
-LaTeX Warning: Reference `eq:model_dcca' on page 12 undefined on input line 281
-.
-
-
-LaTeX Warning: Reference `eq:model_dcca' on page 12 undefined on input line 291
-.
-
-[12]
-
-LaTeX Warning: Reference `fig:model_dcca_pretrain' on page 13 undefined on inpu
-t line 299.
-
-File: ../images/3.The_Model/the_model_dcca_pretrain.pdf Graphic file (type pdf)
-
-<../images/3.The_Model/the_model_dcca_pretrain.pdf>
-
-LaTeX Warning: Reference `eq:model_dcca_pretrain' on page 13 undefined on input
- line 307.
-
-
-LaTeX Warning: Reference `eq:model_dcca_pretrain' on page 13 undefined on input
- line 318.
-
-[13]
-
-LaTeX Warning: Reference `fig:model_dcca_finetune' on page 14 undefined on inpu
-t line 320.
-
-
-LaTeX Warning: Reference `eq:model_dcca_finetune' on page 14 undefined on input
- line 320.
-
-File: ../images/3.The_Model/the_model_dcca_finetune.pdf Graphic file (type pdf)
-
-<../images/3.The_Model/the_model_dcca_finetune.pdf> [14]
-
-LaTeX Warning: Reference `eq:model_dcca_finetune' on page 15 undefined on input
- line 335.
-
-
-LaTeX Warning: Citation `shi2015convolutional' on page 15 undefined on input li
-ne 344.
-
-(../Bibliography/chapter.tex
+[5] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [15] (./chapter.aux)
+) [6] (./chapter.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
-(\end occurred when \ifx on line 353 was incomplete) 
+(\end occurred when \ifx on line 149 was incomplete) 
 Here is how much of TeX's memory you used:
- 3152 strings out of 494899
- 43806 string characters out of 6175707
- 108342 words of memory out of 5000000
- 6569 multiletter control sequences out of 15000+600000
- 21757 words of font info for 85 fonts, out of 8000000 for 9000
+ 3143 strings out of 494899
+ 42631 string characters out of 6175707
+ 106342 words of memory out of 5000000
+ 6567 multiletter control sequences out of 15000+600000
+ 21680 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,13n,43p,428b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,43p,454b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (15 pages, 34312 bytes).
+Output written on chapter.dvi (6 pages, 11964 bytes).

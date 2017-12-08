@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  6 DEC 2017 11:02
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  8 DEC 2017 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -230,22 +230,22 @@ Excluding comment 'comment')
  (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
  (../hyoushi/title.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
@@ -308,11 +308,11 @@ File: ../images/2.Related_Work/argTree1.png Graphic file (type bmp)
 ]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 66.
+(Font)              using `JT1/mc/m/n' instead on input line 67.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 66.
+(Font)              using `JY1/mc/m/n' instead on input line 67.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -322,10 +322,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10] [11]) (../2.Related_Work/chapter.tex [12]
 第 2 章
-
-LaTeX Warning: Reference `rel:argSupport' on page 13 undefined on input line 20
-.
-
 [13
 
 
@@ -340,11 +336,11 @@ File: ../images/2.Related_Work/COLLAGREE_thread.png Graphic file (type bmp)
 ]
 Excluding 'comment' comment.
 
-LaTeX Warning: Citation `は' on page 15 undefined on input line 79.
+LaTeX Warning: Citation `zatsudan' on page 15 undefined on input line 79.
 
-[15]
+[15] [16]
 File: ../images/2.Related_Work/textTiling-figure.png Graphic file (type bmp)
- <../images/2.Related_Work/textTiling-figure.png> [16]
+ <../images/2.Related_Work/textTiling-figure.png>
 File: ../images/2.Related_Work/textTiling-graph.png Graphic file (type bmp)
 
 <../images/2.Related_Work/textTiling-graph.png> [17] [18]
@@ -376,49 +372,66 @@ Overfull \hbox (15.91663pt too wide) in paragraph at lines 309--329
 
 [27] [28] [29]
 File: ../images/2.Related_Work/embedTopic1.png Graphic file (type bmp)
- <../images/2.Related_Work/embedTopic1.png>
+ <../images/2.Related_Work/embedTopic1.png> [30]
 File: ../images/2.Related_Work/TweetSift.png Graphic file (type bmp)
 
-<../images/2.Related_Work/TweetSift.png> [30] [31]) (../3.The_Model/chapter.tex
+<../images/2.Related_Work/TweetSift.png> [31]) (../3.The_Model/chapter.tex
 [32]
 第 3 章
-) (../4.Implementation/chapter.tex [33
+File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
+<../images/3.The_Model/WholeModel.png> [33
 
 
-] [34
+] [34]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
 
-]
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 57.
+
+Overfull \hbox (64.67207pt too wide) in paragraph at lines 70--77
+[][][][] 
+ []
+
+[35]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+ [36]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 109.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 109.
+
+[37]) (../4.Implementation/chapter.tex [38]
 第 4 章
-) (../5.Experiments/chapter.tex [35
+) (../5.Experiments/chapter.tex [39
 
-] [36
+
+] [40
 
 ]
 第 5 章
 
-LaTeX Warning: Reference `' on page 37 undefined on input line 15.
+LaTeX Warning: Reference `' on page 41 undefined on input line 15.
 
-[37
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
- (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
-
-[38
-
-]) (../6.Conclusion/chapter.tex [39] [40
-
-]
-第 6 章
-) (../7.Acknowledgement/chapter.tex [41
+[41
 
 ] [42
 
-] [43
+]) (../6.Conclusion/chapter.tex [43] [44
+
+]
+第 6 章
+) (../7.Acknowledgement/chapter.tex [45
+
+] [46
+
+] [47
 
 ]
 Overfull \hbox (5.90514pt too wide) in paragraph at lines 37--39
@@ -426,7 +439,7 @@ Overfull \hbox (5.90514pt too wide) in paragraph at lines 37--39
 Sci-ence and En-gi-neer-ing \JY1/mc/m/sl/12 の \OT1/cmr/m/n/12 Xingjian
  []
 
-[44] [45]) (../Bibliography/chapter.tex (./thesis.bbl [46]
+[48] [49]) (../Bibliography/chapter.tex (./thesis.bbl [50]
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 6.
@@ -435,15 +448,15 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
-[47
+[51
 
-] [48])) (../A.Mypaper/chapter.tex [49] [50
+] [52])) (../A.Mypaper/chapter.tex [53] [54
 
 ]
 付 録 A  
-[51
+[55
 
-]) (../B.SIG-CCI2/chapter.tex [52
+]) (../B.SIG-CCI2/chapter.tex [56
 
 
 ]
@@ -456,10 +469,10 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 
 <../B.SIG-CCI2/yoshino-paper6.pdf>
 File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
- <../B.SIG-CCI2/yoshino-paper6.pdf> [53
+ <../B.SIG-CCI2/yoshino-paper6.pdf> [57
 
 ]
-[54] [55] [56] [57]) (../C.IJCAI-16/chapter.tex Excluding 'comment' comment.)
+[58] [59] [60] [61]) (../C.IJCAI-16/chapter.tex Excluding 'comment' comment.)
 (./thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -468,14 +481,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 68 was incomplete) 
+(\end occurred when \ifx on line 70 was incomplete) 
 Here is how much of TeX's memory you used:
- 3317 strings out of 494899
- 46491 string characters out of 6175707
- 111764 words of memory out of 5000000
- 6679 multiletter control sequences out of 15000+600000
- 22078 words of font info for 85 fonts, out of 8000000 for 9000
+ 3353 strings out of 494899
+ 47159 string characters out of 6175707
+ 111947 words of memory out of 5000000
+ 6711 multiletter control sequences out of 15000+600000
+ 22379 words of font info for 86 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 28i,11n,43p,546b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,11n,43p,563b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (59 pages, 88340 bytes).
+Output written on thesis.dvi (63 pages, 101004 bytes).
