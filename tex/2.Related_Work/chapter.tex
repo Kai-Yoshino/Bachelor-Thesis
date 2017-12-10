@@ -228,9 +228,10 @@ LexRankでいう類似度は簡単にいえば2文がどれだけ共通の単語
 \begin{algorithm}
 \caption{べき乗法の計算アルゴリズム} \label{algo:powMethod}
 \begin{algorithmic}[1]
-	\State Input : 確率的かつ既約かつ非周期的な行列$\bm{M}$
-	\State Input : 行列サイズ $N$, 誤差許容値$~ \epsilon$
-	\State Output: 固有ベクトル $\bm{p}$
+\State Input : 確率的かつ既約かつ非周期的な行列$\bm{M}$
+\State Input : 行列サイズ $N$, 誤差許容値$~ \epsilon$
+\State Output: 固有ベクトル $\bm{p}$
+\Procedure{powerMethod}{$M，N，\epsilon$} 
 	\State $\bm{p}_{0}=  \frac{1}{N} \bm{1};$
 	\State $t=0;$
 	\Repeat
@@ -239,6 +240,7 @@ LexRankでいう類似度は簡単にいえば2文がどれだけ共通の単語
 		\State $\delta = \| \bm{p}_{t} - \bm{p}_{t-1} \| ;$
 	\Until $ \delta < \epsilon$
 	\State \textbf{return} $\bm{p}_{t};$
+\EndProcedure
 \end{algorithmic}
 \end{algorithm}
 
@@ -247,11 +249,12 @@ LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\r
 \begin{algorithm}
 \caption{LexRankスコアの計算アルゴリズム} \label{algo:lexRank}
 \begin{algorithmic}[1]
-	\State $Input: n 個の文からなる配列 S, コサイン類似度の閾値 t$
-	\State $Output: 各文のLexRankスコアを格納した配列L$
-	\State $Array ~~ CosineMatrix[n][n];$
-	\State $Array ~~ Degree[n];$
-	\State $Array ~~ L[n];$
+\State $Input: n 個の文からなる配列 S, コサイン類似度の閾値 t$
+\State $Output: 各文のLexRankスコアを格納した配列L$
+\State $Array ~~ CosineMatrix[n][n];$
+\State $Array ~~ Degree[n];$
+\State $Array ~~ L[n];$
+\Procedure{LexRank}{$S,t$} 
 	 \For{$i \gets 1 ~  to  ~ n $}\label{algo:lexRank:for1-b}
 	 	\For{$j \gets 1 ~ to ~ n $}\label{algo:lexRank:for2-b}
 			\State $CosineMatrix[i][j]$ = idf-modified-cosine$(S[i], S[j]);$\label{algo:lexRank:cos}
@@ -270,6 +273,7 @@ LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\r
 	\EndFor\label{for3}\label{algo:lexRank:for3-e}
 	\State L = PowerMethod$(CosineMatrix, n, ε);$\label{algo:lexRank:pw}
 	\State \textbf{return} L
+\EndProcedure
 \end{algorithmic}
 \end{algorithm}
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  7 DEC 2017 11:25
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  9 DEC 2017 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,6 +227,20 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \CommentStream=\write4
 
 Excluding comment 'comment')
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box51
+\shadowsize=\dimen136
+\@Sbox=\box52
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+)
 \c@linenumber=\count121
 ) (./chapter.aux)
 \openout1 = `chapter.aux'.
@@ -335,62 +349,74 @@ LaTeX Warning: Citation `lexRank' on page 11 undefined on input line 203.
 LaTeX Warning: Citation `pageRank1999' on page 11 undefined on input line 203.
 
 File: ../images/2.Related_Work/lexRank-graph.png Graphic file (type bmp)
-<../images/2.Related_Work/lexRank-graph.png> [11] [12]
+<../images/2.Related_Work/lexRank-graph.png>
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 234.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 234.
+
+[11] [12]
 
 LaTeX Warning: Citation `firth1957hypothesis' on page 13 undefined on input lin
-e 280.
+e 284.
 
 File: ../images/2.Related_Work/WordParagraphMatrix2.png Graphic file (type bmp)
 
 <../images/2.Related_Work/WordParagraphMatrix2.png> [13] [14]
 
-LaTeX Warning: Citation `word2vec' on page 15 undefined on input line 306.
+LaTeX Warning: Citation `word2vec' on page 15 undefined on input line 310.
 
 File: ../images/2.Related_Work/CBOW.png Graphic file (type bmp)
 <../images/2.Related_Work/CBOW.png>
 File: ../images/2.Related_Work/skip-gram.png Graphic file (type bmp)
  <../images/2.Related_Work/skip-gram.png>
-Overfull \hbox (15.91663pt too wide) in paragraph at lines 309--329
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 313--333
  [][][] 
  []
 
 [15]
 
-LaTeX Warning: Citation `levy2014neural' on page 16 undefined on input line 334
+LaTeX Warning: Citation `levy2014neural' on page 16 undefined on input line 338
 .
 
 [16]
 
-LaTeX Warning: Citation `fastText' on page 17 undefined on input line 338.
+LaTeX Warning: Citation `fastText' on page 17 undefined on input line 342.
 
 
-LaTeX Warning: Citation `fastText2' on page 17 undefined on input line 338.
+LaTeX Warning: Citation `fastText2' on page 17 undefined on input line 342.
 
 [17]
 
-LaTeX Warning: Citation `embedTopic1' on page 18 undefined on input line 362.
+LaTeX Warning: Citation `embedTopic1' on page 18 undefined on input line 366.
 
 File: ../images/2.Related_Work/embedTopic1.png Graphic file (type bmp)
 <../images/2.Related_Work/embedTopic1.png> [18]
 
-LaTeX Warning: Citation `embedTopic2' on page 19 undefined on input line 375.
+LaTeX Warning: Citation `embedTopic2' on page 19 undefined on input line 379.
 
 File: ../images/2.Related_Work/TweetSift.png Graphic file (type bmp)
 <../images/2.Related_Work/TweetSift.png> [19] (../Bibliography/chapter.tex
 No file chapter.bbl.
 ) [20] (./chapter.aux)
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 403 was incomplete) 
+(\end occurred when \ifx on line 407 was incomplete) 
 Here is how much of TeX's memory you used:
- 3202 strings out of 494899
- 44276 string characters out of 6175707
- 110534 words of memory out of 5000000
- 6619 multiletter control sequences out of 15000+600000
- 21379 words of font info for 83 fonts, out of 8000000 for 9000
+ 3372 strings out of 494899
+ 46444 string characters out of 6175707
+ 113446 words of memory out of 5000000
+ 6784 multiletter control sequences out of 15000+600000
+ 21680 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  29i,11n,43p,530b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (20 pages, 37908 bytes).
+Output written on chapter.dvi (20 pages, 38096 bytes).

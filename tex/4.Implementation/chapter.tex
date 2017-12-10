@@ -6,15 +6,90 @@
   \fi
   %-------------------------------------------------------------------------------
   \cleardoublepage
-\chapter{単語集合間の関連度計算手法}
+\chapter{発言内容の類似度計算}
 
 \label{impl:chapter}
 
 \section{序言}
 \label{impl:introduction}
+本章では発言内容，すなわち文字列の意味的類似度を計算する手法を提案する．以下に本章の構成を示す
+まず，\ref{impl:preProcessing}節では類似度の精度を上昇させるために行う前処理について説明する．\ref{impl:similarity}節では発言内容の類似度計算の手法について述べる．\ref{impl:conclusion}節では本章のまとめを示す．
 
+\section{前処理}
+\label{impl:preProcessing}
+分散表現による類似度計算で精度を上昇させるためには発言内容から余分な単語を取り除きいて重要な単語を抽出する，または極めて短く要約することが重要である．提案手法では形態素解析エンジン MeCab と\ref{rel:part:weight}節で説明したokapiBM25 と LexRankを用いて発言の文章から重要単語を抽出し，抽出した単語の類似度を分散表現を用いて計算する．
+\subsection{MeCab}
+MeCab(めかぶ)\cite{kudo2005mecab}は京都大学情報学研究科-日本電信電話株式会社コミュニケーション科学基礎研究所共同研究ユニットプロジェクトを通じて開発されたオープンソース形態素解析エンジンである．MeCab に対して「MeCab はオープンソース形態素解析エンジンである。」と入力した際の結果を図\ref{Fig:mecab}に示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/4.Implementation/mecab.png}
+  \caption{解析結果}
+  \label{Fig:mecab}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+出力フォーマットは次の形式となっている．\\
+\ovalbox{表層形 \verb|\t| 品詞,品詞細分類1,品詞細分類2,品詞細分類3,活用型,活用形,原形,読み,発音}\\
+「読み」と「発音」は図\ref{Fig:mecab}の"MeCab"のように不明であるものには付与されない．
+MeCabによる形態素解析の結果，次の条件を満たす単語を除外している．
+\begin{enumerate}
+  \item 品詞細分類に「数」を含む
+  \item 「読み」，「発音」が不明である
+  \item 品詞が「助詞」，「助動詞」，「記号」，「連体詞」のどれかである． 
+  \item １文字のひらがなである
+  \item 品詞細分類に「接尾」または「非自立」を含む
+\end{enumerate}
+上記の条件を満たす単語を除外したのは\ref{impl:preProcessing:weight}節で説明する重み付けにおいて重要な単語であると判定されやすいが，\ref{impl:preProcessing:sim}節で説明する類似度計算において精度を下げてしまうからである．
+単語の除外は重み付けにおいて文章を単語に分割する際に行われる．
+
+\subsection{重み付け}
+\label{impl:preProcessing:weight}
+提案手法では\ref{rel:part:weight}節で説明したokapiBM25とLexRankの２種類の重み付け手法をを統合して発言の内容の文字列$remark$中の単語に対して重み付けを行う．
+アルゴリズムを\textbf{Algorithm\ref{algo:combinedWeight}}に示す．
+\begin{algorithm}
+\caption{統合重みの計算アルゴリズム} \label{algo:combinedWeight}
+\begin{algorithmic}[1]
+\State $Input: remark  ~ 発言内容の文字列$
+\State $Output:  combinedWeight ~ remark中の単語と重みを対応付けた連想配列$
+\State $Array ~~ sentList;$ \Comment{以前に重み付けを行ったm個前までの文章のリスト}
+\Procedure{calcCombinedWeight}{$reamrk$} 
+	\State bm25Weight = calcBM25Weight(remark)\Comment{単語と重みの連想配列}
+	\For{Each$~ sent \in remark$}\Comment{remarkを句点，改行コードで分割する}
+		\State sentList.append(sent)
+	\EndFor
+	\State lexWeight = calcLexRank(sentList)
+	 \For{Each$~ word  \in bm25Weight.keys()$}\label{algo:combinedWight:for1-b}
+	 	\State wordWeight = bm25Weight[word]
+		\If{word is 固有名詞}
+			\State wordWeight *=2\label{algo:combinedWight:pNoun}
+		\EndIf
+		\State sentWeight = 0
+		\For{Each$~ sent \in remark$}\label{algo:combinedWight:for2-b}
+			\If{word in sent}
+				\State sentWeight+=lexWeight[sent]
+			\EndIf
+		\EndFor\label{algo:combinedWight:for2-e}
+		\State combinedWeight[word] = wordWeight*sentWeight \label{algo:combinedWight:final}
+	 \EndFor\label{algo:combinedWeight:for1-e}
+	\State \textbf{return} combinedWeight
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+固有名詞は文章の中で重要な役割を果たす可能性が大きいと考え，\ref{algo:combinedWight:pNoun}行目では固有名詞の単語重みを倍にしている．そして，\ref{algo:combinedWight:for2-b} $\sim$ \ref{algo:combinedWight:final}行目ではwordを含む全文章の重みの合計を求め，okapiBM25による単語重みを掛け合わせたものをwordの統合重みとしている．単語重みに単語を含む文章の重みを掛け合わせることで感嘆文のような文章そのものは重要でないが頻度の少ない単語を使用する文章中の単語が選ばれる可能性を下げている．
+\section{類似度計算}
+\label{impl:similarity}
+\subsection{単語抽出}
+\label{impl:similarity:extract}
+\ref{impl:preProcessing}節で計算された単語重みの値が大きいものの上位n個までの単語を発言文章remarkにおいて重要度の高い単語であるとして抽出する．単語重みが等しいものが複数あった場合は単語を昇順に並び替えて順序を付けている．また，使用する分散表現モデルに登録されていない単語は除外している．
+\subsection{分散表現による類似度計算}
+\label{impl:similarity:wordEmbed}
+\ref{impl:similarity:extract}節で述べた手法を用いて2発言それぞれから抽出した単語集合の類似度を分散表現を用いて求める．
+それぞれの単語集合の単語ベクトルの平均を求め，\ref{rel:part:vec}の図\ref{eq:cosineSim}で述べたようにCosine類似度を2平均ベクトル間で取っている．
 \section{結言}
 \label{impl:conclusion}
+本章では発言内容の類似度を計算する手法について説明した．文章を単語に分割する手法と使用したツールと単語を除外する前処理についても述べた．また，okapiBM25とLexRankを組み合わせた発言中の単語の重み付け手法，及び重み付けによって抽出した単語集合の類似度計算手法についても説明した．
 
  %-------------------------------------------------------------------------------
  \expandafter\ifx\csname MasterFile\endcsname\relax

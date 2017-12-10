@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{zatsudan}
+
+
 \bibitem{fastText}
 et~al Bojanowski, Piotr.
 \newblock "enriching word vectors with subword information".
@@ -38,6 +41,11 @@ Armand Joulin, Edouard Grave, Piotr Bojanowski, and Tomas Mikolov.
 \newblock Bag of tricks for efficient text classification.
 \newblock {\em arXiv preprint arXiv:1607.01759}, 2016.
 
+\bibitem{kudo2005mecab}
+Taku Kudo.
+\newblock Mecab: Yet another part-of-speech and morphological analyzer.
+\newblock {\em http://mecab. sourceforge. net/}, 2005.
+
 \bibitem{levy2014neural}
 Omer Levy and Yoav Goldberg.
 \newblock Neural word embedding as implicit matrix factorization.
@@ -66,11 +74,6 @@ Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
 \newblock The pagerank citation ranking: Bringing order to the web.
 \newblock Technical report, Stanford InfoLab, 1999.
-
-\bibitem{seq2seq}
-Oriol~Vinyals Sutskever, Ilya and Quoc~V. Le.
-\newblock "sequence to sequence learning with neural networks.".
-\newblock {\em Advances in neural information processing systems.}, 2014.
 
 \bibitem{facilitation}
 田中~恵 伊藤~孝紀, 深町~駿平, 伊藤 孝行, and 秀島 栄三.

@@ -8,52 +8,52 @@ I was expecting a `,' or a `}'---line 156 of file ../Bibliography/database2.bib
  :  author={筒井佐代},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "は"
-Name 1 in "Sutskever, Ilya, Oriol Vinyals, and Quoc V. Le" has a comma at the end for entry seq2seq
-while executing---line 1049 of file plain.bst
+Warning--to sort, need author, editor, or key in zatsudan
+Warning--empty author and editor in zatsudan
+Warning--empty title in zatsudan
+Warning--empty publisher in zatsudan
+Warning--empty year in zatsudan
 Warning--empty journal in okapiBM25
-Name 1 in "Sutskever, Ilya, Oriol Vinyals, and Quoc V. Le" has a comma at the end for entry seq2seq
-while executing---line 1090 of file plain.bst
-You've used 18 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            611 strings with 6819 characters,
-and the built_in function-call counts, 6145 in all, are:
-= -- 624
-> -- 258
+            612 strings with 6787 characters,
+and the built_in function-call counts, 6279 in all, are:
+= -- 631
+> -- 253
 < -- 7
-+ -- 104
-- -- 84
-* -- 372
-:= -- 1005
-add.period$ -- 55
-call.type$ -- 18
-change.case$ -- 96
++ -- 103
+- -- 82
+* -- 385
+:= -- 1014
+add.period$ -- 56
+call.type$ -- 19
+change.case$ -- 97
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 258
-empty$ -- 465
-format.name$ -- 84
-if$ -- 1321
+cite$ -- 25
+duplicate$ -- 271
+empty$ -- 489
+format.name$ -- 82
+if$ -- 1350
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 17
-newline$ -- 93
+int.to.str$ -- 19
+missing$ -- 18
+newline$ -- 96
 num.names$ -- 36
-pop$ -- 94
+pop$ -- 106
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 78
 quote$ -- 0
-skip$ -- 214
+skip$ -- 219
 stack$ -- 0
-substring$ -- 390
+substring$ -- 395
 swap$ -- 81
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 1
+type$ -- 74
+warning$ -- 6
 while$ -- 60
-width$ -- 20
-write$ -- 194
+width$ -- 21
+write$ -- 198
 is.kanji.str$ -- 0
-(There were 3 error messages)
+(There was 1 error message)

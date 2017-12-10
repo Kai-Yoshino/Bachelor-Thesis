@@ -82,18 +82,18 @@
 \newlabel{rel:part:vec}{{2.6}{25}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces LexRankスコアの計算アルゴリズム}}{26}}
 \newlabel{algo:lexRank}{{2}{26}}
-\newlabel{algo:lexRank:for1-b}{{6}{26}}
-\newlabel{algo:lexRank:for2-b}{{7}{26}}
-\newlabel{algo:lexRank:cos}{{8}{26}}
-\newlabel{algo:lexRank:for2-e}{{13}{26}}
-\newlabel{algo:lexRank:for1-e}{{13}{26}}
-\newlabel{algo:lexRank:for3-b}{{14}{26}}
-\newlabel{algo:lexRank:for4-b}{{15}{26}}
-\newlabel{for4}{{16}{26}}
-\newlabel{algo:lexRank:for4-e}{{16}{26}}
-\newlabel{for3}{{16}{26}}
-\newlabel{algo:lexRank:for3-e}{{16}{26}}
-\newlabel{algo:lexRank:pw}{{17}{26}}
+\newlabel{algo:lexRank:for1-b}{{7}{26}}
+\newlabel{algo:lexRank:for2-b}{{8}{26}}
+\newlabel{algo:lexRank:cos}{{9}{26}}
+\newlabel{algo:lexRank:for2-e}{{14}{26}}
+\newlabel{algo:lexRank:for1-e}{{14}{26}}
+\newlabel{algo:lexRank:for3-b}{{15}{26}}
+\newlabel{algo:lexRank:for4-b}{{16}{26}}
+\newlabel{for4}{{17}{26}}
+\newlabel{algo:lexRank:for4-e}{{17}{26}}
+\newlabel{for3}{{17}{26}}
+\newlabel{algo:lexRank:for3-e}{{17}{26}}
+\newlabel{algo:lexRank:pw}{{18}{26}}
 \citation{word2vec}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{27}}
 \newlabel{rel:wordEmbed:WordParagraphMat}{{2.6.1}{27}}
@@ -130,8 +130,8 @@
 \newlabel{model:wholeModel}{{3.2}{33}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces システムの流れ}}{34}}
 \newlabel{algo:wholeModel}{{3}{34}}
-\newlabel{algo:wholeModel:for1-b}{{5}{34}}
-\newlabel{algo:wholeModel:for1-e}{{8}{34}}
+\newlabel{algo:wholeModel:for1-b}{{6}{34}}
+\newlabel{algo:wholeModel:for1-e}{{9}{34}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{34}}
 \newlabel{Fig:wholeModel}{{3.1}{34}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}システム詳細}{35}}
@@ -157,61 +157,84 @@
 \newlabel{eq:tSimilarity}{{3.2}{38}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}結言}{38}}
 \newlabel{model:conclusion}{{3.4}{38}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}単語集合間の関連度計算手法}{39}}
+\citation{kudo2005mecab}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}発言内容の類似度計算}{39}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{impl:chapter}{{4}{39}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}序言}{39}}
 \newlabel{impl:introduction}{{4.1}{39}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}結言}{39}}
-\newlabel{impl:conclusion}{{4.2}{39}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第5章}COLLAGREEの議論データを用いた評価実験}{41}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}前処理}{39}}
+\newlabel{impl:preProcessing}{{4.2}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}MeCab}{40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{40}}
+\newlabel{Fig:mecab}{{4.1}{40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}重み付け}{41}}
+\newlabel{impl:preProcessing:weight}{{4.2.2}{41}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces 統合重みの計算アルゴリズム}}{41}}
+\newlabel{algo:combinedWeight}{{5}{41}}
+\newlabel{algo:combinedWight:for1-b}{{9}{41}}
+\newlabel{algo:combinedWight:pNoun}{{12}{41}}
+\newlabel{algo:combinedWight:for2-b}{{14}{41}}
+\newlabel{algo:combinedWight:for2-e}{{16}{41}}
+\newlabel{algo:combinedWight:final}{{17}{41}}
+\newlabel{algo:combinedWeight:for1-e}{{17}{41}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}類似度計算}{42}}
+\newlabel{impl:similarity}{{4.3}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}単語抽出}{42}}
+\newlabel{impl:similarity:extract}{{4.3.1}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{42}}
+\newlabel{impl:similarity:wordEmbed}{{4.3.2}{42}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}結言}{43}}
+\newlabel{impl:conclusion}{{4.4}{43}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第5章}COLLAGREEの議論データを用いた評価実験}{45}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{exp:chapter}{{5}{41}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}序言}{41}}
-\newlabel{exp:introduction}{{5.1}{41}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}使用データ}{42}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}議論データ}{42}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}}{43}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}結言}{43}}
-\newlabel{exp:conclusion}{{5.3}{43}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第6章}結論}{45}}
+\newlabel{exp:chapter}{{5}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}序言}{45}}
+\newlabel{exp:introduction}{{5.1}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}使用データ}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}議論データ}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}}{47}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}結言}{47}}
+\newlabel{exp:conclusion}{{5.3}{47}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第6章}結論}{49}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{con:chapter}{{6}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}序言}{45}}
-\newlabel{con:introduction}{{6.1}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}今後の課題・展望}{45}}
-\newlabel{con:future_work}{{6.2}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}本研究のまとめ}{45}}
-\newlabel{con:conclusion}{{6.3}{45}}
-\@writefile{toc}{\contentsline {chapter}{謝辞}{47}}
+\newlabel{con:chapter}{{6}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}序言}{49}}
+\newlabel{con:introduction}{{6.1}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}今後の課題・展望}{49}}
+\newlabel{con:future_work}{{6.2}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}本研究のまとめ}{49}}
+\newlabel{con:conclusion}{{6.3}{49}}
+\@writefile{toc}{\contentsline {chapter}{謝辞}{51}}
 \bibstyle{plain}
 \bibdata{../Bibliography/database2}
-\bibcite{fastText}{1}
-\bibcite{lexRank}{2}
-\bibcite{firth1957hypothesis}{3}
-\bibcite{okapiBM25}{4}
-\bibcite{texttiling}{5}
-\bibcite{idf}{6}
-\bibcite{fastText2}{7}
-\bibcite{levy2014neural}{8}
-\bibcite{embedTopic2}{9}
-\bibcite{tf}{10}
-\bibcite{word2vec}{11}
-\bibcite{pageRank1999}{12}
-\bibcite{seq2seq}{13}
-\bibcite{facilitation}{14}
-\bibcite{collagreeTest}{15}
-\bibcite{discSupport2}{16}
-\bibcite{embedTopic1}{17}
-\bibcite{textSegmentation1}{18}
-\@writefile{toc}{\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{55}}
+\bibcite{zatsudan}{1}
+\bibcite{fastText}{2}
+\bibcite{lexRank}{3}
+\bibcite{firth1957hypothesis}{4}
+\bibcite{okapiBM25}{5}
+\bibcite{texttiling}{6}
+\bibcite{idf}{7}
+\bibcite{fastText2}{8}
+\bibcite{kudo2005mecab}{9}
+\bibcite{levy2014neural}{10}
+\bibcite{embedTopic2}{11}
+\bibcite{tf}{12}
+\bibcite{word2vec}{13}
+\bibcite{pageRank1999}{14}
+\bibcite{facilitation}{15}
+\bibcite{collagreeTest}{16}
+\bibcite{discSupport2}{17}
+\bibcite{embedTopic1}{18}
+\bibcite{textSegmentation1}{19}
+\@writefile{toc}{\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{59}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{55}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}投稿論文一覧}{55}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{57}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{59}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}投稿論文一覧}{59}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{61}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

@@ -12,7 +12,7 @@
 
 \section{序言}
 \label{model:introduction}
-本章では通知システムの概要について説明する. まず\ref{model:wholeModel}節でシステム全体の動作の流れを示し, アルゴリズムについても説明を行う. 次に\ref{model:detail}節ではシステムの詳細を説明する．システムで扱う発言データの形式や発言間の類似度計算について述べる. 
+本章では通知システムの概要について説明する. 以下に本章の構成を示す．まず\ref{model:wholeModel}節でシステム全体の動作の流れを示し, アルゴリズムについても説明を行う. 次に\ref{model:detail}節ではシステムの詳細を説明する．システムで扱う発言データの形式や発言間の類似度計算について述べる. 
 最後に，\ref{model:conclusion} 節で本章のまとめを示す.
 
 \section{システムの動作の流れ}
@@ -22,9 +22,10 @@
 \begin{algorithm}
 \caption{システムの流れ} \label{algo:wholeModel}
 \begin{algorithmic}[1]
-	\State $Input:  発言R$
-	\State $Output: 通知判定Notify$
-	\State $PG = 過去の発言の集合;$%~~ Group ~ of ~ past ~ remark
+\State $Input:  発言R$
+\State $Output: 通知判定Notify$
+\State $PG = 過去の発言の集合;$%~~ Group ~ of ~ past ~ remark
+\Procedure{topicChange}{$R$} 
 	\State $SG = \{\};$%~~ Group ~ of ~ remark ~ whose ~ topic ~ is ~ same ~ with ~ R
 	 \For{$Each ~ pastR \in PG$}\label{algo:wholeModel:for1-b}
 	 	\State sim = similarity(R,pastR)
@@ -37,6 +38,7 @@
 		\State Notify = True
 	\EndIf
 	\State \textbf{return} Notify
+\EndProcedure
 \end{algorithmic}
 \end{algorithm}
 
