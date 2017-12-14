@@ -1,22 +1,22 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces 議論ツリー}}{10}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 議論ツリー}}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces COLLAGREEのスレッドの例}}{14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces TextTilingの流れ}}{17}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces TextTilingのグラフ}}{18}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces ユニグラムモデル}}{20}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces 混合ユニグラムモデル}}{20}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces LDA}}{20}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 類似度グラフの例}}{24}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces 単語文脈行列}}{27}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces CBOW}}{28}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces skip-gram}}{28}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces 話題展開システムの構造}}{30}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces TweetSiftによるトピック予測のワークフロー}}{31}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces COLLAGREEのスレッドの例}}{16}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces TextTilingの流れ}}{19}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces TextTilingのグラフ}}{20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ユニグラムモデル}}{22}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 混合ユニグラムモデル}}{22}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces LDA}}{22}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 類似度グラフの例}}{26}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces 単語文脈行列}}{29}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces CBOW}}{30}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces skip-gram}}{30}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces 話題展開システムの構造}}{32}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces TweetSiftによるトピック予測のワークフロー}}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{40}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{42}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

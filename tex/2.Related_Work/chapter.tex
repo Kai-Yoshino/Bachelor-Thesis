@@ -249,7 +249,7 @@ LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\r
 \begin{algorithm}
 \caption{LexRankスコアの計算アルゴリズム} \label{algo:lexRank}
 \begin{algorithmic}[1]
-\State $Input: n 個の文からなる配列 S, コサイン類似度の閾値 t$
+\State $Input: n 個の文からなる配列 S, コサイン類似度の閾値 threshold$
 \State $Output: 各文のLexRankスコアを格納した配列L$
 \State $Array ~~ CosineMatrix[n][n];$
 \State $Array ~~ Degree[n];$
@@ -258,7 +258,7 @@ LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\r
 	 \For{$i \gets 1 ~  to  ~ n $}\label{algo:lexRank:for1-b}
 	 	\For{$j \gets 1 ~ to ~ n $}\label{algo:lexRank:for2-b}
 			\State $CosineMatrix[i][j]$ = idf-modified-cosine$(S[i], S[j]);$\label{algo:lexRank:cos}
-			\If{$CosineMatrix[i][j] > t $}
+			\If{$CosineMatrix[i][j] > threshold $}
 				\State $CosineMatrix[i][j] = 1;$
 				\State $Degree[i]++;$
 			\Else

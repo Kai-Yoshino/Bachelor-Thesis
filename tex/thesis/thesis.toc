@@ -1,68 +1,79 @@
 \contentsline {chapter}{論文要旨}{1}
 \contentsline {chapter}{目次}{4}
-\contentsline {chapter}{図目次}{7}
-\contentsline {chapter}{表目次}{8}
-\contentsline {chapter}{\numberline {第1章}序論}{9}
-\contentsline {section}{\numberline {1.1}研究の背景}{9}
-\contentsline {section}{\numberline {1.2}研究の目的}{11}
-\contentsline {section}{\numberline {1.3}本論文の構成}{11}
-\contentsline {chapter}{\numberline {第2章}関連研究}{13}
-\contentsline {section}{\numberline {2.1}序言}{13}
-\contentsline {section}{\numberline {2.2}COLLAGREE}{14}
-\contentsline {subsection}{\numberline {2.2.1}概要}{14}
-\contentsline {subsection}{\numberline {2.2.2}ファシリテーター}{15}
-\contentsline {section}{\numberline {2.3}議論支援}{15}
-\contentsline {section}{\numberline {2.4}話題遷移検出}{16}
-\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{17}
-\contentsline {paragraph}{TextTiling}{17}
-\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{19}
-\contentsline {subsection}{\numberline {2.4.2}トピックモデル}{19}
-\contentsline {paragraph}{ユニグラムモデル}{19}
-\contentsline {paragraph}{混合ユニグラムモデル}{20}
-\contentsline {paragraph}{LDA}{20}
-\contentsline {section}{\numberline {2.5}重み付け}{21}
-\contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{21}
-\contentsline {paragraph}{TF}{21}
-\contentsline {paragraph}{IDF}{22}
-\contentsline {paragraph}{DL}{22}
-\contentsline {subsection}{\numberline {2.5.2}LexRank}{23}
-\contentsline {section}{\numberline {2.6}分散表現}{25}
-\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{27}
-\contentsline {subsection}{\numberline {2.6.2}word2vec}{28}
-\contentsline {subsection}{\numberline {2.6.3}fastText}{29}
-\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{30}
-\contentsline {section}{\numberline {2.7}結言}{32}
-\contentsline {chapter}{\numberline {第3章}通知システム}{33}
-\contentsline {section}{\numberline {3.1}序言}{33}
-\contentsline {section}{\numberline {3.2}システムの動作の流れ}{33}
-\contentsline {section}{\numberline {3.3}システム詳細}{35}
-\contentsline {subsection}{\numberline {3.3.1}発言データ}{35}
-\contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{36}
-\contentsline {paragraph}{時間差評価値}{36}
-\contentsline {paragraph}{返信距離}{37}
-\contentsline {paragraph}{総合類似度}{37}
-\contentsline {section}{\numberline {3.4}結言}{38}
-\contentsline {chapter}{\numberline {第4章}発言内容の類似度計算}{39}
-\contentsline {section}{\numberline {4.1}序言}{39}
-\contentsline {section}{\numberline {4.2}前処理}{39}
-\contentsline {subsection}{\numberline {4.2.1}MeCab}{40}
-\contentsline {subsection}{\numberline {4.2.2}重み付け}{41}
-\contentsline {section}{\numberline {4.3}類似度計算}{42}
-\contentsline {subsection}{\numberline {4.3.1}単語抽出}{42}
-\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{42}
-\contentsline {section}{\numberline {4.4}結言}{43}
-\contentsline {chapter}{\numberline {第5章}COLLAGREEの議論データを用いた評価実験}{45}
-\contentsline {section}{\numberline {5.1}序言}{45}
-\contentsline {section}{\numberline {5.2}使用データ}{46}
-\contentsline {subsection}{\numberline {5.2.1}議論データ}{46}
-\contentsline {subsection}{\numberline {5.2.2}}{47}
-\contentsline {section}{\numberline {5.3}結言}{47}
-\contentsline {chapter}{\numberline {第6章}結論}{49}
-\contentsline {section}{\numberline {6.1}序言}{49}
-\contentsline {section}{\numberline {6.2}今後の課題・展望}{49}
-\contentsline {section}{\numberline {6.3}本研究のまとめ}{49}
-\contentsline {chapter}{謝辞}{51}
-\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{59}
-\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{59}
-\contentsline {section}{\numberline {A.2}投稿論文一覧}{59}
-\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{61}
+\contentsline {chapter}{図目次}{8}
+\contentsline {chapter}{表目次}{9}
+\contentsline {chapter}{\numberline {第1章}序論}{11}
+\contentsline {section}{\numberline {1.1}研究の背景}{11}
+\contentsline {section}{\numberline {1.2}研究の目的}{13}
+\contentsline {section}{\numberline {1.3}本論文の構成}{13}
+\contentsline {chapter}{\numberline {第2章}関連研究}{15}
+\contentsline {section}{\numberline {2.1}序言}{15}
+\contentsline {section}{\numberline {2.2}COLLAGREE}{16}
+\contentsline {subsection}{\numberline {2.2.1}概要}{16}
+\contentsline {subsection}{\numberline {2.2.2}ファシリテーター}{17}
+\contentsline {section}{\numberline {2.3}議論支援}{17}
+\contentsline {section}{\numberline {2.4}話題遷移検出}{18}
+\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{19}
+\contentsline {paragraph}{TextTiling}{19}
+\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{21}
+\contentsline {subsection}{\numberline {2.4.2}トピックモデル}{21}
+\contentsline {paragraph}{ユニグラムモデル}{21}
+\contentsline {paragraph}{混合ユニグラムモデル}{22}
+\contentsline {paragraph}{LDA}{22}
+\contentsline {section}{\numberline {2.5}重み付け}{23}
+\contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{23}
+\contentsline {paragraph}{TF}{23}
+\contentsline {paragraph}{IDF}{24}
+\contentsline {paragraph}{DL}{24}
+\contentsline {subsection}{\numberline {2.5.2}LexRank}{25}
+\contentsline {section}{\numberline {2.6}分散表現}{27}
+\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{29}
+\contentsline {subsection}{\numberline {2.6.2}word2vec}{30}
+\contentsline {subsection}{\numberline {2.6.3}fastText}{31}
+\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{32}
+\contentsline {section}{\numberline {2.7}結言}{34}
+\contentsline {chapter}{\numberline {第3章}通知システム}{35}
+\contentsline {section}{\numberline {3.1}序言}{35}
+\contentsline {section}{\numberline {3.2}システムの動作の流れ}{35}
+\contentsline {section}{\numberline {3.3}システム詳細}{37}
+\contentsline {subsection}{\numberline {3.3.1}発言データ}{37}
+\contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{38}
+\contentsline {paragraph}{時間差評価値}{38}
+\contentsline {paragraph}{返信距離}{39}
+\contentsline {paragraph}{総合類似度}{39}
+\contentsline {section}{\numberline {3.4}結言}{40}
+\contentsline {chapter}{\numberline {第4章}発言内容の類似度計算}{41}
+\contentsline {section}{\numberline {4.1}序言}{41}
+\contentsline {section}{\numberline {4.2}前処理}{41}
+\contentsline {subsection}{\numberline {4.2.1}MeCab}{42}
+\contentsline {subsection}{\numberline {4.2.2}重み付け}{43}
+\contentsline {section}{\numberline {4.3}類似度計算}{44}
+\contentsline {subsection}{\numberline {4.3.1}単語抽出}{44}
+\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{44}
+\contentsline {section}{\numberline {4.4}結言}{45}
+\contentsline {chapter}{\numberline {第5章}評価実験}{47}
+\contentsline {section}{\numberline {5.1}序言}{47}
+\contentsline {section}{\numberline {5.2}対象データ}{48}
+\contentsline {subsection}{\numberline {5.2.1}議論データ}{48}
+\contentsline {subsection}{\numberline {5.2.2}評価データ}{49}
+\contentsline {paragraph}{例1:}{49}
+\contentsline {paragraph}{例2:}{49}
+\contentsline {paragraph}{例3:}{50}
+\contentsline {paragraph}{例4:}{50}
+\contentsline {paragraph}{例5:}{51}
+\contentsline {paragraph}{例6:}{51}
+\contentsline {section}{\numberline {5.3}実験設定}{52}
+\contentsline {subsection}{\numberline {5.3.1}パラメーター}{52}
+\contentsline {subsection}{\numberline {5.3.2}比較手法}{52}
+\contentsline {subsection}{\numberline {5.3.3}評価指標}{53}
+\contentsline {section}{\numberline {5.4}実験結果}{54}
+\contentsline {section}{\numberline {5.5}結言}{54}
+\contentsline {chapter}{\numberline {第6章}結論}{57}
+\contentsline {section}{\numberline {6.1}序言}{57}
+\contentsline {section}{\numberline {6.2}今後の課題・展望}{57}
+\contentsline {section}{\numberline {6.3}本研究のまとめ}{57}
+\contentsline {chapter}{謝辞}{59}
+\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{67}
+\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{67}
+\contentsline {section}{\numberline {A.2}投稿論文一覧}{67}
+\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{69}

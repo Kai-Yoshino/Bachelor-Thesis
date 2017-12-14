@@ -52,9 +52,9 @@ MeCabによる形態素解析の結果，次の条件を満たす単語を除外
 \begin{algorithmic}[1]
 \State $Input: remark  ~ 発言内容の文字列$
 \State $Output:  combinedWeight ~ remark中の単語と重みを対応付けた連想配列$
-\State $Array ~~ sentList;$ \Comment{以前に重み付けを行ったm個前までの文章のリスト}
+\State $Array ~~ sentList;$ \Comment{以前に重み付けを行った最大n個前までの文章のリスト}
 \Procedure{calcCombinedWeight}{$reamrk$} 
-	\State bm25Weight = calcBM25Weight(remark)\Comment{単語と重みの連想配列}
+	\State bm25Weight = calcBM25Weight(remark)\Comment{単語と重みの連想配列}\label{algo:combinedWight:bm25}
 	\For{Each$~ sent \in remark$}\Comment{remarkを句点，改行コードで分割する}
 		\State sentList.append(sent)
 	\EndFor

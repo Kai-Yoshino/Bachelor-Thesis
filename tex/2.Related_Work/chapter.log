@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  9 DEC 2017 15:35
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  13 DEC 2017 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -240,8 +240,14 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks28
 \Verbatim@Outfile=\write5
 \Verbatim@Infile=\read2
+) (/Users/YoshinoKai/Library/texmf/tex/latex/ulinej.sty
+\ul@curpos=\count121
+\ul@tmpbox=\box53
+\ul@skipwidth=\dimen137
+\ul@depth=\dimen138
+\ul@height=\dimen139
 )
-\c@linenumber=\count121
+\c@linenumber=\count122
 ) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
@@ -411,12 +417,12 @@ LaTeX Warning: There were undefined references.
  )
 (\end occurred when \ifx on line 407 was incomplete) 
 Here is how much of TeX's memory you used:
- 3372 strings out of 494899
- 46444 string characters out of 6175707
- 113446 words of memory out of 5000000
- 6784 multiletter control sequences out of 15000+600000
+ 3390 strings out of 494899
+ 46696 string characters out of 6175707
+ 114707 words of memory out of 5000000
+ 6799 multiletter control sequences out of 15000+600000
  21680 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  29i,11n,43p,530b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (20 pages, 38096 bytes).
+Output written on chapter.dvi (20 pages, 38124 bytes).
