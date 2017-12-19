@@ -3,57 +3,48 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: ../Bibliography/database2.bib
-I was expecting a `,' or a `}'---line 156 of file ../Bibliography/database2.bib
- :  
- :  author={筒井佐代},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--to sort, need author, editor, or key in zatsudan
-Warning--empty author and editor in zatsudan
-Warning--empty title in zatsudan
-Warning--empty publisher in zatsudan
-Warning--empty year in zatsudan
 Warning--empty journal in okapiBM25
-You've used 19 entries,
+Warning--empty journal in SMO
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            612 strings with 6787 characters,
-and the built_in function-call counts, 6279 in all, are:
-= -- 631
-> -- 253
-< -- 7
-+ -- 103
-- -- 82
-* -- 385
-:= -- 1014
-add.period$ -- 56
-call.type$ -- 19
-change.case$ -- 97
+            685 strings with 8717 characters,
+and the built_in function-call counts, 10303 in all, are:
+= -- 1026
+> -- 479
+< -- 10
++ -- 192
+- -- 160
+* -- 665
+:= -- 1708
+add.period$ -- 92
+call.type$ -- 30
+change.case$ -- 167
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 271
-empty$ -- 489
-format.name$ -- 82
-if$ -- 1350
+cite$ -- 32
+duplicate$ -- 413
+empty$ -- 766
+format.name$ -- 160
+if$ -- 2181
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 18
-newline$ -- 96
-num.names$ -- 36
-pop$ -- 106
+int.to.str$ -- 30
+missing$ -- 31
+newline$ -- 153
+num.names$ -- 60
+pop$ -- 172
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 138
 quote$ -- 0
-skip$ -- 219
+skip$ -- 323
 stack$ -- 0
-substring$ -- 395
-swap$ -- 81
-text.length$ -- 7
+substring$ -- 620
+swap$ -- 114
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 74
-warning$ -- 6
-while$ -- 60
-width$ -- 21
-write$ -- 198
+type$ -- 116
+warning$ -- 2
+while$ -- 99
+width$ -- 32
+write$ -- 321
 is.kanji.str$ -- 0
-(There was 1 error message)
+(There were 2 warnings)

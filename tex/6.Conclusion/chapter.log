@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  22 SEP 2017 19:06
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  14 DEC 2017 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -193,9 +193,6 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@float@every@algorithm=\toks23
 \c@algorithm=\count112
 )
-(/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
-Package: algpseudocode 
-
 (/Users/YoshinoKai/Library/texmf/tex/latex/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
@@ -210,7 +207,9 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count118
 \c@ALG@tmpcounter=\count119
 \ALG@tmplength=\skip59
-)
+) (/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
+Package: algpseudocode 
+
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/Users/YoshinoKai/Library/texmf/tex/latex/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -228,7 +227,27 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \CommentStream=\write4
 
 Excluding comment 'comment')
-\c@linenumber=\count121
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box51
+\shadowsize=\dimen136
+\@Sbox=\box52
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/Users/YoshinoKai/Library/texmf/tex/latex/ulinej.sty
+\ul@curpos=\count121
+\ul@tmpbox=\box53
+\ul@skipwidth=\dimen137
+\ul@depth=\dimen138
+\ul@height=\dimen139
+)
+\c@linenumber=\count122
 )
 No file chapter.aux.
 \openout1 = `chapter.aux'.
@@ -255,36 +274,31 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 17.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
 
-LaTeX Warning: Reference `con:thought' on page 1 undefined on input line 17.
+LaTeX Warning: Reference `con:knowledge' on page 1 undefined on input line 14.
 
 
-LaTeX Warning: Reference `con:future_work' on page 1 undefined on input line 18
+LaTeX Warning: Reference `con:future_work' on page 1 undefined on input line 14
 .
 
 
-LaTeX Warning: Reference `con:conclusion' on page 1 undefined on input line 20.
+LaTeX Warning: Reference `con:conclusion' on page 1 undefined on input line 14.
 
 
-[1
-
-
-
-] [2]
-
-LaTeX Warning: Reference `relwork:multi_view_multi_modal' on page 3 undefined o
-n input line 73.
-
-[3] (../Bibliography/chapter.tex
+(../Bibliography/chapter.tex
 No file chapter.bbl.
-) [4] (./chapter.aux)
+) [1
+
+
+
+] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -292,14 +306,14 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
-(\end occurred when \ifx on line 100 was incomplete) 
+(\end occurred when \ifx on line 34 was incomplete) 
 Here is how much of TeX's memory you used:
- 2988 strings out of 494899
- 40283 string characters out of 6175707
- 105342 words of memory out of 5000000
- 6454 multiletter control sequences out of 15000+600000
+ 3157 strings out of 494899
+ 42393 string characters out of 6175707
+ 106641 words of memory out of 5000000
+ 6616 multiletter control sequences out of 15000+600000
  11180 words of font info for 45 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,335b,173s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,310b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (4 pages, 10804 bytes).
+Output written on chapter.dvi (1 page, 1300 bytes).
