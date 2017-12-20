@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  6 DEC 2017 10:57
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  20 DEC 2017 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,7 +227,27 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \CommentStream=\write4
 
 Excluding comment 'comment')
-\c@linenumber=\count121
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box51
+\shadowsize=\dimen136
+\@Sbox=\box52
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/Users/YoshinoKai/Library/texmf/tex/latex/ulinej.sty
+\ul@curpos=\count121
+\ul@tmpbox=\box53
+\ul@skipwidth=\dimen137
+\ul@depth=\dimen138
+\ul@height=\dimen139
+)
+\c@linenumber=\count122
 ) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
@@ -251,20 +271,21 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
- Excluding 'comment' comment.
+
 Excluding 'comment' comment. [1
 
 
 
-] [2] [3] (./chapter.aux) )
-(\end occurred when \ifx on line 59 was incomplete) 
+] Excluding 'comment' comment. [2] [3]
+(./chapter.aux) )
+(\end occurred when \ifx on line 62 was incomplete) 
 Here is how much of TeX's memory you used:
- 2963 strings out of 494899
- 39873 string characters out of 6175707
- 110342 words of memory out of 5000000
- 6431 multiletter control sequences out of 15000+600000
+ 3137 strings out of 494899
+ 42079 string characters out of 6175707
+ 107641 words of memory out of 5000000
+ 6598 multiletter control sequences out of 15000+600000
  9341 words of font info for 38 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,517b,173s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,517b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (3 pages, 7088 bytes).
+Output written on chapter.dvi (3 pages, 6928 bytes).

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  6 DEC 2017 11:08
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  20 DEC 2017 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,7 +227,27 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \CommentStream=\write4
 
 Excluding comment 'comment')
-\c@linenumber=\count121
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box51
+\shadowsize=\dimen136
+\@Sbox=\box52
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/Users/YoshinoKai/Library/texmf/tex/latex/ulinej.sty
+\ul@curpos=\count121
+\ul@tmpbox=\box53
+\ul@skipwidth=\dimen137
+\ul@depth=\dimen138
+\ul@height=\dimen139
+)
+\c@linenumber=\count122
 ) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
@@ -257,36 +277,31 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
-File: ../images/2.Related_Work/argTree1.png Graphic file (type bmp)
-<../images/2.Related_Work/argTree1.png>
+[1
+
+
+
+] Excluding 'comment' comment. [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 44.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 44.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 66.
 
 
-LaTeX Warning: Citation `okapiBM25' on page 1 undefined on input line 44.
-
-Excluding 'comment' comment. [1
-
-
-
-] [2]
-
-LaTeX Warning: Reference `relwork:chapter' on page 3 undefined on input line 73
+LaTeX Warning: Reference `relwork:chapter' on page 3 undefined on input line 66
 .
 
 
-LaTeX Warning: Reference `model:chapter' on page 3 undefined on input line 74.
+LaTeX Warning: Reference `model:chapter' on page 3 undefined on input line 67.
 
 
-LaTeX Warning: Reference `impl:chapter' on page 3 undefined on input line 74.
+LaTeX Warning: Reference `impl:chapter' on page 3 undefined on input line 67.
 
 
-LaTeX Warning: Reference `exp:chapter' on page 3 undefined on input line 75.
+LaTeX Warning: Reference `exp:chapter' on page 3 undefined on input line 68.
 
 
-LaTeX Warning: Reference `con:chapter' on page 3 undefined on input line 76.
+LaTeX Warning: Reference `con:chapter' on page 3 undefined on input line 69.
 
 [3] (../Bibliography/chapter.tex (./chapter.bbl [4]
 
@@ -307,14 +322,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 84 was incomplete) 
+(\end occurred when \ifx on line 77 was incomplete) 
 Here is how much of TeX's memory you used:
- 3013 strings out of 494899
- 40656 string characters out of 6175707
- 109342 words of memory out of 5000000
- 6469 multiletter control sequences out of 15000+600000
- 12290 words of font info for 49 fonts, out of 8000000 for 9000
+ 3172 strings out of 494899
+ 42576 string characters out of 6175707
+ 107641 words of memory out of 5000000
+ 6626 multiletter control sequences out of 15000+600000
+ 11527 words of font info for 46 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,503b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,503b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (5 pages, 8396 bytes).
+Output written on chapter.dvi (5 pages, 10040 bytes).

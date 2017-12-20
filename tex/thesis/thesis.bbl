@@ -22,10 +22,10 @@ John~R Firth.
 \newblock A synopsis of linguistic theory, 1930-1955.
 \newblock {\em Studies in linguistic analysis}, 1957.
 
-\bibitem{okapiBM25}
-E~Garcia.
-\newblock "a tutorial on okapi bm25".
-\newblock 2011.
+\bibitem{harris1954distributional}
+Zellig~S Harris.
+\newblock Distributional structure.
+\newblock {\em Word}, 10(2-3):146--162, 1954.
 
 \bibitem{texttiling}
 Marti~A Hearst.
@@ -85,6 +85,11 @@ Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock Efficient estimation of word representations in vector space.
 \newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
 
+\bibitem{w2vTranslate}
+Tomas Mikolov, Quoc~V Le, and Ilya Sutskever.
+\newblock Exploiting similarities among languages for machine translation.
+\newblock {\em arXiv preprint arXiv:1309.4168}, 2013.
+
 \bibitem{pageRank1999}
 Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
 \newblock The pagerank citation ranking: Bringing order to the web.
@@ -95,6 +100,12 @@ John Platt.
 \newblock Sequential minimal optimization: A fast algorithm for training
   support vector machines.
 \newblock 1998.
+
+\bibitem{okapiBM25}
+Stephen~E Robertson, Steve Walker, Susan Jones, Micheline~M Hancock-Beaulieu,
+  Mike Gatford, et~al.
+\newblock Okapi at trec-3.
+\newblock {\em Nist Special Publication Sp}, 109:109, 1995.
 
 \bibitem{collagreeSystem}
 Eizo~Hideshima Takayuki~Ito, Yuma~Imi.

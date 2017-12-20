@@ -3,48 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: ../Bibliography/database2.bib
-Warning--empty journal in okapiBM25
 Warning--empty journal in SMO
-You've used 30 entries,
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            685 strings with 8717 characters,
-and the built_in function-call counts, 10303 in all, are:
-= -- 1026
-> -- 479
+            701 strings with 9156 characters,
+and the built_in function-call counts, 11068 in all, are:
+= -- 1099
+> -- 530
 < -- 10
-+ -- 192
-- -- 160
-* -- 665
-:= -- 1708
-add.period$ -- 92
-call.type$ -- 30
-change.case$ -- 167
++ -- 212
+- -- 178
+* -- 730
+:= -- 1844
+add.period$ -- 98
+call.type$ -- 32
+change.case$ -- 181
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 413
-empty$ -- 766
-format.name$ -- 160
-if$ -- 2181
+cite$ -- 33
+duplicate$ -- 435
+empty$ -- 815
+format.name$ -- 178
+if$ -- 2332
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 31
-newline$ -- 153
-num.names$ -- 60
-pop$ -- 172
+int.to.str$ -- 32
+missing$ -- 33
+newline$ -- 163
+num.names$ -- 64
+pop$ -- 180
 preamble$ -- 1
-purify$ -- 138
+purify$ -- 150
 quote$ -- 0
-skip$ -- 323
+skip$ -- 338
 stack$ -- 0
-substring$ -- 620
-swap$ -- 114
+substring$ -- 664
+swap$ -- 117
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 2
-while$ -- 99
-width$ -- 32
-write$ -- 321
+type$ -- 124
+warning$ -- 1
+while$ -- 106
+width$ -- 34
+write$ -- 344
 is.kanji.str$ -- 0
-(There were 2 warnings)
+(There was 1 warning)
