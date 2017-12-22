@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  14 DEC 2017 18:44
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 10:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -248,8 +248,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \ul@height=\dimen139
 )
 \c@linenumber=\count122
-)
-No file chapter.aux.
+) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -268,6 +267,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 第 6 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
@@ -278,42 +278,28 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
-
-LaTeX Warning: Reference `con:knowledge' on page 1 undefined on input line 14.
-
-
-LaTeX Warning: Reference `con:future_work' on page 1 undefined on input line 14
-.
-
-
-LaTeX Warning: Reference `con:conclusion' on page 1 undefined on input line 14.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
+[1
 
 
-(../Bibliography/chapter.tex
+
+] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [1
-
-
-
-] (./chapter.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred when \ifx on line 34 was incomplete) 
+) [2] (./chapter.aux) )
+(\end occurred when \ifx on line 43 was incomplete) 
 Here is how much of TeX's memory you used:
- 3157 strings out of 494899
- 42393 string characters out of 6175707
- 106641 words of memory out of 5000000
- 6616 multiletter control sequences out of 15000+600000
- 11180 words of font info for 45 fonts, out of 8000000 for 9000
+ 3171 strings out of 494899
+ 42608 string characters out of 6175707
+ 107641 words of memory out of 5000000
+ 6628 multiletter control sequences out of 15000+600000
+ 12711 words of font info for 51 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,310b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,316b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (1 page, 1300 bytes).
+Output written on chapter.dvi (2 pages, 2776 bytes).

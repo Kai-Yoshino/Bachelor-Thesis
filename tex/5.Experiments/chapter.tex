@@ -7,13 +7,12 @@
 %-------------------------------------------------------------------------------
 \cleardoublepage
 \chapter{評価実験}
-
 \label{exp:chapter}
 
 \section{序言}
 \label{exp:introduction}
-本章では，COLLAGREEで行われた議論のデータを対象にした提案手法の評価実験について述べる．評価実験では同じテーマのもと行われた複数の議論を用意し，提案手法の有用性を示す．%提案手法は\ref{}で述べた手法を用い，比較手法は\ref{}で述べた関連研究を用いる．
-以下に本章の構成を述べる．
+本章では，COLLAGREEで行われた議論のデータを対象にした提案手法の評価実験について述べる．%評価実験では同じテーマのもと行われた複数の議論を用意し，提案手法の有用性を示す．\\
+以下に本章の構成を述べる．まず，\ref{exp:data}節では実験に用いたデータについて説明する．\ref{exp:setting}節では実験設定について述べ，\ref{exp:result}節では評価実験の結果を示す．\ref{exp:consideration}節では実験結果に対する考察を行い，最後に\ref{exp:conclusion}節で本章のまとめを示す．
 \clearpage
 \section{対象データ}
 \label{exp:data}
@@ -106,11 +105,12 @@
 \item F:残り20分を切りました。
  皆様、いかがでしょうか？
 \end{itemize}
-以上の基準に沿ってタグを付けてもらい，"1"のタグが過半数以上付けられた発言を正解値=1，他を正解値=0とした．
+以上の基準に沿ってタグを付けてもらい，"1"のタグが過半数より多く付けられた発言を正解値=1，他を正解値=0とした．
 
 \section{実験設定}
+\label{exp:setting}
 \subsection{パラメーター}
-本実験ではパラメーターは次の通りに設定した．前処理にて用いるokapiBM25のパラメーターはk1=2, b=0.75とし，LexRankのパラメーターはn=50，threshold=0.7とした．
+本実験ではパラメーターは次の通りに設定した．前処理にて用いるokapiBM25のパラメーターはk1=2, b=0.75とし，LexRankのパラメーターはn=50，threshold=0.7とした．また，重み付けを用いて文章から抽出する単語の数は5個とした．
 分散表現として用いるfastTextは次元数を100次元とし，学習データにはwikipediaダンプデータを用いた．
 総合類似度の計算に用いるパラメーターはmaxTime=5400(90分)，tWeight = 0.5とし，総合類似度の閾値は0.8とした．
 表5.1 に実験の設定をまとめる.
@@ -121,7 +121,8 @@
     okapiBM25 & b & 0.75 \\ \cline{2-3} \hline
      & n &  50 \\ \cline{2-3}
     LexRank & threshold & 0.7 \\ \cline{2-3} \hline
-     & 次元 &  10 \\ \cline{2-3}
+     \multicolumn{2}{|c|}{抽出単語数} & 5 \\  \hline
+     & 次元 &  100 \\ \cline{2-3} 
     fastText & 学習データ & wikipediaダンプデータ \\ \cline{2-3} \hline
      \multicolumn{2}{|c|}{maxTime} & 5400 \\  \hline
      \multicolumn{2}{|c|}{tWeight} & 0.5 \\  \hline
@@ -136,10 +137,10 @@
 \subsubsection*{\circled{1} 常時通知}
 最も単純かつ分かりやすい比較手法として，発言の内容に関係なく常に通知を行う手法を用いる．
 \subsubsection*{\circled{2} TF-IDFベクトル}
-単語の意味は考慮せず出現頻度に基づく比較手法として，分散表現の代わりにTF-IDFで発言をベクトル化する手法を用いる．\textbf{Algorithm\ref{algo:combinedWeight}}の\ref{algo:combinedWight:bm25}行目でokapiBM25の代わりにTF-IDFを用いて連想配列を求め，重みのベクトルに変換する．発言内容の類似度計算は提案手法と同じでCosine類似度を用い，以降も同じである．
+単語の意味は考慮せず出現頻度に基づく比較手法として，分散表現の代わりにTF-IDFで発言をベクトル化する手法を用いる．\textbf{Algorithm\ref{algo:combinedWeight}}の\ref{algo:combinedWight:bm25}行目でokapiBM25の代わりにTF-IDFを用いて連想配列を求め，重みのベクトルに変換する．発言内容の類似度計算は提案手法と同じでCosine類似度を用い，以降の総合類似度も提案手法と同じである．
 \subsection{評価指標}
 本実験では評価指標として適合率(Precision)，再現率(Recall)，F値(F-measure)の３種類の指標を用いる．\\
-適合率，再現率，F値はそれぞれ次のようにして求める．まず，発言の通知を行うと判定した時を予測値=1，通知を行わないと判定した時を予測値=0とおく．次に，予測値=1かつ正解値=1であるものの個数を$hits$(的中数)，予測値=0かつ正解値=1であるものの個数を$misses$(見逃し数)，予測値=1かつ正解値=0であるものの個数を$falseAlarms$(誤警報数)として数える．そして，式\ref{eq:Precision}，式\ref{eq:Recall}及び式\ref{eq:F-measure}に従って適合率，再現率，F値を計算する．
+適合率，再現率，F値はそれぞれ次のようにして求める．まず，発言の通知を行うと判定した時を予測値=1，通知を行わないと判定した時を予測値=0とおく．次に，予測値=1かつ正解値=1であるものの個数を$TP(True~Positive)$または$hits$(的中数)，予測値=0かつ正解値=1であるものの個数を$FP(False~Negative)$または$misses$(見逃し数)，予測値=1かつ正解値=0であるものの個数を$FP(False~Positive)$または$falseAlarms$(誤警報数)として数える．また，予測値=0かつ正解値=0であるものの個数を$TN(True~Negative)$として数える．そして，式\ref{eq:Precision}，式\ref{eq:Recall}及び式\ref{eq:F-measure}に従って適合率，再現率，F値を計算する．
 \begin{equation}
 \begin{aligned}
 \label{eq:Precision}
@@ -164,20 +165,106 @@ F-measure & = \frac{2 \cdot Precision \cdot Recall}{Precision+Recall}
 ３つの値はどれも値が高いほど判定精度が高いことを示す．
 
 \section{実験結果}
+\label{exp:result}
 実験結果を表\ref{table:result}に示す．
 \begin{table}[htb]
 \begin{center}
   \begin{tabular}{| c | c | c | c |} \hline
     手法 & \multicolumn{3}{| c |}{平均評価指標} \\ \cline{2-4}
-     & Pre & Rec & F \\ \hline \hline
-    比較手法1 &0.3 & 0.5  & 0.4 \\ \hline
-    比較手法2 &0.3 & 0.5  & 0.4 \\ \hline
-    比較手法3 &0.3 & 0.5  & 0.4 \\ \hline
+     & Precision & Recall & F-measure \\ \hline \hline
+    比較手法1 &0.256579335 & 1 & 0.404074977 \\ \hline
+    比較手法2 &0.75 & 0.105429708 & 0.180947229 \\ \hline
+    提案手法 &0.517148273 & 0.558192262 & 0.509950195 \\ \hline
     \end{tabular}
     \caption{実験結果}
     \label{table:result}
 \end{center}
 \end{table}
+
+また，各手法のTP,TN,FP,FNの割合の平均，及びTPとFPの平均割合の和であるP-SUMとTNとFNの平均割合の和であるN-SUMを表\ref{table:result2}に示す．
+\begin{table}[htb]
+\begin{center}
+  \begin{tabular}{| c | c | c | c | c | c | c |} \hline
+    手法 & \multicolumn{6}{| c |}{平均割合} \\ \cline{2-7}
+     & TP & TN & FP  & FN & P-SUM & N-SUM \\ \hline \hline
+    比較手法1 &0.251993 & 0 & 0.748006 & 0 &1.0 & 0 \\ \hline
+    比較手法2 &0.0239234 & 0.730462 & 0.0079744 & 0.2280701 & 0.0414673 & 0.9585326\\ \hline
+    提案手法 &0.1419457 & 0.5980861 & 0.1499202 & 0.1100478  & 0.2918660 & 0.7081339 \\ \hline
+    \end{tabular}
+    \caption{実験結果2}
+    \label{table:result2}
+\end{center}
+\end{table}
+
+\section{考察}
+\label{exp:consideration}
+実験結果から次のことが言える．\\
+\begin{description}
+  \item[考察1] 提案手法はバランス良く判定をすることができる
+  \item[考察2] 提案手法の精度は重み付けに依存する
+\end{description}
+\subsection*{考察\circled{1} 提案手法はバランス良く判定をすることができる}
+表\ref{table:result}が示すように，提案手法は比較手法よりも高いF値を出している．
+原因を究明するために，他２つの比較手法の問題点を考える．
+比較手法1は常に話題が変化したと判定するため見逃しが無く再現率が高いが，対価として何も除外しないので適合率は低くなってしまう．極端さがF値の低下に繋がったと言える．\\
+一方，比較手法2ではTF-IDFによる発言ベクトルを用いて発言内容の類似度を計算しているが，TF-IDFでは文字の出現頻度のみを使用していることと全ての単語を発言ベクトルに含んでいることから新しく投稿された発言の内容文と過去の発言の内容文の両方に同じ単語が含まれている程，類似度が大きくなる．すなわち，過去の発言に全く登場していない新しい単語を多く含んだ内容文を持つ発言でない限り，過去の発言と同じ話題であると判定されやすい．結果的によほど顕著なものでない限り，話題が変化したと判定しなくなるため適合率は高くなるが，対価として見逃しが増え再現率が低くなる．事実，表\ref{table:result2}が示すように比較手法2では比較手法1とは逆に発言の殆どが話題の変化を起こさないものとして判定されている．図\ref{Fig:GraphTF-IDF}に比較手法２で発言の繋がりを図示したものの拡大図を示す．\\
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/5.Experiment/Graph=TF-IDF2.png}
+  \caption{比較手法２による繋がりグラフ-拡大図}
+  \label{Fig:GraphTF-IDF}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+図\ref{Fig:GraphTF-IDF}で示されるように殆どの発言がかなりの数の発言と同じ話題であると判定されていることが確認できる．
+
+以上の２つの比較手法の問題点に対する考察を踏まえて提案手法が比較手法と異なる点を考える．異なる点として，上位の単語のみを類似度計算に用いている点と分散表現を用いている点が挙げられる．
+比較手法2と違って，上位の単語のみが用いられることで同じ単語が含まれているだけでは類似度が上がるとは限らなくなり，結果話題が変化したと判定する回数が増え比較手法2よりも高い再現率を示したと考えられる．
+図\ref{Fig:GraphFastText}に提案手法で発言の繋がりを図示したものを示す．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=1.1\textwidth]{../images/5.Experiment/Graph=FastText-min.png}
+  \caption{提案手法による繋がりグラフ}
+  \label{Fig:GraphFastText}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+図\ref{Fig:GraphTF-IDF}とは違い，１つの発言に対して同じ話題であると判断された発言の数は少なく，比較手法2に比べ類似度が抑えめになっていることが伺える．
+また，分散表現を用いることで字面の異なる単語でも類似性を示すことができるので，再現率と共に適合率を上昇させることに繋がったと考えられ，故にバランス良く判定をすることができたと考えられる．
+
+\subsection*{考察\circled{2} 提案手法の精度は重み付けに依存する}
+表\ref{table:FalseAlarmsRemark}，{table:MissesRemark}にそれぞれ$falseAlarms$，$misses$となった発言の例を示す．
+\begin{table}[htbp]
+  \begin{tabular}{| c |  c |} \hline
+     title & body \\ \hline
+     まずは旅先候補を&まずは旅先候補をどんどんお願いします。\\ \hline
+     京都周辺ツアー & \shortstack{八坂神社、清水寺、金閣寺、銀閣寺、伏見稲荷大社、嵐山、有馬温泉\\
+ 今あがっているのは、このぐらいでしょうか？}\\
+     \hline
+  \end{tabular}
+  \caption{falseAlarms発言データ} \label{table:FalseAlarmsRemark}
+\end{table}
+\begin{table}[htbp]
+\begin{center}
+  \begin{tabular}{| c | c |} \hline
+     title & body \\ \hline
+     NULL&やはり東京は人気ですよね、アキバ行きたいって外国のかたが多いイメージです\\ \hline
+     NULL &  \shortstack{１日目 奈良 東大寺 鹿がいる公園\\
+ ２日目 京都 金閣寺 銀閣寺 清水寺\\
+ ３日目 大阪 万博記念公園 たこやき食べ\\
+ ４日目\\
+ ５日目 長崎 世界遺産巡り\\
+ ６日目 長崎 教会群巡り 原爆資料館\\
+ ７日目 長崎 食めぐり}\\
+     \hline
+  \end{tabular}
+  \caption{misses発言データ} \label{table:MissesRemark}
+  \end{center}
+\end{table}
+まず，表\ref{table:FalseAlarmsRemark}の上段にあるような，議論の最初の方において意見を促すようなファシリテーターが行うような発言がfalseAlarmsとして誤判定されることが多かった．原因として過去に投稿された発言が少なく他の発言との差が顕著になってしまったと考えられる．
+%一方，表\ref{table:MissesRemark}の方では，上段にあるような他の発言に対する雑談っぽさのある他の視点を提供しようとするような返信発言が
+また，まとめを行う発言に弱いことが示された．
 
 \section{結言}
 \label{exp:conclusion}

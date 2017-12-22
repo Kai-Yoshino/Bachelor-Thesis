@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  20 DEC 2017 09:51
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  22 DEC 2017 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -315,27 +315,62 @@ LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
 [4] [5]
 
 LaTeX Warning: Reference `algo:combinedWeight' on page 6 undefined on input lin
-e 139.
+e 141.
 
 
 LaTeX Warning: Reference `algo:combinedWight:bm25' on page 6 undefined on input
- line 139.
+ line 141.
 
-[6] [7] [8] (../Bibliography/chapter.tex
+[6]
+Overfull \hbox (9.04373pt too wide) in paragraph at lines 143--145
+\OML/cmm/m/it/12 misses$\OT1/cmr/m/n/12 (\JY1/mc/m/n/12 見逃し数\OT1/cmr/m/n/12
+ )\JY1/mc/m/n/12 ， 予測値\OT1/cmr/m/n/12 =1 \JY1/mc/m/n/12 かつ正解値\OT1/cmr/
+m/n/12 =0 \JY1/mc/m/n/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
+ []
+
+[7]
+Overfull \hbox (22.04701pt too wide) in paragraph at lines 188--195
+ [][][] 
+ []
+
+[8]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 207.
+File: ../images/5.Experiment/Graph=TF-IDF2.png Graphic file (type bmp)
+ <../images/5.Experiment/Graph=TF-IDF2.png> [9] [10]
+File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
+
+<../images/5.Experiment/Graph=FastText-min.png>
+Overfull \hbox (41.80255pt too wide) in paragraph at lines 227--228
+ [] 
+ []
+
+
+Overfull \hbox (56.31682pt too wide) in paragraph at lines 240--247
+[][][][] 
+ []
+
+
+Overfull \hbox (53.97675pt too wide) in paragraph at lines 251--263
+ [][][] 
+ []
+
+[11] [12] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [9] (./chapter.aux)
+) [13] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 194 was incomplete) 
+(\end occurred when \ifx on line 282 was incomplete) 
 Here is how much of TeX's memory you used:
- 3274 strings out of 494899
- 44097 string characters out of 6175707
+ 3296 strings out of 494899
+ 44605 string characters out of 6175707
  123641 words of memory out of 5000000
- 6697 multiletter control sequences out of 15000+600000
- 21379 words of font info for 83 fonts, out of 8000000 for 9000
+ 6713 multiletter control sequences out of 15000+600000
+ 21634 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,9n,43p,473b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,12n,43p,785b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (9 pages, 25884 bytes).
+Output written on chapter.dvi (13 pages, 35884 bytes).
