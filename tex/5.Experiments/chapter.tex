@@ -236,34 +236,33 @@ F-measure & = \frac{2 \cdot Precision \cdot Recall}{Precision+Recall}
 \subsection*{考察\circled{2} 提案手法の精度は重み付けに依存する}
 表\ref{table:FalseAlarmsRemark}，{table:MissesRemark}にそれぞれ$falseAlarms$，$misses$となった発言の例を示す．
 \begin{table}[htbp]
-  \begin{tabular}{| c |  c |} \hline
-     title & body \\ \hline
-     まずは旅先候補を&まずは旅先候補をどんどんお願いします。\\ \hline
-     京都周辺ツアー & \shortstack{八坂神社、清水寺、金閣寺、銀閣寺、伏見稲荷大社、嵐山、有馬温泉\\
- 今あがっているのは、このぐらいでしょうか？}\\
+  \begin{tabular}{| c |  p{6cm} | c |} \hline
+     title & body  & 抽出単語 \\ \hline
+     まずは旅先候補を&まずは旅先候補をどんどんお願いします。&どんどん,お願い,書き込み,皆様\\ \hline
+     京都周辺ツアー &八坂神社、清水寺、金閣寺、銀閣寺、伏見稲荷大社、嵐山、有馬温泉 今あがっているのは、このぐらいでしょうか？&たくさん,有名,魅力的,清水寺,あり\\
      \hline
   \end{tabular}
   \caption{falseAlarms発言データ} \label{table:FalseAlarmsRemark}
 \end{table}
 \begin{table}[htbp]
 \begin{center}
-  \begin{tabular}{| c | c |} \hline
-     title & body \\ \hline
-     NULL&やはり東京は人気ですよね、アキバ行きたいって外国のかたが多いイメージです\\ \hline
+  \begin{tabular}{| c | p{8cm} | c |} \hline
+     title & body & 抽出単語 \\ \hline
+     NULL&やはり東京は人気ですよね、アキバ行きたいって外国のかたが多いイメージです & 外国,行き,多い,イメージ,アキバ \\ \hline
      NULL &  \shortstack{１日目 奈良 東大寺 鹿がいる公園\\
  ２日目 京都 金閣寺 銀閣寺 清水寺\\
  ３日目 大阪 万博記念公園 たこやき食べ\\
  ４日目\\
  ５日目 長崎 世界遺産巡り\\
  ６日目 長崎 教会群巡り 原爆資料館\\
- ７日目 長崎 食めぐり}\\
+ ７日目 長崎 食めぐり} & 長崎,たこやき,めぐり,万博記念公園,公園\\
      \hline
   \end{tabular}
   \caption{misses発言データ} \label{table:MissesRemark}
   \end{center}
 \end{table}
 まず，表\ref{table:FalseAlarmsRemark}の上段にあるような，議論の最初の方において意見を促すようなファシリテーターが行うような発言がfalseAlarmsとして誤判定されることが多かった．原因として過去に投稿された発言が少なく他の発言との差が顕著になってしまったと考えられる．
-%一方，表\ref{table:MissesRemark}の方では，上段にあるような他の発言に対する雑談っぽさのある他の視点を提供しようとするような返信発言が
+一方，表\ref{table:MissesRemark}の方では，上段にあるような他の発言に対する雑談っぽさのある他の視点を提供しようとするような返信発言が
 また，まとめを行う発言に弱いことが示された．
 
 \section{結言}

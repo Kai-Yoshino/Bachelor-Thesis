@@ -1,0 +1,49 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+The style file: plain.bst
+Database file #1: ../Bibliography/database2.bib
+Warning--empty journal in SMO
+You've used 32 entries,
+            2118 wiz_defined-function locations,
+            701 strings with 9156 characters,
+and the built_in function-call counts, 11068 in all, are:
+= -- 1099
+> -- 530
+< -- 10
++ -- 212
+- -- 178
+* -- 730
+:= -- 1844
+add.period$ -- 98
+call.type$ -- 32
+change.case$ -- 181
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 435
+empty$ -- 815
+format.name$ -- 178
+if$ -- 2332
+int.to.chr$ -- 0
+int.to.str$ -- 32
+missing$ -- 33
+newline$ -- 163
+num.names$ -- 64
+pop$ -- 180
+preamble$ -- 1
+purify$ -- 150
+quote$ -- 0
+skip$ -- 338
+stack$ -- 0
+substring$ -- 664
+swap$ -- 117
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 124
+warning$ -- 1
+while$ -- 106
+width$ -- 34
+write$ -- 344
+is.kanji.str$ -- 0
+(There was 1 warning)

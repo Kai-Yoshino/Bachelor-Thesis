@@ -20,7 +20,7 @@
 \label{model:wholeModel}
 擬似コードを\textbf{Algorithm\ref{algo:wholeModel}}に示し，図示したものを図\ref{Fig:wholeModel}に示す．
 
-\textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．作業を繰り返し全ての発言との計算が終了した後，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
+\textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．作業を繰り返し全ての発言との計算が終了した後，発言Rに返信先がなく，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
 \begin{algorithm}
 \caption{システムの流れ} \label{algo:wholeModel}
 \begin{algorithmic}[1]
@@ -36,7 +36,7 @@
 		\EndIf
 	 \EndFor\label{algo:wholeModel:for1-e}
 	 \State Notify = False
-	 \If{$SG == \{\}$}
+	 \If{$SG == \{\}  ~ and ~ R.reply==Null$}
 		\State Notify = True
 	\EndIf
 	\State \textbf{return} Notify

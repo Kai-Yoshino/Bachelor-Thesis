@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  22 SEP 2017 19:06
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -193,9 +193,6 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@float@every@algorithm=\toks23
 \c@algorithm=\count112
 )
-(/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
-Package: algpseudocode 
-
 (/Users/YoshinoKai/Library/texmf/tex/latex/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
@@ -210,7 +207,9 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count118
 \c@ALG@tmpcounter=\count119
 \ALG@tmplength=\skip59
-)
+) (/Users/YoshinoKai/Library/texmf/tex/latex/algpseudocode.sty
+Package: algpseudocode 
+
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/Users/YoshinoKai/Library/texmf/tex/latex/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -228,9 +227,28 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \CommentStream=\write4
 
 Excluding comment 'comment')
-\c@linenumber=\count121
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box51
+\shadowsize=\dimen136
+\@Sbox=\box52
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/Users/YoshinoKai/Library/texmf/tex/latex/ulinej.sty
+\ul@curpos=\count121
+\ul@tmpbox=\box53
+\ul@skipwidth=\dimen137
+\ul@depth=\dimen138
+\ul@height=\dimen139
 )
-No file chapter.aux.
+\c@linenumber=\count122
+) (./chapter.aux)
 \openout1 = `chapter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -253,25 +271,20 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+
 [1
 
 
 
-]
-Overfull \hbox (5.90514pt too wide) in paragraph at lines 37--39
-[]\JY1/mc/m/n/12 香港科技大学大学院 \OT1/cmr/m/n/12 De-part-ment of Com-puter S
-ci-ence and En-gi-neer-ing \JY1/mc/m/n/12 の \OT1/cmr/m/n/12 Xingjian
- []
-
-[2] [3] [4] (./chapter.aux) )
-(\end occurred when \ifx on line 111 was incomplete) 
+] [2] [3] [4] (./chapter.aux) )
+(\end occurred when \ifx on line 100 was incomplete) 
 Here is how much of TeX's memory you used:
- 2962 strings out of 494899
- 39858 string characters out of 6175707
- 104342 words of memory out of 5000000
- 6432 multiletter control sequences out of 15000+600000
+ 3138 strings out of 494899
+ 42088 string characters out of 6175707
+ 107641 words of memory out of 5000000
+ 6599 multiletter control sequences out of 15000+600000
  9341 words of font info for 38 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,335b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,5n,43p,266b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (4 pages, 9292 bytes).
+Output written on chapter.dvi (4 pages, 8552 bytes).

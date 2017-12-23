@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 10:46
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -248,7 +248,11 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \ul@height=\dimen139
 )
 \c@linenumber=\count122
-) (./chapter.aux)
+) (./chapter.aux
+
+LaTeX Warning: Label `con:task' multiply defined.
+
+)
 \openout1 = `chapter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -278,9 +282,13 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 21.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 21.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
+
+LaTeX Warning: Reference `con:future_work' on page 1 undefined on input line 15
+.
+
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
@@ -289,17 +297,50 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 
 
 
-] (../Bibliography/chapter.tex
-No file chapter.bbl.
-) [2] (./chapter.aux) )
-(\end occurred when \ifx on line 43 was incomplete) 
-Here is how much of TeX's memory you used:
- 3171 strings out of 494899
- 42608 string characters out of 6175707
- 107641 words of memory out of 5000000
- 6628 multiletter control sequences out of 15000+600000
- 12711 words of font info for 51 fonts, out of 8000000 for 9000
- 107 hyphenation exceptions out of 8191
- 29i,4n,43p,316b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+] [2]
+File: ../images/6.Conclusion/Graph-Remark&Time.png Graphic file (type bmp)
+ <../images/6.Conclusion/Graph-Remark&Time.png>
 
-Output written on chapter.dvi (2 pages, 2776 bytes).
+LaTeX Warning: Citation `collagree_Experiment' on page 3 undefined on input lin
+e 55.
+
+[3] [4]
+
+LaTeX Warning: Reference `exp:consideration' on page 5 undefined on input line 
+65.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+ [5]
+Missing character: There is no ^^ef in font cmr12!
+Missing character: There is no ^^bd in font cmr12!
+Missing character: There is no ^^a5 in font cmr12!
+Missing character: There is no ^^ef in font cmr12!
+Missing character: There is no ^^bd in font cmr12!
+Missing character: There is no ^^a5 in font cmr12!
+ [6]
+(../Bibliography/chapter.tex
+No file chapter.bbl.
+) [7] (./chapter.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred when \ifx on line 91 was incomplete) 
+Here is how much of TeX's memory you used:
+ 3211 strings out of 494899
+ 43366 string characters out of 6175707
+ 108641 words of memory out of 5000000
+ 6660 multiletter control sequences out of 15000+600000
+ 13731 words of font info for 55 fonts, out of 8000000 for 9000
+ 107 hyphenation exceptions out of 8191
+ 29i,4n,43p,755b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on chapter.dvi (7 pages, 14744 bytes).

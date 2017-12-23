@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 10:45
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -270,20 +270,10 @@ LaTeX Font Info:    ... okay on input line 4.
 
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 9.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 9.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
 File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
-<../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
-
-<../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
-
 <../C.IPSJ80/jsample-submit.pdf>
 File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
  <../C.IPSJ80/jsample-submit.pdf> [1
@@ -291,15 +281,15 @@ File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
 
 
 ] [2]
-[3] [4] [5] [6] [7] (./chapter.aux) )
-(\end occurred when \ifx on line 45 was incomplete) 
+[3] (./chapter.aux) )
+(\end occurred when \ifx on line 23 was incomplete) 
 Here is how much of TeX's memory you used:
- 3158 strings out of 494899
- 42684 string characters out of 6175707
+ 3150 strings out of 494899
+ 42360 string characters out of 6175707
  106641 words of memory out of 5000000
- 6609 multiletter control sequences out of 15000+600000
+ 6605 multiletter control sequences out of 15000+600000
  10104 words of font info for 41 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,266b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,266b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (7 pages, 1692 bytes).
+Output written on chapter.dvi (3 pages, 968 bytes).
