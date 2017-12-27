@@ -36,22 +36,22 @@
 \contentsline {section}{\numberline {2.7}結言}{41}
 \contentsline {chapter}{\numberline {第3章}話題変化判定システム}{43}
 \contentsline {section}{\numberline {3.1}序言}{43}
-\contentsline {section}{\numberline {3.2}システムの動作の流れ}{43}
-\contentsline {section}{\numberline {3.3}システム詳細}{45}
-\contentsline {subsection}{\numberline {3.3.1}発言データ}{45}
+\contentsline {section}{\numberline {3.2}システム動作の流れ}{43}
+\contentsline {section}{\numberline {3.3}システム詳細}{44}
+\contentsline {subsection}{\numberline {3.3.1}発言データ}{44}
 \contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{46}
 \contentsline {paragraph}{時間差評価値}{47}
 \contentsline {paragraph}{返信距離}{47}
 \contentsline {paragraph}{総合類似度}{48}
-\contentsline {section}{\numberline {3.4}結言}{48}
+\contentsline {section}{\numberline {3.4}結言}{49}
 \contentsline {chapter}{\numberline {第4章}発言内容の類似度計算}{51}
 \contentsline {section}{\numberline {4.1}序言}{51}
 \contentsline {section}{\numberline {4.2}前処理}{51}
 \contentsline {subsection}{\numberline {4.2.1}MeCab}{52}
-\contentsline {subsection}{\numberline {4.2.2}重み付け}{53}
-\contentsline {section}{\numberline {4.3}類似度計算}{54}
-\contentsline {subsection}{\numberline {4.3.1}単語抽出}{54}
-\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{54}
+\contentsline {subsection}{\numberline {4.2.2}重み付け}{54}
+\contentsline {section}{\numberline {4.3}類似度計算}{55}
+\contentsline {subsection}{\numberline {4.3.1}単語抽出}{55}
+\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{55}
 \contentsline {section}{\numberline {4.4}結言}{55}
 \contentsline {chapter}{\numberline {第5章}評価実験}{57}
 \contentsline {section}{\numberline {5.1}序言}{57}
@@ -59,27 +59,27 @@
 \contentsline {subsection}{\numberline {5.2.1}議論データ}{58}
 \contentsline {subsection}{\numberline {5.2.2}評価データ}{59}
 \contentsline {paragraph}{例1:}{59}
-\contentsline {paragraph}{例2:}{59}
+\contentsline {paragraph}{例2:}{60}
 \contentsline {paragraph}{例3:}{60}
 \contentsline {paragraph}{例4:}{60}
 \contentsline {paragraph}{例5:}{61}
-\contentsline {paragraph}{例6:}{61}
+\contentsline {paragraph}{例6:}{62}
 \contentsline {section}{\numberline {5.3}実験設定}{62}
 \contentsline {subsection}{\numberline {5.3.1}パラメーター}{62}
-\contentsline {subsection}{\numberline {5.3.2}比較手法}{62}
-\contentsline {subsection}{\numberline {5.3.3}評価指標}{63}
-\contentsline {section}{\numberline {5.4}実験結果}{64}
+\contentsline {subsection}{\numberline {5.3.2}比較手法}{63}
+\contentsline {subsection}{\numberline {5.3.3}評価指標}{64}
+\contentsline {section}{\numberline {5.4}実験結果}{65}
 \contentsline {section}{\numberline {5.5}考察}{65}
-\contentsline {section}{\numberline {5.6}結言}{69}
-\contentsline {chapter}{\numberline {第6章}結論}{71}
-\contentsline {section}{\numberline {6.1}序言}{71}
-\contentsline {section}{\numberline {6.2}得られた知見}{71}
-\contentsline {section}{\numberline {6.3}今後の課題と展望}{72}
-\contentsline {subsection}{\numberline {6.3.1}今後の課題}{72}
-\contentsline {subsection}{\numberline {6.3.2}今後の展望}{75}
-\contentsline {section}{\numberline {6.4}本研究のまとめ}{76}
-\contentsline {chapter}{謝辞}{79}
-\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{89}
-\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{89}
-\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{91}
-\contentsline {chapter}{\numberline {付 録C }IJCAI-16投稿論文}{97}
+\contentsline {section}{\numberline {5.6}結言}{70}
+\contentsline {chapter}{\numberline {第6章}結論}{73}
+\contentsline {section}{\numberline {6.1}序言}{73}
+\contentsline {section}{\numberline {6.2}得られた知見}{73}
+\contentsline {section}{\numberline {6.3}今後の課題と展望}{75}
+\contentsline {subsection}{\numberline {6.3.1}今後の課題}{75}
+\contentsline {subsection}{\numberline {6.3.2}今後の展望}{78}
+\contentsline {section}{\numberline {6.4}本研究のまとめ}{79}
+\contentsline {chapter}{謝辞}{81}
+\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{91}
+\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{91}
+\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{93}
+\contentsline {chapter}{\numberline {付 録C }情報処理学会 第80回全国大会 投稿論文}{99}

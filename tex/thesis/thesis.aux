@@ -147,17 +147,18 @@
 \newlabel{model:chapter}{{3}{43}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}序言}{43}}
 \newlabel{model:introduction}{{3.1}{43}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}システムの動作の流れ}{43}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}システム動作の流れ}{43}}
 \newlabel{model:wholeModel}{{3.2}{43}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces システムの流れ}}{44}}
 \newlabel{algo:wholeModel}{{3}{44}}
+\newlabel{algo:wholeModel:begin}{{5}{44}}
 \newlabel{algo:wholeModel:for1-b}{{6}{44}}
 \newlabel{algo:wholeModel:for1-e}{{9}{44}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{44}}
-\newlabel{Fig:wholeModel}{{3.1}{44}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}システム詳細}{45}}
-\newlabel{model:detail}{{3.3}{45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}発言データ}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}システム詳細}{44}}
+\newlabel{model:detail}{{3.3}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}発言データ}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{45}}
+\newlabel{Fig:wholeModel}{{3.1}{45}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces 発言データ}}{46}}
 \newlabel{table:remarkData}{{3.1}{46}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{46}}
@@ -166,18 +167,19 @@
 \@writefile{toc}{\contentsline {paragraph}{時間差評価値}{47}}
 \newlabel{eq:timeValue}{{3.1}{47}}
 \@writefile{toc}{\contentsline {paragraph}{返信距離}{47}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces 返信距離}}{47}}
-\newlabel{algo:replyDist}{{4}{47}}
-\newlabel{replyDist:if1-b}{{5}{47}}
-\newlabel{replyDist:if1-e}{{6}{47}}
-\newlabel{replyDist:if2-b}{{7}{47}}
-\newlabel{replyDist:if2-e}{{8}{47}}
-\newlabel{replyDist:if3-b}{{9}{47}}
-\newlabel{replyDist:if3-e}{{12}{47}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces 返信距離}}{48}}
+\newlabel{algo:replyDist}{{4}{48}}
+\newlabel{replyDist:if1-b}{{5}{48}}
+\newlabel{replyDist:if1-e}{{6}{48}}
+\newlabel{replyDist:if2-b}{{7}{48}}
+\newlabel{replyDist:if2-e}{{8}{48}}
+\newlabel{replyDist:if3-b}{{9}{48}}
+\newlabel{replyDist:if3-e}{{12}{48}}
 \@writefile{toc}{\contentsline {paragraph}{総合類似度}{48}}
 \newlabel{eq:tSimilarity}{{3.2}{48}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}結言}{48}}
-\newlabel{model:conclusion}{{3.4}{48}}
+\newlabel{eq:tSimilarity2}{{3.3}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}結言}{49}}
+\newlabel{model:conclusion}{{3.4}{49}}
 \citation{kudo2005mecab}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第4章}発言内容の類似度計算}{51}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -187,26 +189,29 @@
 \newlabel{impl:introduction}{{4.1}{51}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}前処理}{51}}
 \newlabel{impl:preProcessing}{{4.2}{51}}
+\citation{CRF}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}MeCab}{52}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{52}}
 \newlabel{Fig:mecab}{{4.1}{52}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}重み付け}{53}}
-\newlabel{impl:preProcessing:weight}{{4.2.2}{53}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces 統合重みの計算アルゴリズム}}{53}}
-\newlabel{algo:combinedWeight}{{5}{53}}
-\newlabel{algo:combinedWight:bm25}{{5}{53}}
-\newlabel{algo:combinedWight:for1-b}{{9}{53}}
-\newlabel{algo:combinedWight:pNoun}{{12}{53}}
-\newlabel{algo:combinedWight:for2-b}{{14}{53}}
-\newlabel{algo:combinedWight:for2-e}{{16}{53}}
-\newlabel{algo:combinedWight:final}{{17}{53}}
-\newlabel{algo:combinedWeight:for1-e}{{17}{53}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}類似度計算}{54}}
-\newlabel{impl:similarity}{{4.3}{54}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}単語抽出}{54}}
-\newlabel{impl:similarity:extract}{{4.3.1}{54}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{54}}
-\newlabel{impl:similarity:wordEmbed}{{4.3.2}{54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces 解析結果}}{53}}
+\newlabel{Fig:mecabLattice}{{4.2}{53}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}重み付け}{54}}
+\newlabel{impl:preProcessing:weight}{{4.2.2}{54}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces 統合重みの計算アルゴリズム}}{54}}
+\newlabel{algo:combinedWeight}{{5}{54}}
+\newlabel{algo:combinedWight:bm25}{{5}{54}}
+\newlabel{algo:combinedWight:for1-b}{{9}{54}}
+\newlabel{algo:combinedWight:pNoun}{{12}{54}}
+\newlabel{algo:combinedWight:for2-b}{{14}{54}}
+\newlabel{algo:combinedWight:for2-e}{{16}{54}}
+\newlabel{algo:combinedWight:final}{{17}{54}}
+\newlabel{algo:combinedWeight:for1-e}{{17}{54}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}類似度計算}{55}}
+\newlabel{impl:similarity}{{4.3}{55}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}単語抽出}{55}}
+\newlabel{impl:similarity:extract}{{4.3.1}{55}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}分散表現による類似度計算}{55}}
+\newlabel{impl:similarity:wordEmbed}{{4.3.2}{55}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}結言}{55}}
 \newlabel{impl:conclusion}{{4.4}{55}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第5章}評価実験}{57}}
@@ -222,101 +227,107 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}評価データ}{59}}
 \newlabel{exp:data:evaluation}{{5.2.2}{59}}
 \@writefile{toc}{\contentsline {paragraph}{例1:}{59}}
-\@writefile{toc}{\contentsline {paragraph}{例2:}{59}}
+\@writefile{toc}{\contentsline {paragraph}{例2:}{60}}
 \@writefile{toc}{\contentsline {paragraph}{例3:}{60}}
 \@writefile{toc}{\contentsline {paragraph}{例4:}{60}}
 \@writefile{toc}{\contentsline {paragraph}{例5:}{61}}
-\@writefile{toc}{\contentsline {paragraph}{例6:}{61}}
+\citation{infoRetrieval}
+\@writefile{toc}{\contentsline {paragraph}{例6:}{62}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.3}実験設定}{62}}
 \newlabel{exp:setting}{{5.3}{62}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}パラメーター}{62}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}比較手法}{62}}
 \@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces パラメーターの設定}}{63}}
 \newlabel{table:par}{{5.1}{63}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}評価指標}{63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}比較手法}{63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}評価指標}{64}}
 \newlabel{eq:Precision}{{5.1}{64}}
 \newlabel{eq:Recall}{{5.2}{64}}
 \newlabel{eq:F-measure}{{5.3}{64}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}実験結果}{64}}
-\newlabel{exp:result}{{5.4}{64}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces 実験結果}}{64}}
-\newlabel{table:result}{{5.2}{64}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}実験結果}{65}}
+\newlabel{exp:result}{{5.4}{65}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces 実験結果}}{65}}
+\newlabel{table:result}{{5.2}{65}}
 \@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces 実験結果2}}{65}}
 \newlabel{table:result2}{{5.3}{65}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.5}考察}{65}}
 \newlabel{exp:consideration}{{5.5}{65}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces 比較手法２による繋がりグラフ-拡大図}}{66}}
-\newlabel{Fig:GraphTF-IDF}{{5.1}{66}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces 提案手法による繋がりグラフ}}{67}}
-\newlabel{Fig:GraphFastText}{{5.2}{67}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces falseAlarms発言データ}}{68}}
-\newlabel{table:FalseAlarmsRemark}{{5.4}{68}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces misses発言データ}}{68}}
-\newlabel{table:MissesRemark}{{5.5}{68}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}結言}{69}}
-\newlabel{exp:conclusion}{{5.6}{69}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第6章}結論}{71}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces 比較手法２による繋がりグラフ-拡大図}}{67}}
+\newlabel{Fig:GraphTF-IDF}{{5.1}{67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces 提案手法による繋がりグラフ}}{68}}
+\newlabel{Fig:GraphFastText}{{5.2}{68}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces falseAlarms発言データ}}{69}}
+\newlabel{table:FalseAlarmsRemark}{{5.4}{69}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces misses発言データ}}{69}}
+\newlabel{table:MissesRemark}{{5.5}{69}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}結言}{70}}
+\newlabel{exp:conclusion}{{5.6}{70}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第6章}結論}{73}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{con:chapter}{{6}{71}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}序言}{71}}
-\newlabel{con:introduction}{{6.1}{71}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}得られた知見}{71}}
-\newlabel{con:knowledge}{{6.2}{71}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}今後の課題と展望}{72}}
-\newlabel{con:task_and_future}{{6.3}{72}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}今後の課題}{72}}
-\newlabel{con:task}{{6.3.1}{72}}
-\newlabel{con:task}{{6.3.1}{72}}
+\newlabel{con:chapter}{{6}{73}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}序言}{73}}
+\newlabel{con:introduction}{{6.1}{73}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}得られた知見}{73}}
+\newlabel{con:knowledge}{{6.2}{73}}
 \citation{collagree_Experiment}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces 発言数と処理時間}}{74}}
-\newlabel{Fig:Graph-Remark&Time}{{6.1}{74}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}今後の展望}{75}}
-\newlabel{con:future}{{6.3.2}{75}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}本研究のまとめ}{76}}
-\newlabel{con:conclusion}{{6.4}{76}}
-\@writefile{toc}{\contentsline {chapter}{謝辞}{79}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}今後の課題と展望}{75}}
+\newlabel{con:task_and_future}{{6.3}{75}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}今後の課題}{75}}
+\newlabel{con:task}{{6.3.1}{75}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces 発言数と処理時間}}{76}}
+\newlabel{Fig:Graph-Remark&Time}{{6.1}{76}}
+\citation{doc2vec2014}
+\citation{seq2seq2014}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}今後の展望}{78}}
+\newlabel{con:future}{{6.3.2}{78}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}本研究のまとめ}{79}}
+\newlabel{con:conclusion}{{6.4}{79}}
+\@writefile{toc}{\contentsline {chapter}{謝辞}{81}}
 \bibstyle{plain}
 \bibdata{../Bibliography/database2}
 \bibcite{LDA2003}{1}
 \bibcite{fastText}{2}
-\bibcite{lexRank}{3}
-\bibcite{firth1957hypothesis}{4}
-\bibcite{harris1954distributional}{5}
-\bibcite{texttiling}{6}
-\bibcite{topicModel}{7}
-\bibcite{discSupport1-1}{8}
-\bibcite{idf}{9}
-\bibcite{fastText2}{10}
-\bibcite{kudo2005mecab}{11}
-\bibcite{levy2014neural}{12}
-\bibcite{embedTopic2}{13}
-\bibcite{tf}{14}
-\bibcite{word2vec}{15}
-\bibcite{w2vTranslate}{16}
-\bibcite{pageRank1999}{17}
-\bibcite{SMO}{18}
-\bibcite{okapiBM25}{19}
-\bibcite{collagreeSystem}{20}
-\bibcite{facilitation}{21}
-\bibcite{collagreeTest}{22}
-\bibcite{collagree_Experiment}{23}
-\bibcite{argDefine}{24}
-\bibcite{discSupport1-2}{25}
-\bibcite{convAnalysis}{26}
-\bibcite{discSupport2}{27}
-\bibcite{argTree}{28}
-\bibcite{topicLDAshift}{29}
-\bibcite{embedTopic1}{30}
-\bibcite{zatsudan}{31}
-\bibcite{textSegmentation1}{32}
-\@writefile{toc}{\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{89}}
+\bibcite{infoRetrieval}{3}
+\bibcite{lexRank}{4}
+\bibcite{firth1957hypothesis}{5}
+\bibcite{harris1954distributional}{6}
+\bibcite{texttiling}{7}
+\bibcite{topicModel}{8}
+\bibcite{discSupport1-1}{9}
+\bibcite{idf}{10}
+\bibcite{fastText2}{11}
+\bibcite{kudo2005mecab}{12}
+\bibcite{CRF}{13}
+\bibcite{doc2vec2014}{14}
+\bibcite{levy2014neural}{15}
+\bibcite{embedTopic2}{16}
+\bibcite{tf}{17}
+\bibcite{word2vec}{18}
+\bibcite{w2vTranslate}{19}
+\bibcite{pageRank1999}{20}
+\bibcite{SMO}{21}
+\bibcite{okapiBM25}{22}
+\bibcite{seq2seq2014}{23}
+\bibcite{collagreeSystem}{24}
+\bibcite{facilitation}{25}
+\bibcite{collagreeTest}{26}
+\bibcite{collagree_Experiment}{27}
+\bibcite{argDefine}{28}
+\bibcite{discSupport1-2}{29}
+\bibcite{convAnalysis}{30}
+\bibcite{discSupport2}{31}
+\bibcite{argTree}{32}
+\bibcite{topicLDAshift}{33}
+\bibcite{embedTopic1}{34}
+\bibcite{zatsudan}{35}
+\bibcite{textSegmentation1}{36}
+\@writefile{toc}{\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{91}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{89}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{91}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{91}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{93}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {付 録C }IJCAI-16投稿論文}{97}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {付 録C }情報処理学会 第80回全国大会 投稿論文}{99}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

@@ -13,14 +13,17 @@
 \section{序言}
 \label{model:introduction}
 本章では話題変化判定システムの概要について説明する. \\
-以下に本章の構成を示す．まず\ref{model:wholeModel}節でシステム全体の動作の流れを示し, アルゴリズムについても説明を行う. 次に\ref{model:detail}節ではシステムの詳細を説明すると共にシステムで扱う発言データの形式や発言間の類似度計算について述べる. 
+以下に本章の構成を示す．まず\ref{model:wholeModel}節でシステム動作を流れ図から説明する. 次に\ref{model:detail}節ではシステムの詳細を説明すると共にシステムで扱う発言データの形式や発言間の類似度計算について述べる. 
 最後に，\ref{model:conclusion} 節で本章のまとめを示す.
 
-\section{システムの動作の流れ}
+\section{システム動作の流れ}
 \label{model:wholeModel}
 擬似コードを\textbf{Algorithm\ref{algo:wholeModel}}に示し，図示したものを図\ref{Fig:wholeModel}に示す．
 
-\textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．作業を繰り返し全ての発言との計算が終了した後，発言Rに返信先がなく，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
+\textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．
+%発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．
+本システムは話題変化を判定するため，話題の変化させる発言を以下の手順で把握する．話題の変化は，発言$R$と過去の発言の集合である$PG$の比較によって判定する.発言$R$が投稿された時に過去の発言集合である$PG$内に発言$R$と同様の話題がないと判定された場合，同じ話題である発言集合$SG$が空集合となり，話題を変化させる発言であるとする.また，同じ発言の判定は，発言$R$が投稿された時，過去の発言の集合である$PG$と発言$R$の類似度を計算する．以上で計算された類似の値が閾値を超えていた場合，同じ話題である発言集合$SG$に比較した2つの話題が同じであるとして登録する．
+上記の過去の発言との比較作業は\textbf{Algorithm\ref{algo:wholeModel}}の\ref{algo:wholeModel:begin}$\sim$\ref{algo:wholeModel:for1-e}行目に相当し，作業を繰り返して全ての発言との計算が終了した後，発言Rに返信先がなく，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
 \begin{algorithm}
 \caption{システムの流れ} \label{algo:wholeModel}
 \begin{algorithmic}[1]
@@ -28,7 +31,7 @@
 \State $Output: 通知判定Notify$
 \State $PG = 過去の発言の集合;$%~~ Group ~ of ~ past ~ remark
 \Procedure{topicChange}{$R$} 
-	\State $SG = \{\};$%~~ Group ~ of ~ remark ~ whose ~ topic ~ is ~ same ~ with ~ R
+	\State $SG = \{\};$\label{algo:wholeModel:begin}%~~ Group ~ of ~ remark ~ whose ~ topic ~ is ~ same ~ with ~ R
 	 \For{$Each ~ pastR \in PG$}\label{algo:wholeModel:for1-b}
 	 	\State sim = similarity(R,pastR)
 		\If{$sim > threshold$}
@@ -36,7 +39,7 @@
 		\EndIf
 	 \EndFor\label{algo:wholeModel:for1-e}
 	 \State Notify = False
-	 \If{$SG == \{\}  ~ and ~ R.reply==Null$}
+	 \If{$SG == \{\} $}
 		\State Notify = True
 	\EndIf
 	\State \textbf{return} Notify
@@ -56,17 +59,17 @@
 \label{model:detail}
 \subsection{発言データ}
 本システムで扱う"発言データ"は単なる文字列ではなく，タイムスタンプ等の他のデータを持つリスト形式のデータである．表\ref{table:remarkData}にデータの一部を示す．
-また，以下で本研究で使用する発言データの要素について説明する．
+また，以下に本研究で使用する発言データの要素について説明する．
 \subsubsection*{\circled{1} id}
-発言データを識別するための番号で，全て整数値で表される．
+発言データを識別するための番号であり，全て整数値で表される．
 \subsubsection*{\circled{2} title}
 スレッドのタイトル名を表す文字列で，発言がスレッドの先頭でない限りはNULLとなる．
 \subsubsection*{\circled{3} body}
-発言の内容を表す文字列．
+発言の内容を表す文字列である．
 \subsubsection*{\circled{4} parent-id}
 発言の返信先，すなわち親発言のidを表す番号で，親発言がある場合は親発言のidと同じ番号になり，ない場合はNULLとなる．
 \subsubsection*{\circled{5} crreated-at}
-発言が投稿された時間を示すタイムスタンプ．
+発言が投稿された時間を示すタイムスタンプである．
 
 \begin{table}[htbp]
   \begin{tabular}{| c | p{4cm} | p{4cm} | c | p{2cm} | c |} \hline
@@ -83,7 +86,7 @@
 \label{model:simRemarkl}
 発言間の類似度計算は次の３段階で行われる．
 \subsubsection*{\circled{1} 前処理}
-発言データ中のtitleとbody，すなわち発言の内容文を対象に\circled{2}で行われる発言内容の類似度計算の精度を上昇させるためにストップワード(役立たないことから処理対象外とされる単語)の除去や単語の重み付けを行う．また，titleがNULLでない場合はtitleとbodyを改行コードで繋いで１つの文章とする．
+本研究では前処理として，発言データ中のtitleとbody，すなわち発言の内容文を対象に\circled{2}で行われる発言内容の類似度計算の精度を上昇させるためにストップワード(役立たないことから処理対象外とされる単語)の除去や単語の重み付けを行う．また，titleがNULLでない場合はtitleとbodyを改行コードで繋いで１つの文章とする．
 前処理の詳細については\ref{impl:chapter}章で述べる．
 \subsubsection*{\circled{2} 発言内容の類似度計算}
 \label{model:simRemark:2}
@@ -92,7 +95,7 @@
 \subsubsection*{\circled{3} 総合類似度計算}
 上記の\circled{2}で計算された発言の文章間の類似度に発言間の時間差と返信関係を組み合わせることで総合類似度を求める．
 \paragraph{時間差評価値}\ \\
-発言$new$と以前の発言$old$間の時間差を式\ref{eq:timeValue}に基いて正規化された評価値として求める．
+新たに投稿された発言$new$とnew以前の発言の１つである$old$間の時間差を式\ref{eq:timeValue}に基いて正規化された評価値として求める．
 \begin{equation}
 \begin{aligned}
 \label{eq:timeValue}
@@ -100,10 +103,11 @@ tValue & = 1 - \frac{ epoch(new.created) - epoch(old.created) }{ maxTime }
 \end{aligned}
 \end{equation}
 ここで関数$epoch$及び定数$maxTime$，$x.created$について説明する．$epoch$は与えられたタイムスタンプをエポック秒に変換する．$maxTime$は最大時間差を表し，基本的には議論の制限時間を用いる．$x.created$は発言$x$が投稿された時間を表す．
-時間差評価値は２発言間の時間差が小さいほど関連が強いとみなし，0から1に近づく．
+時間差評価値は0から1の範囲で示され，２発言間の時間差が小さいほど関連が強いとみなし，1 に近くなる.
 
 \paragraph{返信距離}\ \\
-発言$new$と以前の発言$old$間の返信距離をAlgorithm\ref{algo:replyDist}に基いて再帰的に求める．
+返信距離は発言$new$と以前の発言$old$間の返信距離をAlgorithm\ref{algo:replyDist}に基いて再帰的に求められる．
+
 \begin{algorithm}
 \caption{返信距離} \label{algo:replyDist}
 \begin{algorithmic}[1]
@@ -124,28 +128,37 @@ tValue & = 1 - \frac{ epoch(new.created) - epoch(old.created) }{ maxTime }
 \end{algorithmic}
 \end{algorithm}
 
-\ref{replyDist:if2-b} $\sim$ \ref{replyDist:if2-e}行目 ， \ref{replyDist:if3-b} $\sim$ \ref{replyDist:if3-e}行目で示すように発言のidが一致した場合は現在の返信距離を返し，一致しなかった場合は返信距離を1増やして$new$の親発言$parent$と$old$の返信関係を再帰呼び出しで求め，返り値を返す．
-また，\ref{replyDist:if1-b} $\sim$ \ref{replyDist:if1-e} 行目で示すように２発言間が返信関係になかった場合は0を返す．
+\ref{replyDist:if1-b} $\sim$ \ref{replyDist:if1-e} 行目で示すように２発言間が返信関係になかった場合は0を返す．
+２発言間が返信関係にある場合は\ref{replyDist:if2-b} $\sim$ \ref{replyDist:if2-e}行目 ， \ref{replyDist:if3-b} $\sim$ \ref{replyDist:if3-e}行目で示すように発言のidが一致した場合は現在の返信距離を返し，一致しなかった場合は返信距離を1増やして$new$の親発言$parent$と$old$の返信関係を再帰呼び出しで求め，返り値を返す．
 
 \paragraph{総合類似度}\ \\
 総合類似度は前述の発言内容の類似度，時間差評価値，返信距離によって求められる．
 返信距離が0である時，すなわち2発言が異なるスレッドに属している場合は類似度と時間差評価値から総合類似度を計算する．
-類似度だけでなく時間差評価値を使用するのは，総合類似度だけで判断してしまうと議論の終盤になって発言数が多くなってきた時に新しく投稿された発言が多くの古い発言と類似していると判断されてしまうことがあり得るからである．議論は基本的に少し前の発言に関連して行われることが多いことから時間差評価値を使用して時間的に近しいものほど総合類似度が上昇するようにする．具体的には式\ref{eq:tSimilarity}のように計算される．
+総合類似度に時間差評価値を導入した理由は，基本的に少し前に発言に関連して議論が進行されることが多いため，時間的に近いものほど評価を上昇させる仕組みを考慮したからである．
+%類似度だけでなく時間差評価値を使用するのは，総合類似度だけで判断してしまうと議論の終盤になって発言数が多くなってきた時に新しく投稿された発言が多くの古い発言と類似していると判断されてしまうことがあり得るからである．理由として，議論は基本的に少し前の発言に関連して行われることが多いことが挙げられる．
+時間差評価値を使用して時間的に近しいものほど総合類似度が上昇するようにする．具体的には式\ref{eq:tSimilarity}のように計算される．
 \begin{equation}
 \begin{aligned}
 \label{eq:tSimilarity}
-tSim & = tValue*tWeight + sim*(1-tWeight)
+totalSim & = tValue*tWeight + sim*(1-tWeight)
 \end{aligned}
 \end{equation}
 
-ここで変数$sim$，定数$tWeight$について説明する．$sim$は発言内容の類似度を表し，0から1の値を取る．$tWeight$は時間差評価値の総合類似度の計算における重要性を表し，0から1の値を取る．
-また，返信距離が0でない，すなわち2発言が同じスレッドに属している場合は何らかの関連があると考えられることから，時間差評価値を無視して発言内容の類似度を直接，総合類似度として用いる．
+式\ref{eq:tSimilarity}の変数$sim$，$tValue$定数$tWeight$について説明する．$sim$は発言内容の類似度を表し，0から1の値を取る．$tValue$は式\ref{eq:timeValue}での$tValue$と同じもので時間差評価値を表す．$tWeight$は時間差評価値の総合類似度の計算における重要性を表し，0から1の値を取る．
+また，返信距離が0でない，すなわち2発言が同じスレッドに属している場合は何らかの関連があると考えられることから，式\ref{eq:tSimilarity2}に示すように時間差評価値を無視して発言内容の類似度を直接，総合類似度として用いる．
+\begin{equation}
+\begin{aligned}
+\label{eq:tSimilarity2}
+totalSim & =  sim
+\end{aligned}
+\end{equation}
 
 \section{結言}
 \label{model:conclusion}
 本章では話題変化判定システムの動作の流れやアルゴリズムについて説明し，扱うデータの形式や内容を示した．
-\ref{impl:chapter}章にて説明する発言内容の類似度の計算手法の詳細を除いて，発言間の類似度計算の手法についても説明した．また，時間的に近しい議論ほど類似度が上昇するように時間差評価値と発言内容の類似度の２つを用いて総合類似度計算することを示した．
-
+\ref{impl:chapter}章にて説明する発言内容の類似度の計算手法の詳細を除いて，発言間の類似度計算の手法について説明した．
+%また，時間的に近しい議論ほど類似度が上昇するように時間差評価値と発言内容の類似度の２つを用いて総合類似度計算することを示した．
+また，総合類似度は、時間的に近しい議論ほど類似度が上昇するように時間差評価値と発言内容の類似度から求めることを示した．
 
  %-------------------------------------------------------------------------------
  \expandafter\ifx\csname MasterFile\endcsname\relax

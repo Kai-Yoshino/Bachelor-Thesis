@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 16:33
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  27 DEC 2017 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,94 +283,88 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 23.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 23.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
  (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
  [2
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 44.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 48.
  [3]
 [4] [5]
 
-LaTeX Warning: Reference `algo:combinedWeight' on page 6 undefined on input lin
-e 140.
+LaTeX Warning: Citation `infoRetrieval' on page 6 undefined on input line 140.
 
-
-LaTeX Warning: Reference `algo:combinedWight:bm25' on page 6 undefined on input
- line 140.
-
-[6]
-Overfull \hbox (9.04373pt too wide) in paragraph at lines 142--144
+[6] [7]
+Overfull \hbox (9.04373pt too wide) in paragraph at lines 151--153
 \OML/cmm/m/it/12 misses$\OT1/cmr/m/n/12 (\JY1/mc/m/n/12 見逃し数\OT1/cmr/m/n/12
  )\JY1/mc/m/n/12 ， 予測値\OT1/cmr/m/n/12 =1 \JY1/mc/m/n/12 かつ正解値\OT1/cmr/
 m/n/12 =0 \JY1/mc/m/n/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
  []
 
-[7]
-Overfull \hbox (22.04701pt too wide) in paragraph at lines 187--194
+[8]
+Overfull \hbox (22.04701pt too wide) in paragraph at lines 196--203
  [][][] 
  []
 
-[8]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 206.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 215.
 File: ../images/5.Experiment/Graph=TF-IDF2.png Graphic file (type bmp)
- <../images/5.Experiment/Graph=TF-IDF2.png> [9] [10]
+<../images/5.Experiment/Graph=TF-IDF2.png> [9]
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
 <../images/5.Experiment/Graph=FastText-min.png>
-Overfull \hbox (41.80255pt too wide) in paragraph at lines 226--227
+Overfull \hbox (41.80255pt too wide) in paragraph at lines 236--237
  [] 
  []
 
-
-Overfull \hbox (65.41895pt too wide) in paragraph at lines 239--245
+[10] [11]
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 249--255
 [][][][] 
  []
 
 
-Overfull \hbox (96.89122pt too wide) in paragraph at lines 249--261
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 259--272
  [][][] 
  []
 
-[11] [12] (../Bibliography/chapter.tex
+[12] [13] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [13] (./chapter.aux)
+) [14] [15] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 280 was incomplete) 
+(\end occurred when \ifx on line 294 was incomplete) 
 Here is how much of TeX's memory you used:
- 3296 strings out of 494899
- 44605 string characters out of 6175707
- 123641 words of memory out of 5000000
- 6713 multiletter control sequences out of 15000+600000
+ 3295 strings out of 494899
+ 44574 string characters out of 6175707
+ 129641 words of memory out of 5000000
+ 6712 multiletter control sequences out of 15000+600000
  21634 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,14n,43p,785b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,14n,43p,627b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (13 pages, 36664 bytes).
+Output written on chapter.dvi (15 pages, 39804 bytes).

@@ -17,9 +17,9 @@
 
 \section{前処理}
 \label{impl:preProcessing}
-分散表現による類似度計算で精度を上昇させるためには発言内容から余分な単語を取り除きいて重要な単語を抽出する，または極めて短く要約することが重要である．提案手法では形態素解析エンジン MeCab と\ref{rel:part:weight}節で説明したokapiBM25 と LexRankを用いて発言の文章から重要単語を抽出し，抽出した単語の類似度を分散表現を用いて計算する．
+分散表現による類似度計算で精度を上昇させるためには発言内容から余分な単語を取り除き重要な単語を抽出する，または極めて短く要約することが重要である．提案手法では形態素解析エンジン MeCab と\ref{rel:part:weight}節で説明したokapiBM25 と LexRankを用いて発言の文章から重要単語を抽出し，抽出した単語の類似度を分散表現によって計算する．
 \subsection{MeCab}
-MeCab(めかぶ)\cite{kudo2005mecab}は京都大学情報学研究科-日本電信電話株式会社コミュニケーション科学基礎研究所共同研究ユニットプロジェクトを通じて開発されたオープンソース形態素解析エンジンである．MeCab に対して「MeCab はオープンソース形態素解析エンジンである。」と入力した際の結果を図\ref{Fig:mecab}に示す．
+MeCab(めかぶ)\cite{kudo2005mecab}は京都大学情報学研究科-日本電信電話株式会社コミュニケーション科学基礎研究所共同研究ユニットプロジェクトを通じて開発されたオープンソース形態素解析エンジンである．以下の図\ref{Fig:mecab}でMeCab に対して「MeCab はオープンソース形態素解析エンジンである。」と入力した際の結果を示す．
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=\textwidth]{../images/4.Implementation/mecab.png}
@@ -31,8 +31,17 @@ MeCab(めかぶ)\cite{kudo2005mecab}は京都大学情報学研究科-日本電�
 
 出力フォーマットは次の形式となっている．\\
 \ovalbox{表層形 \verb|\t| 品詞,品詞細分類1,品詞細分類2,品詞細分類3,活用型,活用形,原形,読み,発音}\\
-「読み」と「発音」は図\ref{Fig:mecab}の"MeCab"のように不明であるものには付与されない．
-MeCabによる形態素解析の結果，次の条件を満たす単語を除外している．
+Mecabでは形態素解析を行う時，辞書データに基いて図\ref{Fig:mecabLattice}に示すように全ての可能な出力をグラフで表現した構造を作成し，Conditional Random Fields\cite{CRF}と呼ばれるコスト推定アルゴリズムを用いて最も可能性の高い経路を推定し，出力としている．
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=\textwidth]{../images/4.Implementation/lattice1.png}
+  \caption{解析結果}
+  \label{Fig:mecabLattice}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+また，「読み」と「発音」は図\ref{Fig:mecab}の"MeCab"のように不明であるものには付与されない．\\
+本研究ではMeCabによる形態素解析の結果，次の条件を満たす単語を除外している．
 \begin{enumerate}
   \item 品詞細分類に「数」を含む
   \item 「読み」，「発音」が不明である
@@ -40,12 +49,14 @@ MeCabによる形態素解析の結果，次の条件を満たす単語を除外
   \item １文字のひらがなである
   \item 品詞細分類に「接尾」または「非自立」を含む
 \end{enumerate}
-上記の条件を満たす単語を除外したのは\ref{impl:preProcessing:weight}節で説明する重み付けにおいて重要な単語であると判定されやすいが，\ref{impl:preProcessing:sim}節で説明する類似度計算において精度を下げてしまうからである．
+上記の条件を満たす単語を除外した理由は\ref{impl:preProcessing:weight}節で説明する重み付けにおいて重要な単語であると判定されやすいが，\ref{impl:preProcessing:sim}節で説明する類似度計算において精度を下げてしまうからである．
+本研究は文章の前処理として，上記の1から5の条件に該当する単語の　クリーニング処理を実施した.前処理を実施した理由は，類似度計算において，精度を向上させるためである．
+%本研究は文章の前処理として，上記の1から4の条件を満たすため，クリーニング処理，数字の置き換え，ストップワードの除去を実施した.前処理を実施した理由は，類似度計算において，精度を向上させるためである．
 単語の除外は重み付けにおいて文章を単語に分割する際に行われる．
 
 \subsection{重み付け}
 \label{impl:preProcessing:weight}
-提案手法では\ref{rel:part:weight}節で説明したokapiBM25とLexRankの２種類の重み付け手法をを統合して発言の内容の文字列$remark$中の単語に対して重み付けを行う．
+提案手法では\ref{rel:part:weight}節で説明したokapiBM25とLexRankの２種類の重み付け手法を統合して発言の内容の文字列$remark$中の単語に対して重み付けを行う．
 アルゴリズムを\textbf{Algorithm\ref{algo:combinedWeight}}に示す．
 \begin{algorithm}
 \caption{統合重みの計算アルゴリズム} \label{algo:combinedWeight}
@@ -77,19 +88,22 @@ MeCabによる形態素解析の結果，次の条件を満たす単語を除外
 \end{algorithmic}
 \end{algorithm}
 
-固有名詞は文章の中で重要な役割を果たす可能性が大きいと考え，\ref{algo:combinedWight:pNoun}行目では固有名詞の単語重みを倍にしている．そして，\ref{algo:combinedWight:for2-b} $\sim$ \ref{algo:combinedWight:final}行目ではwordを含む全文章の重みの合計を求め，okapiBM25による単語重みを掛け合わせたものをwordの統合重みとしている．単語重みに単語を含む文章の重みを掛け合わせることで感嘆文のような文章そのものは重要でないが頻度の少ない単語を使用する文章中の単語が選ばれる可能性を下げている．
+本研究において，固有名詞は文章の中で重要な役割を果たす可能性が大きいと考え，\ref{algo:combinedWight:pNoun}行目で固有名詞の単語重みを倍にしている．そして，\ref{algo:combinedWight:for2-b} $\sim$ \ref{algo:combinedWight:final}行目ではwordを含む全文章の重みの合計を求め，okapiBM25による単語重みを掛け合わせたものをwordの統合重みとしている．単語重みに単語を含む文章の重みを掛け合わせることで感嘆文のような文章そのものは重要でないが頻度の少ない単語を使用する文章中の単語が選ばれる可能性を下げている．
 \section{類似度計算}
 \label{impl:similarity}
 \subsection{単語抽出}
 \label{impl:similarity:extract}
-\ref{impl:preProcessing}節で計算された単語重みの値が大きいものの上位n個までの単語を発言文章remarkにおいて重要度の高い単語であるとして抽出する．単語重みが等しいものが複数あった場合は単語を昇順に並び替えて順序を付けている．また，使用する分散表現モデルに登録されていない単語は除外している．
+本研究では\ref{impl:preProcessing}節で計算された単語重みの値が大きいものの上位n個までの単語を発言文章remarkにおいて重要度の高い単語であるとして抽出する．単語重みが等しいものが複数あった場合は単語を昇順に並び替えて順序を付ける．また，使用する分散表現モデルに登録されていない単語は除外している．
 \subsection{分散表現による類似度計算}
 \label{impl:similarity:wordEmbed}
-\ref{impl:similarity:extract}節で述べた手法を用いて2発言それぞれから抽出した単語集合の類似度を分散表現を用いて求める．
+%\ref{impl:similarity:extract}節で述べた手法を用いて2発言それぞれから抽出した単語集合の類似度を分散表現を用いて求める．
+分散表現による類似度計算は，\ref{impl:similarity:extract}節で述べた手法で抽出した単語集合の類似度から分散表現を用意て求める．
 それぞれの単語集合の単語ベクトルの平均を求め，\ref{rel:part:vec}の図\ref{eq:cosineSim}で述べたようにCosine類似度を2平均ベクトル間で取っている．
 \section{結言}
 \label{impl:conclusion}
-本章では発言内容の類似度を計算する手法について説明した．文章を単語に分割する手法と使用したツールと単語を除外する前処理についても述べた．また，okapiBM25とLexRankを組み合わせた発言中の単語の重み付け手法，及び重み付けによって抽出した単語集合の類似度計算手法についても説明した．
+本章では発言内容の類似度を計算する手法について説明した．
+%文章を単語に分割する手法と使用したツールと単語を除外する前処理についても述べた．
+本章では，分散表現による類似度計算の前処理である文章を単語に分割する手法，及び単語を除外する処理についても述べ ，また，okapiBM25とLexRankを組み合わせた発言中の単語の重み付け手法，及び重み付けによって抽出した単語集合の類似度計算手法について説明した．
 
  %-------------------------------------------------------------------------------
  \expandafter\ifx\csname MasterFile\endcsname\relax

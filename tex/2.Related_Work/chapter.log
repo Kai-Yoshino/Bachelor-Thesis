@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  20 DEC 2017 19:33
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 09:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -287,15 +287,15 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 
 
-LaTeX Warning: Citation `argDefine' on page 2 undefined on input line 27.
+LaTeX Warning: Citation `argDefine' on page 2 undefined on input line 28.
 
 
-LaTeX Warning: Citation `collagreeSystem' on page 2 undefined on input line 28.
+LaTeX Warning: Citation `collagreeSystem' on page 2 undefined on input line 32.
 
 
 File: ../images/2.Related_Work/COLLAGREE_Main-min.png Graphic file (type bmp)
@@ -310,162 +310,161 @@ File: ../images/2.Related_Work/COLLAGREE_Discuss-min.png Graphic file (type bmp
 
 <../images/2.Related_Work/COLLAGREE_Discuss-min.png>
 
-LaTeX Warning: Float too large for page by 325.79764pt on input line 61.
-
-[3]
-
-LaTeX Warning: Citation `discSupport1-1' on page 4 undefined on input line 65.
+LaTeX Warning: Float too large for page by 325.79764pt on input line 66.
 
 
-LaTeX Warning: Citation `discSupport1-2' on page 4 undefined on input line 66.
+LaTeX Warning: Citation `discSupport1-1' on page 3 undefined on input line 70.
 
 
-LaTeX Warning: Citation `argTree' on page 4 undefined on input line 67.
+LaTeX Warning: Citation `discSupport1-2' on page 3 undefined on input line 71.
+
+
+LaTeX Warning: Citation `argTree' on page 3 undefined on input line 72.
 
 File: ../images/2.Related_Work/argTree1.png Graphic file (type bmp)
-<../images/2.Related_Work/argTree1.png>
+<../images/2.Related_Work/argTree1.png> [3] [4] [5]
 
-LaTeX Warning: Citation `facilitation' on page 4 undefined on input line 82.
+LaTeX Warning: Citation `facilitation' on page 6 undefined on input line 88.
 
 
-LaTeX Warning: Citation `collagree_Experiment' on page 4 undefined on input lin
-e 82.
-
-[4] [5]
-
-LaTeX Warning: Citation `discSupport2' on page 6 undefined on input line 89.
+LaTeX Warning: Citation `collagree_Experiment' on page 6 undefined on input lin
+e 88.
 
 [6]
 
-LaTeX Warning: Citation `convAnalysis' on page 7 undefined on input line 96.
-
-
-LaTeX Warning: Citation `zatsudan' on page 7 undefined on input line 98.
+LaTeX Warning: Citation `discSupport2' on page 7 undefined on input line 95.
 
 [7]
 
-LaTeX Warning: Citation `texttiling' on page 8 undefined on input line 112.
+LaTeX Warning: Citation `convAnalysis' on page 8 undefined on input line 102.
+
+
+LaTeX Warning: Citation `zatsudan' on page 8 undefined on input line 106.
+
+[8]
+
+LaTeX Warning: Citation `texttiling' on page 9 undefined on input line 120.
 
 File: ../images/2.Related_Work/textTiling-figure.png Graphic file (type bmp)
 <../images/2.Related_Work/textTiling-figure.png>
 File: ../images/2.Related_Work/textTiling-graph.png Graphic file (type bmp)
 
-<../images/2.Related_Work/textTiling-graph.png> [8]
+<../images/2.Related_Work/textTiling-graph.png>
 
 LaTeX Warning: Citation `textSegmentation1' on page 9 undefined on input line 1
-34.
+42.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+[9] [10]
+LaTeX Font Info:    Try loading font information for U+msa on input line 145.
+ (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Try loading font information for U+msb on input line 145.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [9]
-[10]
+)
 
-LaTeX Warning: Citation `topicModel' on page 11 undefined on input line 141.
+LaTeX Warning: Citation `topicModel' on page 11 undefined on input line 149.
 
 File: ../images/2.Related_Work/topicModel-unigram.png Graphic file (type bmp)
-<../images/2.Related_Work/topicModel-unigram.png>
+<../images/2.Related_Work/topicModel-unigram.png> [11]
 File: ../images/2.Related_Work/topicModel-mixUnigram.png Graphic file (type bmp
 )
 
-<../images/2.Related_Work/topicModel-mixUnigram.png> [11]
+<../images/2.Related_Work/topicModel-mixUnigram.png>
 
-LaTeX Warning: Citation `LDA2003' on page 12 undefined on input line 167.
+LaTeX Warning: Citation `LDA2003' on page 12 undefined on input line 172.
 
 File: ../images/2.Related_Work/topicModel-LDA.png Graphic file (type bmp)
 <../images/2.Related_Work/topicModel-LDA.png>
 
-LaTeX Warning: Citation `topicLDAshift' on page 12 undefined on input line 180.
+LaTeX Warning: Citation `topicLDAshift' on page 12 undefined on input line 185.
 
 
 File: ../images/2.Related_Work/LDA-topicFlow.png Graphic file (type bmp)
 <../images/2.Related_Work/LDA-topicFlow.png>
 
-LaTeX Warning: Float too large for page by 21.97466pt on input line 189.
+LaTeX Warning: Float too large for page by 21.97466pt on input line 194.
 
-[12] [13] [14]
+[12] [13] [14] [15]
 
-LaTeX Warning: Citation `okapiBM25' on page 15 undefined on input line 211.
-
-
-LaTeX Warning: Citation `tf' on page 15 undefined on input line 211.
+LaTeX Warning: Citation `okapiBM25' on page 16 undefined on input line 216.
 
 
-LaTeX Warning: Citation `idf' on page 15 undefined on input line 211.
-
-[15] [16]
-
-LaTeX Warning: Citation `lexRank' on page 17 undefined on input line 252.
+LaTeX Warning: Citation `tf' on page 16 undefined on input line 216.
 
 
-LaTeX Warning: Citation `pageRank1999' on page 17 undefined on input line 252.
+LaTeX Warning: Citation `idf' on page 16 undefined on input line 216.
+
+[16]
+
+LaTeX Warning: Citation `lexRank' on page 17 undefined on input line 257.
+
+
+LaTeX Warning: Citation `pageRank1999' on page 17 undefined on input line 257.
 
 [17]
 File: ../images/2.Related_Work/lexRank-graph.png Graphic file (type bmp)
  <../images/2.Related_Work/lexRank-graph.png>
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 283.
+(Font)              using `JT1/mc/m/n' instead on input line 288.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 283.
-
-[18]
-
-LaTeX Warning: Citation `harris1954distributional' on page 19 undefined on inpu
-t line 334.
+(Font)              using `JY1/mc/m/n' instead on input line 288.
 
 
-LaTeX Warning: Citation `firth1957hypothesis' on page 19 undefined on input lin
-e 334.
+LaTeX Warning: Citation `harris1954distributional' on page 18 undefined on inpu
+t line 339.
 
+
+LaTeX Warning: Citation `firth1957hypothesis' on page 18 undefined on input lin
+e 339.
+
+[18] [19] [20]
 File: ../images/2.Related_Work/WordParagraphMatrix2.png Graphic file (type bmp)
 
-<../images/2.Related_Work/WordParagraphMatrix2.png> [19] [20] [21]
+ <../images/2.Related_Work/WordParagraphMatrix2.png> [21]
 
-LaTeX Warning: Citation `word2vec' on page 22 undefined on input line 361.
+LaTeX Warning: Citation `word2vec' on page 22 undefined on input line 367.
 
 File: ../images/2.Related_Work/CBOW.png Graphic file (type bmp)
 <../images/2.Related_Work/CBOW.png>
 File: ../images/2.Related_Work/skip-gram.png Graphic file (type bmp)
  <../images/2.Related_Work/skip-gram.png>
-Overfull \hbox (15.91663pt too wide) in paragraph at lines 365--385
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 371--391
  [][][] 
  []
 
-[22]
 
-LaTeX Warning: Citation `w2vTranslate' on page 23 undefined on input line 390.
+LaTeX Warning: Citation `w2vTranslate' on page 22 undefined on input line 396.
 
 
-LaTeX Warning: Citation `levy2014neural' on page 23 undefined on input line 390
+LaTeX Warning: Citation `levy2014neural' on page 22 undefined on input line 396
 .
 
+[22]
 
-LaTeX Warning: Citation `fastText' on page 23 undefined on input line 394.
+LaTeX Warning: Citation `fastText' on page 23 undefined on input line 400.
 
 
-LaTeX Warning: Citation `fastText2' on page 23 undefined on input line 394.
+LaTeX Warning: Citation `fastText2' on page 23 undefined on input line 400.
 
 [23]
 
-LaTeX Warning: Citation `embedTopic1' on page 24 undefined on input line 418.
+LaTeX Warning: Citation `embedTopic1' on page 24 undefined on input line 424.
 
 File: ../images/2.Related_Work/embedTopic1.png Graphic file (type bmp)
-<../images/2.Related_Work/embedTopic1.png>
+<../images/2.Related_Work/embedTopic1.png> [24]
 
-LaTeX Warning: Citation `embedTopic2' on page 24 undefined on input line 431.
+LaTeX Warning: Citation `embedTopic2' on page 25 undefined on input line 437.
 
 File: ../images/2.Related_Work/TweetSift.png Graphic file (type bmp)
-<../images/2.Related_Work/TweetSift.png> [24]
+<../images/2.Related_Work/TweetSift.png>
 
-LaTeX Warning: Citation `SMO' on page 25 undefined on input line 444.
+LaTeX Warning: Citation `SMO' on page 25 undefined on input line 450.
 
 [25] [26] (../Bibliography/chapter.tex
 No file chapter.bbl.
@@ -477,14 +476,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 463 was incomplete) 
+(\end occurred when \ifx on line 469 was incomplete) 
 Here is how much of TeX's memory you used:
  3419 strings out of 494899
  47463 string characters out of 6175707
- 114769 words of memory out of 5000000
+ 115769 words of memory out of 5000000
  6824 multiletter control sequences out of 15000+600000
  21680 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,11n,43p,571b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,530b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (27 pages, 52304 bytes).
+Output written on chapter.dvi (27 pages, 52312 bytes).

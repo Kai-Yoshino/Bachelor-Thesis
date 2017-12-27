@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  21 DEC 2017 10:14
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  27 DEC 2017 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -298,44 +298,49 @@ File: ../images/4.Implementation/mecab.png Graphic file (type bmp)
 
 
 ]
-Overfull \hbox (48.67046pt too wide) in paragraph at lines 32--37
+
+LaTeX Warning: Citation `CRF' on page 2 undefined on input line 34.
+
+File: ../images/4.Implementation/lattice1.png Graphic file (type bmp)
+<../images/4.Implementation/lattice1.png>
+Overfull \hbox (48.67046pt too wide) in paragraph at lines 32--46
 [][] 
  []
 
 [2]
 
 LaTeX Warning: Reference `impl:preProcessing:sim' on page 3 undefined on input 
-line 43.
+line 52.
 
 
-LaTeX Warning: Reference `rel:part:weight' on page 3 undefined on input line 48
+LaTeX Warning: Reference `rel:part:weight' on page 3 undefined on input line 59
 .
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 56.
+(Font)              using `JT1/mc/m/n' instead on input line 67.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 56.
+(Font)              using `JY1/mc/m/n' instead on input line 67.
 
-[3]
+[3] [4]
 
-LaTeX Warning: Reference `rel:part:vec' on page 4 undefined on input line 89.
+LaTeX Warning: Reference `rel:part:vec' on page 5 undefined on input line 101.
 
 
-LaTeX Warning: Reference `eq:cosineSim' on page 4 undefined on input line 89.
+LaTeX Warning: Reference `eq:cosineSim' on page 5 undefined on input line 101.
 
-[4] (../Bibliography/chapter.tex
+(../Bibliography/chapter.tex
 No file chapter.bbl.
 ) [5] (./chapter.aux)
 
@@ -345,14 +350,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 100 was incomplete) 
+(\end occurred when \ifx on line 114 was incomplete) 
 Here is how much of TeX's memory you used:
- 3311 strings out of 494899
- 44784 string characters out of 6175707
- 110641 words of memory out of 5000000
- 6730 multiletter control sequences out of 15000+600000
+ 3316 strings out of 494899
+ 44915 string characters out of 6175707
+ 111641 words of memory out of 5000000
+ 6734 multiletter control sequences out of 15000+600000
  21849 words of font info for 85 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,4n,43p,522b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,4n,43p,536b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (5 pages, 9332 bytes).
+Output written on chapter.dvi (5 pages, 10524 bytes).

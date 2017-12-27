@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  23 DEC 2017 14:35
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  26 DEC 2017 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -281,22 +281,22 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 21.
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 30.
+(Font)              using `JT1/mc/m/n' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 30.
+(Font)              using `JY1/mc/m/n' instead on input line 33.
 
 File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
 <../images/3.The_Model/WholeModel.png> [1
@@ -305,42 +305,41 @@ File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 60.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
- [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 60.
-
-Overfull \hbox (1.84389pt too wide) in paragraph at lines 76--76
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 63.
+ [2]
+Overfull \hbox (1.84389pt too wide) in paragraph at lines 79--79
 []\OT1/cmr/m/n/12 2017/03/14
  []
 
 
-Overfull \hbox (86.91544pt too wide) in paragraph at lines 72--79
+Overfull \hbox (86.91544pt too wide) in paragraph at lines 75--82
 [][][][] 
  []
 
 [3]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
 
 
-LaTeX Warning: Reference `impl:chapter' on page 4 undefined on input line 87.
+LaTeX Warning: Reference `impl:chapter' on page 4 undefined on input line 90.
 
 
-LaTeX Warning: Reference `impl:chapter' on page 4 undefined on input line 91.
+LaTeX Warning: Reference `impl:chapter' on page 4 undefined on input line 94.
 
-[4] [5]
+[4] [5] [6]
 
-LaTeX Warning: Reference `impl:chapter' on page 6 undefined on input line 147.
+LaTeX Warning: Reference `impl:chapter' on page 7 undefined on input line 159.
 
-[6] (../Bibliography/chapter.tex
+(../Bibliography/chapter.tex
 No file chapter.bbl.
 ) [7] (./chapter.aux)
 
@@ -350,14 +349,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 156 was incomplete) 
+(\end occurred when \ifx on line 169 was incomplete) 
 Here is how much of TeX's memory you used:
- 3323 strings out of 494899
- 44935 string characters out of 6175707
- 110641 words of memory out of 5000000
- 6740 multiletter control sequences out of 15000+600000
+ 3325 strings out of 494899
+ 44975 string characters out of 6175707
+ 111641 words of memory out of 5000000
+ 6742 multiletter control sequences out of 15000+600000
  21680 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,9n,43p,522b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,43p,629b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (7 pages, 13476 bytes).
+Output written on chapter.dvi (7 pages, 14612 bytes).

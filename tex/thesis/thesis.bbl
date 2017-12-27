@@ -10,6 +10,11 @@ et~al Bojanowski, Piotr.
 \newblock "enriching word vectors with subword information".
 \newblock {\em arXiv preprint arXiv:1607.04606}, 2016.
 
+\bibitem{infoRetrieval}
+D~Manning Christopher, Raghavan Prabhakar, and SCH{\"U}TZE Hinrich.
+\newblock Introduction to information retrieval.
+\newblock {\em An Introduction To Information Retrieval}, 151:177, 2008.
+
 \bibitem{lexRank}
 Gunes Erkan and Dragomir~R. Radev.
 \newblock "lexrank: Graph-based lexical centrality as salience in text
@@ -61,6 +66,18 @@ Taku Kudo.
 \newblock Mecab: Yet another part-of-speech and morphological analyzer.
 \newblock {\em http://mecab. sourceforge. net/}, 2005.
 
+\bibitem{CRF}
+John Lafferty, Andrew McCallum, and Fernando~CN Pereira.
+\newblock Conditional random fields: Probabilistic models for segmenting and
+  labeling sequence data.
+\newblock 2001.
+
+\bibitem{doc2vec2014}
+Quoc Le and Tomas Mikolov.
+\newblock Distributed representations of sentences and documents.
+\newblock In {\em Proceedings of the 31st International Conference on Machine
+  Learning (ICML-14)}, pages 1188--1196, 2014.
+
 \bibitem{levy2014neural}
 Omer Levy and Yoav Goldberg.
 \newblock Neural word embedding as implicit matrix factorization.
@@ -106,6 +123,12 @@ Stephen~E Robertson, Steve Walker, Susan Jones, Micheline~M Hancock-Beaulieu,
   Mike Gatford, et~al.
 \newblock Okapi at trec-3.
 \newblock {\em Nist Special Publication Sp}, 109:109, 1995.
+
+\bibitem{seq2seq2014}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  3104--3112, 2014.
 
 \bibitem{collagreeSystem}
 Eizo~Hideshima Takayuki~Ito, Yuma~Imi.
