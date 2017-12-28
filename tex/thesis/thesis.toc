@@ -38,8 +38,8 @@
 \contentsline {chapter}{\numberline {第3章}話題変化判定システム}{43}
 \contentsline {section}{\numberline {3.1}序言}{43}
 \contentsline {section}{\numberline {3.2}システム動作の流れ}{43}
-\contentsline {section}{\numberline {3.3}システム詳細}{44}
-\contentsline {subsection}{\numberline {3.3.1}発言データ}{44}
+\contentsline {section}{\numberline {3.3}システム詳細}{45}
+\contentsline {subsection}{\numberline {3.3.1}発言データ}{45}
 \contentsline {subsection}{\numberline {3.3.2}発言間の類似度計算}{46}
 \contentsline {paragraph}{時間差評価値}{47}
 \contentsline {paragraph}{返信距離}{47}
@@ -72,15 +72,15 @@
 \contentsline {section}{\numberline {5.4}実験結果}{65}
 \contentsline {section}{\numberline {5.5}考察}{66}
 \contentsline {section}{\numberline {5.6}結言}{72}
-\contentsline {chapter}{\numberline {第6章}結論}{73}
-\contentsline {section}{\numberline {6.1}序言}{73}
-\contentsline {section}{\numberline {6.2}得られた知見}{73}
-\contentsline {section}{\numberline {6.3}今後の課題と展望}{75}
-\contentsline {subsection}{\numberline {6.3.1}今後の課題}{75}
-\contentsline {subsection}{\numberline {6.3.2}今後の展望}{78}
-\contentsline {section}{\numberline {6.4}本研究のまとめ}{79}
-\contentsline {chapter}{謝辞}{81}
-\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{91}
-\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{91}
-\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{93}
-\contentsline {chapter}{\numberline {付 録C }情報処理学会 第80回全国大会 投稿論文}{99}
+\contentsline {chapter}{\numberline {第6章}結論}{75}
+\contentsline {section}{\numberline {6.1}序言}{75}
+\contentsline {section}{\numberline {6.2}得られた知見}{75}
+\contentsline {section}{\numberline {6.3}今後の課題と展望}{77}
+\contentsline {subsection}{\numberline {6.3.1}今後の課題}{77}
+\contentsline {subsection}{\numberline {6.3.2}今後の展望}{80}
+\contentsline {section}{\numberline {6.4}本研究のまとめ}{81}
+\contentsline {chapter}{謝辞}{83}
+\contentsline {chapter}{\numberline {付 録A }発表(予定)論文一覧}{93}
+\contentsline {section}{\numberline {A.1}発表(予定)論文一覧}{93}
+\contentsline {chapter}{\numberline {付 録B }市民共創知研究会 投稿論文}{95}
+\contentsline {chapter}{\numberline {付 録C }情報処理学会 第80回全国大会 投稿論文}{101}

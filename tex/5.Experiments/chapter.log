@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 13:33
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,7 +326,7 @@ m/n/12 =0 \JY1/mc/m/n/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cm
 
 [8] [9]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 237.
 File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
 mp)
  <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [10] [11]
@@ -336,23 +336,23 @@ File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
 <../images/5.Experiment/Graph=FastText-min.png> [13]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 296--302
 [][][][] 
  []
 
 
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 306--319
  [][][] 
  []
 
-[14] [15] (../Bibliography/chapter.tex
+[14] [15] [16] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [16] (./chapter.aux)
+) [17] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 340 was incomplete) 
+(\end occurred when \ifx on line 344 was incomplete) 
 Here is how much of TeX's memory you used:
  3299 strings out of 494899
  44753 string characters out of 6175707
@@ -362,4 +362,4 @@ Here is how much of TeX's memory you used:
  107 hyphenation exceptions out of 8191
  29i,14n,43p,627b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (16 pages, 45544 bytes).
+Output written on chapter.dvi (17 pages, 45928 bytes).

@@ -22,7 +22,9 @@
 
 \textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．
 %発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．
-本システムは話題変化を判定するため，話題の変化させる発言を以下の手順で把握する．話題の変化は，発言$R$と過去の発言の集合である$PG$の比較によって判定する.発言$R$が投稿された時に過去の発言集合である$PG$内に発言$R$と同様の話題がないと判定された場合，同じ話題である発言集合$SG$が空集合となり，話題を変化させる発言であるとする.また，同じ発言の判定は，発言$R$が投稿された時，過去の発言の集合である$PG$と発言$R$の類似度を計算する．以上で計算された類似の値が閾値を超えていた場合，同じ話題である発言集合$SG$に比較した2つの話題が同じであるとして登録する．
+本システムは話題変化を判定するため，話題の変化させる発言を以下の手順で把握する．
+まず最初に，発言$R$で使われている単語の情報を\ref{impl:chapter}章で説明する重み付けで用いるために，\ref{algo:wholeModel:update}行目で単語の出現回数等の更新を行う．
+話題の変化は，発言$R$と過去の発言の集合である$PG$の比較によって判定する.発言$R$が投稿された時に過去の発言集合である$PG$内に発言$R$と同様の話題がないと判定された場合，同じ話題である発言集合$SG$が空集合となり，話題を変化させる発言であるとする.また，同じ発言の判定は，発言$R$が投稿された時，過去の発言の集合である$PG$と発言$R$の類似度を計算する．以上で計算された類似の値が閾値を超えていた場合，同じ話題である発言集合$SG$に比較した2つの話題が同じであるとして登録する．
 上記の過去の発言との比較作業は\textbf{Algorithm\ref{algo:wholeModel}}の\ref{algo:wholeModel:begin}$\sim$\ref{algo:wholeModel:for1-e}行目に相当し，作業を繰り返して全ての発言との計算が終了した後，発言Rに返信先がなく，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
 \begin{algorithm}
 \caption{システムの流れ} \label{algo:wholeModel}
@@ -32,6 +34,7 @@
 \State $PG = 過去の発言の集合;$%~~ Group ~ of ~ past ~ remark
 \Procedure{topicChange}{$R$} 
 	\State $SG = \{\};$\label{algo:wholeModel:begin}%~~ Group ~ of ~ remark ~ whose ~ topic ~ is ~ same ~ with ~ R
+	\State update(R)\label{algo:wholeModel:update}
 	 \For{$Each ~ pastR \in PG$}\label{algo:wholeModel:for1-b}
 	 	\State sim = similarity(R,pastR)
 		\If{$sim > threshold$}

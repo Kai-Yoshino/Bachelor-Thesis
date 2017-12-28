@@ -88,7 +88,7 @@ Mecabでは形態素解析を行う時，辞書データに基いて図\ref{Fig:
 \end{algorithmic}
 \end{algorithm}
 
-本研究において，固有名詞は文章の中で重要な役割を果たす可能性が大きいと考え，\ref{algo:combinedWight:pNoun}行目で固有名詞の単語重みを倍にしている．そして，\ref{algo:combinedWight:for2-b} $\sim$ \ref{algo:combinedWight:final}行目ではwordを含む全文章の重みの合計を求め，okapiBM25による単語重みを掛け合わせたものをwordの統合重みとしている．単語重みに単語を含む文章の重みを掛け合わせることで感嘆文のような文章そのものは重要でないが頻度の少ない単語を使用する文章中の単語が選ばれる可能性を下げている．
+本研究において，固有名詞は文章の中で重要な役割を果たす可能性が大きいと考え，\ref{algo:combinedWight:pNoun}行目で固有名詞の単語重みを倍にしている．そして，\ref{algo:combinedWight:for2-b} $\sim$ \ref{algo:combinedWight:final}行目ではwordを含む全文章の重みの合計を求め，okapiBM25による単語重みを掛け合わせたものをwordの統合重みとしている．単語重みに単語を含む文章の重みを掛け合わせることで感嘆文のような文章そのものは重要でないが頻度の少ない単語を使用する文章中の単語が選ばれる可能性を下げている．\\
 \section{類似度計算}
 \label{impl:similarity}
 \subsection{単語抽出}

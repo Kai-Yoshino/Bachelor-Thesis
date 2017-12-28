@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 13:33
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,32 +420,35 @@ File: ../images/2.Related_Work/TweetSift.png Graphic file (type bmp)
 <../images/2.Related_Work/TweetSift.png> [39] [40] [41])
 (../3.The_Model/chapter.tex [42]
 第 3 章
+
+LaTeX Warning: Reference `algo:wholeModel:update' on page 43 undefined on input
+ line 26.
+
 File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
 <../images/3.The_Model/WholeModel.png> [43
 
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+] [44]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 63.
- [44]
-Overfull \hbox (1.84389pt too wide) in paragraph at lines 79--79
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 66.
+ [45]
+Overfull \hbox (1.84389pt too wide) in paragraph at lines 82--82
 []\OT1/cmr/m/n/12 2017/03/14
  []
 
 
-Overfull \hbox (86.91544pt too wide) in paragraph at lines 75--82
+Overfull \hbox (86.91544pt too wide) in paragraph at lines 78--85
 [][][][] 
  []
 
-[45]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
- [46] [47] [48]) (../4.Implementation/chapter.tex [49] [50
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
+[46] [47] [48]) (../4.Implementation/chapter.tex [49] [50
 
 ]
 第 4 章
@@ -483,7 +486,7 @@ n/12 (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
 
 [64] [65]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 237.
 File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
 mp)
  <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [66] [67]
@@ -493,33 +496,34 @@ File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
 <../images/5.Experiment/Graph=FastText-min.png> [69]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 296--302
 [][][][] 
  []
 
 
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 306--319
  [][][] 
  []
 
-[70] [71]) (../6.Conclusion/chapter.tex [72]
+[70] [71] [72]) (../6.Conclusion/chapter.tex [73] [74
+
+]
 第 6 章
 
-LaTeX Warning: Reference `con:future_work' on page 73 undefined on input line 1
+LaTeX Warning: Reference `con:future_work' on page 75 undefined on input line 1
 5.
 
-[73
+[75
 
-
-] [74]
+] [76]
 File: ../images/6.Conclusion/Graph-Remark&Time.png Graphic file (type bmp)
- <../images/6.Conclusion/Graph-Remark&Time.png> [75] [76] [77]
-[78]) (../7.Acknowledgement/chapter.tex [79] [80
+ <../images/6.Conclusion/Graph-Remark&Time.png> [77] [78] [79]
+[80]) (../7.Acknowledgement/chapter.tex [81] [82
 
-] [81
+] [83
 
-] [82] [83])
-(../Bibliography/chapter.tex (./thesis.bbl [84]
+] [84] [85])
+(../Bibliography/chapter.tex (./thesis.bbl [86]
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 6.
@@ -528,15 +532,15 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
-[85
+[87
 
-] [86] [87] [88])) (../A.Mypaper/chapter.tex [89] [90
+] [88] [89] [90])) (../A.Mypaper/chapter.tex [91] [92
 
 ]
 付 録 A  
-[91
+[93
 
-]) (../B.SIG-CCI2/chapter.tex [92
+]) (../B.SIG-CCI2/chapter.tex [94
 
 
 ]
@@ -549,10 +553,10 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 
 <../B.SIG-CCI2/yoshino-paper6.pdf>
 File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
- <../B.SIG-CCI2/yoshino-paper6.pdf> [93
+ <../B.SIG-CCI2/yoshino-paper6.pdf> [95
 
 ]
-[94] [95] [96] [97]) (../C.IPSJ80/chapter.tex [98
+[96] [97] [98] [99]) (../C.IPSJ80/chapter.tex [100
 
 
 ]
@@ -560,10 +564,10 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
 <../C.IPSJ80/jsample-submit.pdf>
 File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/jsample-submit.pdf> [99
+ <../C.IPSJ80/jsample-submit.pdf> [101
 
-] [100]
-[101]) (./thesis.aux)
+]
+[102] [103]) (./thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -576,12 +580,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  )
 (\end occurred when \ifx on line 72 was incomplete) 
 Here is how much of TeX's memory you used:
- 3642 strings out of 494899
- 52224 string characters out of 6175707
+ 3643 strings out of 494899
+ 52248 string characters out of 6175707
  130674 words of memory out of 5000000
- 6974 multiletter control sequences out of 15000+600000
+ 6975 multiletter control sequences out of 15000+600000
  22803 words of font info for 88 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  28i,14n,43p,780b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (103 pages, 205020 bytes).
+Output written on thesis.dvi (105 pages, 205908 bytes).
