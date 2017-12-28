@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  27 DEC 2017 17:16
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -317,54 +317,49 @@ LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
 LaTeX Warning: Citation `infoRetrieval' on page 6 undefined on input line 140.
 
 [6] [7]
-Overfull \hbox (9.04373pt too wide) in paragraph at lines 151--153
+Overfull \hbox (9.04373pt too wide) in paragraph at lines 163--165
 \OML/cmm/m/it/12 misses$\OT1/cmr/m/n/12 (\JY1/mc/m/n/12 見逃し数\OT1/cmr/m/n/12
  )\JY1/mc/m/n/12 ， 予測値\OT1/cmr/m/n/12 =1 \JY1/mc/m/n/12 かつ正解値\OT1/cmr/
 m/n/12 =0 \JY1/mc/m/n/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
  []
 
-[8]
-Overfull \hbox (22.04701pt too wide) in paragraph at lines 196--203
- [][][] 
- []
-
+[8] [9]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 215.
-File: ../images/5.Experiment/Graph=TF-IDF2.png Graphic file (type bmp)
-<../images/5.Experiment/Graph=TF-IDF2.png> [9]
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
+File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
+mp)
+ <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [10] [11]
+File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
+
+<../images/5.Experiment/Graph=TF-IDF-min.png> [12]
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
-<../images/5.Experiment/Graph=FastText-min.png>
-Overfull \hbox (41.80255pt too wide) in paragraph at lines 236--237
- [] 
- []
-
-[10] [11]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 249--255
+<../images/5.Experiment/Graph=FastText-min.png> [13]
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
 [][][][] 
  []
 
 
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 259--272
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
  [][][] 
  []
 
-[12] [13] (../Bibliography/chapter.tex
+[14] [15] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [14] [15] (./chapter.aux)
+) [16] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 294 was incomplete) 
+(\end occurred when \ifx on line 340 was incomplete) 
 Here is how much of TeX's memory you used:
- 3295 strings out of 494899
- 44574 string characters out of 6175707
+ 3299 strings out of 494899
+ 44753 string characters out of 6175707
  129641 words of memory out of 5000000
- 6712 multiletter control sequences out of 15000+600000
+ 6715 multiletter control sequences out of 15000+600000
  21634 words of font info for 84 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 29i,14n,43p,627b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,14n,43p,627b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (15 pages, 39804 bytes).
+Output written on chapter.dvi (16 pages, 45544 bytes).

@@ -5,35 +5,36 @@
 \contentsline {chapter}{\numberline {第1章}序論}{11}
 \contentsline {section}{\numberline {1.1}研究の背景}{11}
 \contentsline {section}{\numberline {1.2}研究の目的}{13}
-\contentsline {section}{\numberline {1.3}本論文の構成}{13}
+\contentsline {section}{\numberline {1.3}本論文の構成}{14}
 \contentsline {chapter}{\numberline {第2章}関連研究}{15}
 \contentsline {section}{\numberline {2.1}序言}{15}
 \contentsline {section}{\numberline {2.2}COLLAGREE}{16}
 \contentsline {subsection}{\numberline {2.2.1}COLLAGREE開発の背景}{16}
-\contentsline {subsection}{\numberline {2.2.2}COLLAGREEの概要}{17}
-\contentsline {subsection}{\numberline {2.2.3}ファシリテーター}{20}
+\contentsline {subsection}{\numberline {2.2.2}COLLAGREEの概要}{16}
+\contentsline {subsection}{\numberline {2.2.3}ファシリテーター}{21}
 \contentsline {section}{\numberline {2.3}議論支援}{21}
-\contentsline {section}{\numberline {2.4}話題遷移検出}{21}
-\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{22}
-\contentsline {paragraph}{TextTiling}{22}
-\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{23}
+\contentsline {section}{\numberline {2.4}話題遷移検出}{22}
+\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{23}
+\contentsline {paragraph}{TextTiling}{23}
+\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{25}
 \contentsline {subsection}{\numberline {2.4.2}トピックモデル}{25}
 \contentsline {paragraph}{ユニグラムモデル}{25}
-\contentsline {paragraph}{混合ユニグラムモデル}{25}
+\contentsline {paragraph}{混合ユニグラムモデル}{26}
 \contentsline {paragraph}{LDA}{26}
-\contentsline {paragraph}{トピックモデルを使用した関連研究}{26}
+\contentsline {paragraph}{トピックモデルを使用した関連研究}{27}
 \contentsline {section}{\numberline {2.5}重み付け}{29}
-\contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{29}
+\contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{30}
 \contentsline {paragraph}{TF}{30}
-\contentsline {paragraph}{IDF}{30}
-\contentsline {paragraph}{DL}{30}
-\contentsline {subsection}{\numberline {2.5.2}LexRank}{31}
-\contentsline {section}{\numberline {2.6}分散表現}{33}
-\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{35}
-\contentsline {subsection}{\numberline {2.6.2}word2vec}{36}
-\contentsline {subsection}{\numberline {2.6.3}fastText}{37}
-\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{38}
-\contentsline {section}{\numberline {2.7}結言}{41}
+\contentsline {paragraph}{DF}{30}
+\contentsline {paragraph}{IDF}{31}
+\contentsline {paragraph}{DL}{31}
+\contentsline {subsection}{\numberline {2.5.2}LexRank}{32}
+\contentsline {section}{\numberline {2.6}分散表現}{34}
+\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{34}
+\contentsline {subsection}{\numberline {2.6.2}word2vec}{37}
+\contentsline {subsection}{\numberline {2.6.3}fastText}{38}
+\contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{39}
+\contentsline {section}{\numberline {2.7}結言}{42}
 \contentsline {chapter}{\numberline {第3章}話題変化判定システム}{43}
 \contentsline {section}{\numberline {3.1}序言}{43}
 \contentsline {section}{\numberline {3.2}システム動作の流れ}{43}
@@ -66,11 +67,11 @@
 \contentsline {paragraph}{例6:}{62}
 \contentsline {section}{\numberline {5.3}実験設定}{62}
 \contentsline {subsection}{\numberline {5.3.1}パラメーター}{62}
-\contentsline {subsection}{\numberline {5.3.2}比較手法}{63}
+\contentsline {subsection}{\numberline {5.3.2}比較手法}{64}
 \contentsline {subsection}{\numberline {5.3.3}評価指標}{64}
 \contentsline {section}{\numberline {5.4}実験結果}{65}
-\contentsline {section}{\numberline {5.5}考察}{65}
-\contentsline {section}{\numberline {5.6}結言}{70}
+\contentsline {section}{\numberline {5.5}考察}{66}
+\contentsline {section}{\numberline {5.6}結言}{72}
 \contentsline {chapter}{\numberline {第6章}結論}{73}
 \contentsline {section}{\numberline {6.1}序言}{73}
 \contentsline {section}{\numberline {6.2}得られた知見}{73}

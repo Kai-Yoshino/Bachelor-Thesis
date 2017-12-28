@@ -224,12 +224,21 @@ tf_{i,j} & = \frac{n_{ij}}{ \sum_{k} n_{kj} }
 \end{aligned}
 \end{equation}
 ここで$n_{ij}$は文書$d_{j}$における単語$t_{i}$の出現回数，$\sum _{k} n_{kj} $は文書$d_{j}$におけるすべての単語の出現回数の和である．
+\paragraph{DF}\ \\
+DFは文書頻度を表し，文書全体で単語が何回出現したかを表す．主として後述のIDFで用いられる．ある単語$t_i$の文書頻度重み$df_{i}$は式(\ref{eq:df})のようにして求められる．
+\begin{equation}
+\begin{aligned}
+\label{eq:df}
+df_{i} & =  | \{ d: d \ni t_i \}  |
+\end{aligned}
+\end{equation}
+
 \paragraph{IDF}\ \\
 IDFは逆文書頻度を表し，多くの文書において出現頻度の高い単語は重要ではないという考え方に基づく．IDFは多くの文書に出現する語，すなわち一般的な語の重要度を下げ，特定の文書にしか出現しない単語の重要度を上げる役割を果たす．ある単語$t_i$の逆文書頻度重み$idf_{i}$は式(\ref{eq:idf})のようにして求められる．
 \begin{equation}
 \begin{aligned}
 \label{eq:idf}
-idf_{i} & = \log{ \frac{ |D| }{ | \{ d: d \ni t_i \}  |} } %+1は本研究ではしない
+idf_{i} & = \log{ \frac{ |D| }{ | \{ d: d \ni t_i \}  |} }+1 %+1は本研究ではしない
 \end{aligned}
 \end{equation}
 ここで$|D|$は総文書数，$| \{ d: d \ni t_i \}  |$は単語$t_i$を含む文書数である．

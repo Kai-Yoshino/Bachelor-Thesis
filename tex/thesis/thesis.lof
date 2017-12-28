@@ -1,29 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces COLLAGREEのトップ画面}}{16}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces COLLAGREEのスレッドの例}}{17}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces COLLAGREEのトップ画面}}{17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces COLLAGREEのスレッドの例}}{18}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces COLLAGREEの議論画面}}{19}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 議論ツリー}}{20}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces TextTilingの流れ}}{23}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces TextTilingのグラフ}}{24}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces ユニグラムモデル}}{25}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces ユニグラムモデル}}{26}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces 混合ユニグラムモデル}}{26}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces LDA}}{26}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces トピック変化点検出手順}}{27}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces 類似度グラフの例}}{32}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces 単語文脈行列( https://www.slideshare.net/naoakiokazaki/20150530-jsai2015 の表を筆者修正)}}{35}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces CBOW}}{36}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces skip-gram}}{36}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces 話題展開システムの構造}}{39}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces TweetSiftによるトピック予測のワークフロー}}{40}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces LDA}}{27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces トピック変化点検出手順}}{28}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces 類似度グラフの例}}{33}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces 単語文脈行列\newline ( https://www.slideshare.net/naoakiokazaki/20150530-jsai2015 の表を筆者修正)}}{36}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces CBOW}}{37}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces skip-gram}}{37}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces 話題展開システムの構造}}{40}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces TweetSiftによるトピック予測のワークフロー}}{41}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces システムの流れ}}{45}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{52}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces 解析結果}}{53}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 比較手法２による繋がりグラフ-拡大図}}{67}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 提案手法による繋がりグラフ}}{68}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 提案手法２による繋がりグラフ-拡大図}}{67}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 比較手法２による繋がりグラフ}}{69}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 提案手法1による繋がりグラフ}}{70}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 発言数と処理時間}}{76}
 \addvspace {10\p@ }
