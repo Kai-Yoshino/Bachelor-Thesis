@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  24 DEC 2017 18:39
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  5 JAN 2018 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -273,23 +273,22 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
-<../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/jsample-submit.pdf> [1
+File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
+<../C.IPSJ80/submit.pdf>
+File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
+ <../C.IPSJ80/submit.pdf> [1
 
 
 
-] [2]
-[3] (./chapter.aux) )
+] [2] [3] (./chapter.aux) )
 (\end occurred when \ifx on line 23 was incomplete) 
 Here is how much of TeX's memory you used:
  3150 strings out of 494899
- 42360 string characters out of 6175707
+ 42328 string characters out of 6175707
  106641 words of memory out of 5000000
  6605 multiletter control sequences out of 15000+600000
  10104 words of font info for 41 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  29i,4n,43p,266b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (3 pages, 1028 bytes).
+Output written on chapter.dvi (3 pages, 1012 bytes).

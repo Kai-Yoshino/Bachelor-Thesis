@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 14:28
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  5 JAN 2018 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,7 +326,7 @@ m/n/12 =0 \JY1/mc/m/n/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cm
 
 [8] [9]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 237.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
 File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
 mp)
  <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [10] [11]
@@ -336,12 +336,12 @@ File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
 <../images/5.Experiment/Graph=FastText-min.png> [13]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 296--302
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
 [][][][] 
  []
 
 
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 306--319
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
  [][][] 
  []
 
@@ -352,7 +352,7 @@ No file chapter.bbl.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 344 was incomplete) 
+(\end occurred when \ifx on line 343 was incomplete) 
 Here is how much of TeX's memory you used:
  3299 strings out of 494899
  44753 string characters out of 6175707

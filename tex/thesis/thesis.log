@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  28 DEC 2017 14:46
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  8 JAN 2018 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,29 +267,30 @@ LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 
-(../hyoushi/title.tex
+(../hyoushi/hyoushi.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ])
-[2] (../0.Abstract/chapter.tex Excluding 'comment' comment. [1
+(../hyoushi/title.tex [1]) [2] (../0.Abstract/chapter.tex
+Excluding 'comment' comment. [1
 
 
 
-]
-Excluding 'comment' comment.) [2] [3] (./thesis.toc
+] Excluding 'comment' comment.) [2] [3]
+(./thesis.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
@@ -301,8 +302,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [7]
-(./thesis.lof [8
+ [7] (./thesis.lof [8
 
 
 ])
@@ -313,7 +313,8 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- (../1.Introduction/chapter.tex [10
+
+(../1.Introduction/chapter.tex [10
 
 
 ]
@@ -420,10 +421,6 @@ File: ../images/2.Related_Work/TweetSift.png Graphic file (type bmp)
 <../images/2.Related_Work/TweetSift.png> [39] [40] [41])
 (../3.The_Model/chapter.tex [42]
 第 3 章
-
-LaTeX Warning: Reference `algo:wholeModel:update' on page 43 undefined on input
- line 26.
-
 File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
 <../images/3.The_Model/WholeModel.png> [43
 
@@ -486,7 +483,7 @@ n/12 (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
 
 [64] [65]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 237.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
 File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
 mp)
  <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [66] [67]
@@ -496,12 +493,12 @@ File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
 File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
 
 <../images/5.Experiment/Graph=FastText-min.png> [69]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 296--302
+Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
 [][][][] 
  []
 
 
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 306--319
+Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
  [][][] 
  []
 
@@ -561,31 +558,28 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 
 ]
 付 録 C  
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
-<../C.IPSJ80/jsample-submit.pdf>
-File: ../C.IPSJ80/jsample-submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/jsample-submit.pdf> [101
+File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
+<../C.IPSJ80/submit.pdf>
+File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
+ <../C.IPSJ80/submit.pdf> [101
 
-]
-[102] [103]) (./thesis.aux)
+] [102] [103])
+(./thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred when \ifx on line 72 was incomplete) 
 Here is how much of TeX's memory you used:
- 3643 strings out of 494899
- 52248 string characters out of 6175707
- 130674 words of memory out of 5000000
- 6975 multiletter control sequences out of 15000+600000
- 22803 words of font info for 88 fonts, out of 8000000 for 9000
+ 3649 strings out of 494899
+ 52316 string characters out of 6175707
+ 131684 words of memory out of 5000000
+ 6978 multiletter control sequences out of 15000+600000
+ 23565 words of font info for 91 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  28i,14n,43p,780b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (105 pages, 205908 bytes).
+Output written on thesis.dvi (106 pages, 206420 bytes).
