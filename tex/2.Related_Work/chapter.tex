@@ -17,7 +17,7 @@
 %背景や要素技術，要素技術を使用した関連研究，その後類似研究について述べる
 本章では，COLLAGREEの概要と議論支援及び本研究で支援することを目標とするファシリテーターについて説明し，既存の議論支援研究や話題遷移を扱う関連研究についても説明するとともに本研究との違いを述べる.更に本研究の重要な要素である重み付けと分散表現についても詳しく述べる.
 
-本章の構成を以下に示す．まず，\ref{rel:collagree}節では，COLLAGREEの概要について簡単に述べる．\ref{rel:argSupport}節では，既存の議論支援に関する研究について述べる．\ref{rel:topic}節では話題に関する本研究の見方や既存の話題に関する研究について述べる．次に，\ref{rel:part:weight}節では本研究の重要な要素である重み付けについて述べる．\ref{rel:part:vec}節では本研究のもう１つの重要な要素である分散表現及び分散表現を使用した話題関連研究について述べる．最後に，\ref{rel:conclusion}節で本章のまとめを示す．
+以下に本章の構成を示す．まず，\ref{rel:collagree}節では，COLLAGREEの概要について簡単に述べる．\ref{rel:argSupport}節では，既存の議論支援に関する研究について述べる．\ref{rel:topic}節では話題に関する本研究の見方や既存の話題に関する研究について述べる．次に，\ref{rel:part:weight}節では本研究の重要な要素である重み付けについて述べる．\ref{rel:part:vec}節では本研究のもう１つの重要な要素である分散表現及び分散表現を使用した話題関連研究について述べる．最後に，\ref{rel:conclusion}節で本章のまとめを示す．
 
 \clearpage
 \section{COLLAGREE}
@@ -43,10 +43,13 @@
 \subsection{COLLAGREEの概要}
 COLLAGREEは掲示板のような議論プラットフォームをベースにしており，各ユーザーが自由なタイミングで意見を投稿，返信できる．
 しかし，\ref{rel:collagree:bg}節で述べたように多様な価値観を持つ大規模な人数での，自由な議論では「炎上」が発生しやすい．従って，COLLAGREE では，議論のマネジメント役として人間のファシリテーターが導入されている．
-COLLAGREEのような議論掲示板は基本的には１つの議論テーマに対して関連するテーマを扱った複数のスレッドから構成される．スレッドとはある特定の話題・論点に関する１つのまとまりを指す．例えば，図\ref{Fig:thread1}のようにスレッドを立てたユーザーの発言が親意見となり，他のユーザーが子意見として親意見に返信し，子意見に対して孫意見が存在する場合もある．
+COLLAGREEのような議論掲示板は基本的には１つの議論テーマに対して関連するテーマを扱った複数のスレッドから構成される．スレッドとはある特定の話題・論点に関する１つのまとまりを指す．
+図\ref{Fig:thread1}にCOLLAGREEでのスレッドの例を示す．
+%例えば，図\ref{Fig:thread1} のようにスレッドを立て たユーザーの発言が親意見となり，他のユーザーが子意見として親意見に返信し， 子意見に対して孫意見が存在する場合もある.
+図\ref{Fig:thread1}では四角形が発言を表し，発言を結ぶ線は返信関係を表す．図\ref{Fig:thread1}では発言$0$を親意見としてスレッドが立てられており，他のユーザーが子意見として親意見に返信し，更に子意見に対して孫意見が存在している．
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=0.5\textwidth]{../images/2.Related_Work/COLLAGREE_thread.png}
+  \includegraphics[width=0.3\textwidth]{../images/2.Related_Work/COLLAGREE_thread.png}
   \caption{COLLAGREEのスレッドの例}
   \label{Fig:thread1}
   \vspace{-10pt}
@@ -54,6 +57,7 @@ COLLAGREEのような議論掲示板は基本的には１つの議論テーマ�
 \end{figure}
 
 しかし，スレッドや返信は必ずしも正しく使われるとは限らず，単なるチャットと同様に扱われてしまいスレッドが乱立してしまうこともある．%今回の実験データをカウントする
+
 図\ref{Fig:collagreeDiscuss}にCOLLAGREEでの実際の議論画面を示す．
 \begin{figure}[htbp]
  \begin{center}
@@ -64,7 +68,6 @@ COLLAGREEのような議論掲示板は基本的には１つの議論テーマ�
   \vspace{-10pt}
  \end{center}
 \end{figure}
-
 図\ref{Fig:collagreeDiscuss}の上部の投稿フォームより，参加者は意見を自由に投稿することができる．投稿された意見は図\ref{Fig:collagreeDiscuss}の下部に表示され，参加者は各意見に対して返信や賛同を行うことができる．返信を繰り返すことでスレッドが構成され，図\ref{Fig:collagreeDiscuss}では３層のスレッドが構成されている．
 %
 COLLAGREE上での議論を支援する先行研究として，Itoら\cite{discSupport1-1}はCOLLAGREE上インセンティブとして参加者の活動の活発化や，重要投稿の把握の支援を目的に議論ポイントと呼ばれるシステムを導入した．システムでは参加者の投稿や投稿に対する返信や賛同に沿ってポイントを参加者に付与する．
@@ -210,6 +213,8 @@ LDAでは文書$d$中のトピック$t$の単語の割合$p(t|d)$とトピック
 %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 \section{重み付け}
 \label{rel:part:weight}
+\subsection{概要}
+\label{rel:part:weight:overview}
 重み付けは情報検索を主とする分野で使われる方法で，蓄積された情報中の語の索引語，すなわち特定の情報の特徴を表し検索の手掛かりとなる語，としての重要度を数値的に表現し，それぞれの語の重要度に応じて重みを付け，集計して総合評価を出す手法である．出された総合評価はスコア等と呼ばれる．一般的に語の重要度は整数または実数値で与えられる．自動的な重み付けにおいては語の出現頻度情報や出現位置を利用して数値を与える．
 本研究で行う重み付けは下記の２種類の重み付けを基にしている．
 \subsection{Okapi BM25}
@@ -268,7 +273,7 @@ Erkanら\cite{lexRank}によって考案されたLexRankはGoogleのPageRank\cit
   \item 多くの文に類似する文は重要な文である．
   \item 重要な文に類似する文は重要な文である．
 \end{enumerate}
-LexRankでいう類似度は簡単にいえば2文がどれだけ共通の単語を持つかということを表し，文をTF-IDFを用いてベクトル化してCosineを求めることで類似度としており，式\ref{eq:cosine}に沿ってベクトル$x$と$y$のCosineが計算される．
+LexRankでいう類似度は簡単にいえば2文がどれだけ共通の単語を持つかということを表し，文をTF-IDFを用いてベクトル化してCosineを求めることで類似度としており，式(\ref{eq:cosine})に沿ってベクトル$x$と$y$のCosineが計算される．
 \begin{equation}
 \begin{aligned}
 \label{eq:cosine}
@@ -360,7 +365,7 @@ LexRankスコアを計算する一連のアルゴリズムを\textbf{Algorithm\r
 \end{figure}
 
 行列中の各要素$M_{ij}$は単語$i$と文脈$j$の共起頻度を表しており，例として青い四角はtrainとrideが72回共起したことを表している．各行$M_i$は単語$i$の意味ベクトルを表し，例として赤い四角は"beer"の単語ベクトルを表している．
-また，単語の類似度を式\ref{eq:cosineSim}のように単語の意味ベクトルのコサイン類似度で求めることができる．
+また，単語の類似度を式(\ref{eq:cosineSim})のように単語の意味ベクトルのコサイン類似度で求めることができる．
 \begin{equation}
 \begin{aligned}
 \label{eq:cosineSim}
@@ -368,7 +373,7 @@ cos \theta & = \frac{M_i \cdot M_j}{ | M_i | | M_j |}
 \end{aligned}
 \end{equation}
 
-式\ref{eq:cosineSim}を図\ref{Fig:WordParagraphMat}の行列に適応させるとbeerとwineのコサイン類似度は約$0.941$，beerとtrainのコサイン類似度は約$0.387$となり，trainよりもwineの方がbeerに類似していることが分かる．
+式(\ref{eq:cosineSim})を図\ref{Fig:WordParagraphMat}の行列に適応させるとbeerとwineのコサイン類似度は約$0.941$，beerとtrainのコサイン類似度は約$0.387$となり，trainよりもwineの方がbeerに類似していることが分かる．
 %また後述のword2vecやfastTextでは他の数学的処理が可能となるが，分散表現は問題点として類義語と対義語を区別できないことが挙げられる．
 \subsection{word2vec}
 \ref{rel:wordEmbed:WordParagraphMat}節で説明した単語文脈行列から得られる単語ベクトルは単語の類似度を求めることは出来たが，他の数学的処理には対応していなかった．
@@ -423,9 +428,9 @@ s(w_t , w_c) & =  \sum_{g \in \mathcal{G}_w} \bm{ z }^{\mathrm{T}}_{g} \bm{v}_{w
 \end{aligned}
 \end{equation}
 
-式\ref{eq:para_scoreF_1}はfastText以前の手法でのスコア関数を表し，式\ref{eq:para_scoreF_2}はfastTextでのスコア関数を表す．$\bm{u}_{w_{t}}$，$\bm{v}_{w_c}$はそれぞれ単語$w_t$，$w_c$を実数ベクトルで表したもので，式\ref{eq:para_scoreF_2}において$\mathcal{G}_w$，$\bm{z}_{g}$はそれぞれ単語$w$のn-gramの集合とn-gram $g$を実数ベクトルで表現したものを表す．
-式\ref{eq:para_scoreF_1}では単語と文脈単語の間のスカラー積をスコアとしているが，式\ref{eq:para_scoreF_2}では単語のn-gramと文脈単語の間のスカラー積の合計をスコアとしている．
-式\ref{eq:para_scoreF_2}の手法を用いることで従来のモデルでは考慮されていなかった"活用形"を考慮できるようになった．例として，単語 goとgoesとgoingは全てgoの活用形であるが字面は異なるので従来のモデルでは異なる単語として学習されていたが，fastTextでは部分語である"go"を３つ全てで学習することで意味の近しい単語として学習することが可能となることが挙げられる．
+式(\ref{eq:para_scoreF_1})はfastText以前の手法でのスコア関数を表し，式(\ref{eq:para_scoreF_2})はfastTextでのスコア関数を表す．$\bm{u}_{w_{t}}$，$\bm{v}_{w_c}$はそれぞれ単語$w_t$，$w_c$を実数ベクトルで表したもので，式(\ref{eq:para_scoreF_2})において$\mathcal{G}_w$，$\bm{z}_{g}$はそれぞれ単語$w$のn-gramの集合とn-gram $g$を実数ベクトルで表現したものを表す．
+式(\ref{eq:para_scoreF_1})では単語と文脈単語の間のスカラー積をスコアとしているが，式(\ref{eq:para_scoreF_2})では単語のn-gramと文脈単語の間のスカラー積の合計をスコアとしている．
+式(\ref{eq:para_scoreF_2})の手法を用いることで従来のモデルでは考慮されていなかった"活用形"を考慮できるようになった．例として，単語 goとgoesとgoingは全てgoの活用形であるが字面は異なるので従来のモデルでは異なる単語として学習されていたが，fastTextでは部分語である"go"を３つ全てで学習することで意味の近しい単語として学習することが可能となることが挙げられる．
 
 本研究では分散表現の手法としてfastTextを使用している．
 \subsection{分散表現を使用した話題関連研究}
@@ -447,20 +452,41 @@ s(w_t , w_c) & =  \sum_{g \in \mathcal{G}_w} \bm{ z }^{\mathrm{T}}_{g} \bm{v}_{w
 図\ref{Fig:embedTopic1}にトピックカテゴリの予測のワークフローを示す．
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=\textwidth]{../images/2.Related_Work/TweetSift.png}
+  \includegraphics[width=\textwidth]{../images/2.Related_Work/TweetSift2.png}
   \caption{TweetSiftによるトピック予測のワークフロー}
   \label{Fig:tweetSift}
   \vspace{-10pt}
  \end{center}
 \end{figure}
 
-図\ref{Fig:embedTopic1}の右のフローではツイートデータとスクレイピングで作成された知識ベースを用いて知識ベース特徴を生成している．
-図\ref{Fig:embedTopic1}の左のフローでは前処理を行ったツイートと作成済み分散表現モデルを用いて分散表現特徴を生成している．
-２つの特徴を用いてSMO(Sequential Minimal Optimization)\cite{SMO}によってトピックが予測されている．
-Liらの研究で用いられる分散表現は学習の際に単語だけでなく，LDAを用いて予測した単語のトピックも使用されている．
+%図\ref{Fig:embedTopic1}の右のフローではツイートデータとスクレイピングで作成された知識ベースを用いて知識ベース特徴を生成している．
+%図\ref{Fig:embedTopic1}の左のフローでは前処理を行ったツイートと作成済み分散表現モデルを用いて分散表現特徴を生成している．
+%２つの特徴を用いてSMO(Sequential Minimal Optimization)\cite{SMO}によってトピックが予測されている．
+図\ref{Fig:embedTopic1}の\circled{1}ではURLの削除や数字の正規化などのツイートの前処理が行われている．
+\circled{2}ではTEWE(Topic Enhanced Word Embeddings)の生成を行う．TEWEは話題ベクトルと単語ベクトルを連結したもので，話題ベクトルは前処理が行われたツイートを基にLDAを使用して生成される．
+単語ベクトルはword2vecのskip-gramモデルを拡張したものを使っており，式(\ref{eq:skip-gram})，(\ref{eq:tewe})にそれぞれskip-gram，TEWEでの単語ベクトルの学習における目的関数を示す．
+\begin{equation}
+\begin{aligned}
+\label{eq:skip-gram}
+L(D) & =  \frac{1}{T} \sum^{T}_{i=1} \sum_{-c \leq j \leq c, j \neq 0} \log p(w_{i+j} \mid w_i)
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+\label{eq:tewe}
+L(D) & =  \frac{1}{T} \sum^{T}_{i=1} \sum_{-c \leq j \leq c, j \neq 0} \log p(w_{i+j} \mid w_i) + \log p(w_{i+j} \mid t_i)
+\end{aligned}
+\end{equation}
+
+式(\ref{eq:skip-gram})で示されるようにskip-gramでは単語$w_i$が出現した時に文脈語$w_{i+j}$が出現する確率を最大化することを目指すが，式(\ref{eq:tewe})で示されるようにTEWEでは単語$W_i$が割り当てられたトピック$t_i$も使用して文脈語$w_{i+j}$が出現する確率を最大化することを目指している．
+%Liらの研究で用いられる分散表現は学習の際に単語だけでなく，LDAを用いて予測した単語のトピックも使用されている．
+
+\circled{3}では知識ベースに基づく特徴を生成している．知識ベースにはユーザーハンドルや人気のある単語，重要な単語が属するドメインの情報が記録されている．ツイート中に現れるURLやハッシュタグを使用するツイートレベルとユーザーハンドルやユーザー名を使用するユーザーレベルという２つのレベルで知識ベースとの一致に基いて特徴が生成される．%表に例を示す．
+
+\circled{4}ではTweetSift classifierがTEWEと知識ベースのよる特徴を統合しており，前述の2つの特徴を入力としてSMO(Sequential Minimal Optimization)\cite{SMO}によってトピックが予測されている．
 
 以上を踏まえて，本研究と分散表現を用いた研究との相違点について述べる．
-本研究はWeb上での議論を対象としており，対話やSNSを対象としていない点で異なる．また，中野らの研究とは文の生成を行わない点でも異なり，Liらの研究とは分散表現の学習の際にトピックを用いていない点でも異なる．
+本研究はWeb上での議論を対象としており，対話やSNSを対象としていない点で異なる．また，中野らの研究とは文の生成を行わない点でも異なり，Liらの研究とは分散表現の学習の際にword2vecを拡張したものではなくfastTextを用いている点でも異なる．
 
 \section{結言}
 \label{rel:conclusion}

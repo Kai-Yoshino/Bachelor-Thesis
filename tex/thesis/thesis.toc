@@ -11,27 +11,28 @@
 \contentsline {section}{\numberline {2.2}COLLAGREE}{16}
 \contentsline {subsection}{\numberline {2.2.1}COLLAGREE開発の背景}{16}
 \contentsline {subsection}{\numberline {2.2.2}COLLAGREEの概要}{16}
-\contentsline {subsection}{\numberline {2.2.3}ファシリテーター}{21}
+\contentsline {subsection}{\numberline {2.2.3}ファシリテーター}{20}
 \contentsline {section}{\numberline {2.3}議論支援}{21}
-\contentsline {section}{\numberline {2.4}話題遷移検出}{22}
-\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{23}
-\contentsline {paragraph}{TextTiling}{23}
-\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{25}
+\contentsline {section}{\numberline {2.4}話題遷移検出}{21}
+\contentsline {subsection}{\numberline {2.4.1}テキストセグメンテーション}{22}
+\contentsline {paragraph}{TextTiling}{22}
+\contentsline {paragraph}{テキストセグメンテーションを使用した関連研究}{23}
 \contentsline {subsection}{\numberline {2.4.2}トピックモデル}{25}
 \contentsline {paragraph}{ユニグラムモデル}{25}
-\contentsline {paragraph}{混合ユニグラムモデル}{26}
+\contentsline {paragraph}{混合ユニグラムモデル}{25}
 \contentsline {paragraph}{LDA}{26}
-\contentsline {paragraph}{トピックモデルを使用した関連研究}{27}
+\contentsline {paragraph}{トピックモデルを使用した関連研究}{26}
 \contentsline {section}{\numberline {2.5}重み付け}{29}
-\contentsline {subsection}{\numberline {2.5.1}Okapi BM25}{30}
+\contentsline {subsection}{\numberline {2.5.1}概要}{29}
+\contentsline {subsection}{\numberline {2.5.2}Okapi BM25}{29}
 \contentsline {paragraph}{TF}{30}
 \contentsline {paragraph}{DF}{30}
-\contentsline {paragraph}{IDF}{31}
+\contentsline {paragraph}{IDF}{30}
 \contentsline {paragraph}{DL}{31}
-\contentsline {subsection}{\numberline {2.5.2}LexRank}{32}
-\contentsline {section}{\numberline {2.6}分散表現}{34}
-\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{34}
-\contentsline {subsection}{\numberline {2.6.2}word2vec}{37}
+\contentsline {subsection}{\numberline {2.5.3}LexRank}{31}
+\contentsline {section}{\numberline {2.6}分散表現}{35}
+\contentsline {subsection}{\numberline {2.6.1}単語文脈行列}{35}
+\contentsline {subsection}{\numberline {2.6.2}word2vec}{36}
 \contentsline {subsection}{\numberline {2.6.3}fastText}{38}
 \contentsline {subsection}{\numberline {2.6.4}分散表現を使用した話題関連研究}{39}
 \contentsline {section}{\numberline {2.7}結言}{42}

@@ -23,7 +23,8 @@
 \textbf{Algorithm\ref{algo:wholeModel}}を用いてシステムの動作の流れについて説明する．
 %発言$R$が投稿された時，過去に投稿された発言と類似度の計算を行い類似度が閾値を超えていれば２つの発言が同じ話題であるとみなし，発言Rと同じ話題である発言の集合$SG$に登録する．
 本システムは話題変化を判定するため，話題の変化させる発言を以下の手順で把握する．
-まず最初に，発言$R$で使われている単語の情報を\ref{impl:chapter}章で説明する重み付けで用いるために，\ref{algo:wholeModel:update}行目で単語の出現回数等の更新を行う．
+%\begin{comment}
+まず最初に，新しく投稿された発言$R$で使われている単語の情報を\ref{impl:chapter}章で説明する重み付けで用いるために，\ref{algo:wholeModel:update}行目で単語の出現回数等の更新を行う．
 話題の変化は，発言$R$と過去の発言の集合である$PG$の比較によって判定する.発言$R$が投稿された時に過去の発言集合である$PG$内に発言$R$と同様の話題がないと判定された場合，同じ話題である発言集合$SG$が空集合となり，話題を変化させる発言であるとする.また，同じ発言の判定は，発言$R$が投稿された時，過去の発言の集合である$PG$と発言$R$の類似度を計算する．以上で計算された類似度が閾値を超えていた場合，同じ話題である発言集合$SG$に比較した2つの話題が同じであるとして登録する．
 上記の過去の発言との比較作業は\textbf{Algorithm\ref{algo:wholeModel}}の\ref{algo:wholeModel:begin}$\sim$\ref{algo:wholeModel:for1-e}行目に相当し，作業を繰り返して全ての発言との計算が終了した後，発言Rに返信先がなく，$SG$が空集合である，すなわち発言Rと同じ話題である発言がない場合に話題を変化させる発言であると判定して通知を行う．
 \begin{algorithm}
@@ -49,9 +50,15 @@
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+%\end{comment}
+
+図\ref{Fig:wholeModel}を用いてもシステムの動作の流れについて説明する．
+\circled{1}は新しく投稿された$発言t$と過去の$発言0 \sim 発言t-1$との類似度計算を表す．過去の発言の内，類似度が閾値を超えたものは$発言t$と話題が同じであるとして集合に加える．
+\circled{2}は$発言t$と過去の発言の１つである$発言i$との類似度計算の詳細を表す．分散表現や発言間の返信関係及び時間差を用いて発言間の類似度を計算する．
+\circled{3}は話題が変化したかどうかの判定を表す．$発言t$と過去の$発言0 \sim 発言t-1$との類似度計算が完了した後，$発言t$と類似し同じ話題であると判定された発言があったかどうかで話題変化判定を行う．
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=0.9\textwidth]{../images/3.The_Model/WholeModel.png}
+  \includegraphics[width=\textwidth]{../images/3.The_Model/WholeModel4.png}
   \caption{システムの流れ}
   \label{Fig:wholeModel}
   \vspace{-10pt}
@@ -71,7 +78,7 @@
 発言の内容を表す文字列である．
 \subsubsection*{\circled{4} parent-id}
 発言の返信先，すなわち親発言のidを表す番号で，親発言がある場合は親発言のidと同じ番号になり，ない場合はNULLとなる．
-\subsubsection*{\circled{5} crreated-at}
+\subsubsection*{\circled{5} created-at}
 発言が投稿された時間を示すタイムスタンプである．
 
 \begin{table}[htbp]
@@ -148,11 +155,11 @@ totalSim & = tValue*tWeight + sim*(1-tWeight)
 \end{equation}
 
 式\ref{eq:tSimilarity}の変数$sim$，$tValue$定数$tWeight$について説明する．$sim$は発言内容の類似度を表し，0から1の値を取る．$tValue$は式\ref{eq:timeValue}での$tValue$と同じもので時間差評価値を表す．$tWeight$は時間差評価値の総合類似度の計算における重要性を表し，0から1の値を取る．
-また，返信距離が0でない，すなわち2発言が同じスレッドに属している場合は何らかの関連があると考えられることから，式\ref{eq:tSimilarity2}に示すように時間差評価値を無視して発言内容の類似度を直接，総合類似度として用いる．
+また，返信距離が0でない，すなわち2発言が同じスレッドに属している場合は何らかの関連があると考えられることから，式\ref{eq:tSimilarity2}に示すように時間差評価値を無視して発言内容の類似度に補正値$\alpha$を加えたものを総合類似度として用いる．
 \begin{equation}
 \begin{aligned}
 \label{eq:tSimilarity2}
-totalSim & =  sim
+totalSim & =  sim + \alpha
 \end{aligned}
 \end{equation}
 
