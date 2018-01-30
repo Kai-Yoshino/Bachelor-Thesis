@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  17 JAN 2018 17:58
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  30 JAN 2018 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,7 +289,7 @@ Excluding 'comment' comment. [1
 
 
 
-] Excluding 'comment' comment.) [2] [3]
+] [2] Excluding 'comment' comment.) [3]
 (./thesis.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -326,14 +326,14 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 [11
 
 
-] Excluding 'comment' comment.
+]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 59.
+(Font)              using `JT1/mc/m/n' instead on input line 39.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 59.
+(Font)              using `JY1/mc/m/n' instead on input line 39.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -341,7 +341,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] [13]) (../2.Related_Work/chapter.tex [14]
+[12] Excluding 'comment' comment. [13]) (../2.Related_Work/chapter.tex [14]
 第 2 章
 [15
 
@@ -387,18 +387,18 @@ File: ../images/2.Related_Work/LDA-topicFlow.png Graphic file (type bmp)
 
 <../images/2.Related_Work/LDA-topicFlow.png>
 
-LaTeX Warning: Float too large for page by 21.97466pt on input line 197.
+LaTeX Warning: Float too large for page by 21.97466pt on input line 200.
 
 [26] [27] [28] [29] [30] [31]
 File: ../images/2.Related_Work/lexRank-graph.png Graphic file (type bmp)
  <../images/2.Related_Work/lexRank-graph.png>
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 302.
+(Font)              using `JT1/mc/m/n' instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 302.
+(Font)              using `JY1/mc/m/n' instead on input line 305.
 
 [32] [33] [34]
 File: ../images/2.Related_Work/WordParagraphMatrix2.png Graphic file (type bmp)
@@ -409,7 +409,7 @@ File: ../images/2.Related_Work/CBOW.png Graphic file (type bmp)
 <../images/2.Related_Work/CBOW.png>
 File: ../images/2.Related_Work/skip-gram.png Graphic file (type bmp)
  <../images/2.Related_Work/skip-gram.png>
-Overfull \hbox (15.91663pt too wide) in paragraph at lines 385--405
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 388--408
  [][][] 
  []
 
@@ -419,46 +419,32 @@ File: ../images/2.Related_Work/embedTopic1.png Graphic file (type bmp)
 File: ../images/2.Related_Work/TweetSift2.png Graphic file (type bmp)
 
 <../images/2.Related_Work/TweetSift2.png>
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 465.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 468.
 
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 465.
-
-
-LaTeX Warning: Reference `eq:skip-gram' on page 39 undefined on input line 467.
-
-
-
-LaTeX Warning: Reference `eq:tewe' on page 39 undefined on input line 467.
-
-[39] [40]
-
-LaTeX Warning: Reference `eq:skip-gram' on page 41 undefined on input line 481.
-
-
-
-LaTeX Warning: Reference `eq:tewe' on page 41 undefined on input line 481.
-
-[41]) (../3.The_Model/chapter.tex [42]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 468.
+ [39]
+[40] [41]) (../3.The_Model/chapter.tex [42]
 第 3 章
-File: ../images/3.The_Model/WholeModel.png Graphic file (type bmp)
-<../images/3.The_Model/WholeModel.png> [43
+[43
 
 
-] [44]
+]
+File: ../images/3.The_Model/WholeModel4.png Graphic file (type bmp)
+ <../images/3.The_Model/WholeModel4.png> [44]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 73.
  [45]
-Overfull \hbox (1.84389pt too wide) in paragraph at lines 82--82
+Overfull \hbox (1.84389pt too wide) in paragraph at lines 89--89
 []\OT1/cmr/m/n/12 2017/03/14
  []
 
 
-Overfull \hbox (86.91544pt too wide) in paragraph at lines 78--85
+Overfull \hbox (86.91544pt too wide) in paragraph at lines 85--92
 [][][][] 
  []
 
@@ -477,12 +463,12 @@ Overfull \hbox (48.67046pt too wide) in paragraph at lines 32--46
 [][] 
  []
 
-[52]
+[52] [53] [54]
 
-LaTeX Warning: Reference `impl:preProcessing:sim' on page 53 undefined on input
- line 52.
+LaTeX Warning: Reference `impl:similarity:extract' on page 55 undefined on inpu
+t line 100.
 
-[53] [54]) (../5.Experiments/chapter.tex [55] [56
+) (../5.Experiments/chapter.tex [55] [56
 
 ]
 第 5 章
@@ -491,53 +477,33 @@ LaTeX Warning: Reference `impl:preProcessing:sim' on page 53 undefined on input
 ] [58
 
 ] [59] [60] [61] [62] [63]
-Overfull \hbox (9.04373pt too wide) in paragraph at lines 163--165
-\OML/cmm/m/it/12 misses$\OT1/cmr/m/n/12 (\JY1/mc/m/sc/12 見逃し数\OT1/cmr/m/n/1
+Overfull \hbox (11.38683pt too wide) in paragraph at lines 168--170
+\OML/cmm/m/it/12 Misses$\OT1/cmr/m/n/12 (\JY1/mc/m/sc/12 見逃し数\OT1/cmr/m/n/1
 2 )\JY1/mc/m/sc/12 ， 予測値\OT1/cmr/m/n/12 =1 \JY1/mc/m/sc/12 かつ正解値\OT1/c
 mr/m/n/12 =0 \JY1/mc/m/sc/12 であるものの個数を $\OML/cmm/m/it/12 FP\OT1/cmr/m/
 n/12 (\OML/cmm/m/it/12 False []Positive\OT1/cmr/m/n/12 )$
  []
 
-[64] [65]
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 236.
-File: ../images/5.Experiment/Graph=FastText-Plain-cut2.png Graphic file (type b
-mp)
- <../images/5.Experiment/Graph=FastText-Plain-cut2.png> [66] [67]
-File: ../images/5.Experiment/Graph=TF-IDF-min.png Graphic file (type bmp)
-
-<../images/5.Experiment/Graph=TF-IDF-min.png> [68]
-File: ../images/5.Experiment/Graph=FastText-min.png Graphic file (type bmp)
-
-<../images/5.Experiment/Graph=FastText-min.png> [69]
-Overfull \hbox (23.35298pt too wide) in paragraph at lines 295--301
+[64] [65] [66]
+Overfull \hbox (32.79132pt too wide) in paragraph at lines 249--257
 [][][][] 
  []
 
-
-Overfull \hbox (48.63824pt too wide) in paragraph at lines 305--318
- [][][] 
- []
-
-[70] [71] [72]) (../6.Conclusion/chapter.tex [73] [74
-
-]
+[67]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 274.
+ Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. [68] [69]) (../6.Conclusion/chapter.tex [70]
 第 6 章
+[71
 
-LaTeX Warning: Reference `con:future_work' on page 75 undefined on input line 1
-5.
 
-[75
+] [72] Excluding 'comment' comment. [73] [74] [75])
+(../7.Acknowledgement/chapter.tex [76] [77
 
-] [76]
-File: ../images/6.Conclusion/Graph-Remark&Time.png Graphic file (type bmp)
- <../images/6.Conclusion/Graph-Remark&Time.png> [77] [78] [79]
-[80]) (../7.Acknowledgement/chapter.tex [81] [82
 
-] [83
-
-] [84] [85])
-(../Bibliography/chapter.tex (./thesis.bbl [86]
+] [78] [79])
+(../Bibliography/chapter.tex (./thesis.bbl [80]
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 6.
@@ -546,15 +512,14 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
+[81
+
+] [82] [83] [84] [85])) (../A.Mypaper/chapter.tex [86]
+付 録 A  
 [87
 
-] [88] [89] [90])) (../A.Mypaper/chapter.tex [91] [92
 
-]
-付 録 A  
-[93
-
-]) (../B.SIG-CCI2/chapter.tex [94
+]) (../B.SIG-CCI2/chapter.tex [88
 
 
 ]
@@ -567,10 +532,10 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 
 <../B.SIG-CCI2/yoshino-paper6.pdf>
 File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
- <../B.SIG-CCI2/yoshino-paper6.pdf> [95
+ <../B.SIG-CCI2/yoshino-paper6.pdf> [89
 
 ]
-[96] [97] [98] [99]) (../C.IPSJ80/chapter.tex [100
+[90] [91] [92] [93]) (../C.IPSJ80/chapter.tex [94
 
 
 ]
@@ -578,9 +543,27 @@ File: ../B.SIG-CCI2/yoshino-paper6.pdf Graphic file (type pdf)
 File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
 <../C.IPSJ80/submit.pdf>
 File: ../C.IPSJ80/submit.pdf Graphic file (type pdf)
- <../C.IPSJ80/submit.pdf> [101
+ <../C.IPSJ80/submit.pdf> [95
 
-] [102] [103])
+] [96] [97])
+(../D.TopicGraph/chapter.tex [98
+
+
+]
+付 録 D  
+File: ../images/D.TopicGraph/binary_tree_theme8-APPR_LDA-min.png Graphic file (
+type bmp)
+<../images/D.TopicGraph/binary_tree_theme8-APPR_LDA-min.png>
+File: ../images/D.TopicGraph/binary_tree_theme8-APPR_PLAIN-min.png Graphic file
+ (type bmp)
+
+<../images/D.TopicGraph/binary_tree_theme8-APPR_PLAIN-min.png>
+File: ../images/D.TopicGraph/binary_tree_theme8-APPR_FT-min.png Graphic file (t
+ype bmp)
+
+<../images/D.TopicGraph/binary_tree_theme8-APPR_FT-min.png> [99
+
+] [100] [101])
 (./thesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -594,12 +577,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  )
 (\end occurred when \ifx on line 72 was incomplete) 
 Here is how much of TeX's memory you used:
- 3652 strings out of 494899
- 52368 string characters out of 6175707
- 131684 words of memory out of 5000000
- 6981 multiletter control sequences out of 15000+600000
+ 3647 strings out of 494899
+ 52262 string characters out of 6175707
+ 131691 words of memory out of 5000000
+ 6976 multiletter control sequences out of 15000+600000
  23565 words of font info for 91 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 28i,14n,43p,780b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,43p,771b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (106 pages, 209076 bytes).
+Output written on thesis.dvi (104 pages, 205808 bytes).

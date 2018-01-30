@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  17 JAN 2018 17:57
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  30 JAN 2018 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -346,14 +346,14 @@ LaTeX Warning: Citation `discSupport2' on page 6 undefined on input line 98.
 
 [6]
 
-LaTeX Warning: Citation `convAnalysis' on page 7 undefined on input line 105.
+LaTeX Warning: Citation `convAnalysis' on page 7 undefined on input line 106.
 
 
-LaTeX Warning: Citation `zatsudan' on page 7 undefined on input line 109.
+LaTeX Warning: Citation `zatsudan' on page 7 undefined on input line 110.
 
 [7]
 
-LaTeX Warning: Citation `texttiling' on page 8 undefined on input line 123.
+LaTeX Warning: Citation `texttiling' on page 8 undefined on input line 124.
 
 File: ../images/2.Related_Work/textTiling-figure.png Graphic file (type bmp)
 <../images/2.Related_Work/textTiling-figure.png>
@@ -362,11 +362,11 @@ File: ../images/2.Related_Work/textTiling-graph.png Graphic file (type bmp)
 <../images/2.Related_Work/textTiling-graph.png> [8]
 
 LaTeX Warning: Citation `textSegmentation1' on page 9 undefined on input line 1
-45.
+46.
 
 [9] [10]
 
-LaTeX Warning: Citation `topicModel' on page 11 undefined on input line 152.
+LaTeX Warning: Citation `topicModel' on page 11 undefined on input line 155.
 
 File: ../images/2.Related_Work/topicModel-unigram.png Graphic file (type bmp)
 <../images/2.Related_Work/topicModel-unigram.png>
@@ -375,108 +375,108 @@ File: ../images/2.Related_Work/topicModel-mixUnigram.png Graphic file (type bmp
 
 <../images/2.Related_Work/topicModel-mixUnigram.png> [11]
 
-LaTeX Warning: Citation `LDA2003' on page 12 undefined on input line 175.
+LaTeX Warning: Citation `LDA2003' on page 12 undefined on input line 178.
 
 File: ../images/2.Related_Work/topicModel-LDA.png Graphic file (type bmp)
 <../images/2.Related_Work/topicModel-LDA.png>
 
-LaTeX Warning: Citation `topicLDAshift' on page 12 undefined on input line 188.
+LaTeX Warning: Citation `topicLDAshift' on page 12 undefined on input line 191.
 
 
 File: ../images/2.Related_Work/LDA-topicFlow.png Graphic file (type bmp)
 <../images/2.Related_Work/LDA-topicFlow.png>
 
-LaTeX Warning: Float too large for page by 21.97466pt on input line 197.
+LaTeX Warning: Float too large for page by 21.97466pt on input line 200.
 
 [12] [13] [14]
 
-LaTeX Warning: Citation `okapiBM25' on page 15 undefined on input line 221.
+LaTeX Warning: Citation `okapiBM25' on page 15 undefined on input line 224.
 
 
-LaTeX Warning: Citation `tf' on page 15 undefined on input line 221.
+LaTeX Warning: Citation `tf' on page 15 undefined on input line 224.
 
 
-LaTeX Warning: Citation `idf' on page 15 undefined on input line 221.
+LaTeX Warning: Citation `idf' on page 15 undefined on input line 224.
 
 [15] [16]
 
-LaTeX Warning: Citation `lexRank' on page 17 undefined on input line 271.
+LaTeX Warning: Citation `lexRank' on page 17 undefined on input line 274.
 
 
-LaTeX Warning: Citation `pageRank1999' on page 17 undefined on input line 271.
+LaTeX Warning: Citation `pageRank1999' on page 17 undefined on input line 274.
 
 [17]
 File: ../images/2.Related_Work/lexRank-graph.png Graphic file (type bmp)
  <../images/2.Related_Work/lexRank-graph.png>
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 302.
+(Font)              using `JT1/mc/m/n' instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 302.
+(Font)              using `JY1/mc/m/n' instead on input line 305.
 
 [18] [19] [20]
 
 LaTeX Warning: Citation `harris1954distributional' on page 21 undefined on inpu
-t line 353.
+t line 356.
 
 
 LaTeX Warning: Citation `firth1957hypothesis' on page 21 undefined on input lin
-e 353.
+e 356.
 
 File: ../images/2.Related_Work/WordParagraphMatrix2.png Graphic file (type bmp)
 
 <../images/2.Related_Work/WordParagraphMatrix2.png>
 
-LaTeX Warning: Citation `word2vec' on page 21 undefined on input line 381.
+LaTeX Warning: Citation `word2vec' on page 21 undefined on input line 384.
 
 File: ../images/2.Related_Work/CBOW.png Graphic file (type bmp)
 <../images/2.Related_Work/CBOW.png>
 File: ../images/2.Related_Work/skip-gram.png Graphic file (type bmp)
  <../images/2.Related_Work/skip-gram.png>
-Overfull \hbox (15.91663pt too wide) in paragraph at lines 385--405
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 388--408
  [][][] 
  []
 
 [21] [22]
 
-LaTeX Warning: Citation `w2vTranslate' on page 23 undefined on input line 410.
+LaTeX Warning: Citation `w2vTranslate' on page 23 undefined on input line 413.
 
 
-LaTeX Warning: Citation `levy2014neural' on page 23 undefined on input line 410
+LaTeX Warning: Citation `levy2014neural' on page 23 undefined on input line 413
 .
 
 [23]
 
-LaTeX Warning: Citation `fastText' on page 24 undefined on input line 414.
+LaTeX Warning: Citation `fastText' on page 24 undefined on input line 417.
 
 
-LaTeX Warning: Citation `fastText2' on page 24 undefined on input line 414.
+LaTeX Warning: Citation `fastText2' on page 24 undefined on input line 417.
 
 [24]
 
-LaTeX Warning: Citation `embedTopic1' on page 25 undefined on input line 438.
+LaTeX Warning: Citation `embedTopic1' on page 25 undefined on input line 441.
 
 File: ../images/2.Related_Work/embedTopic1.png Graphic file (type bmp)
 <../images/2.Related_Work/embedTopic1.png>
 
-LaTeX Warning: Citation `embedTopic2' on page 25 undefined on input line 451.
+LaTeX Warning: Citation `embedTopic2' on page 25 undefined on input line 454.
 
 File: ../images/2.Related_Work/TweetSift2.png Graphic file (type bmp)
 <../images/2.Related_Work/TweetSift2.png>
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 465.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 468.
 
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 465.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 468.
  [25]
 [26]
 
-LaTeX Warning: Citation `SMO' on page 27 undefined on input line 486.
+LaTeX Warning: Citation `SMO' on page 27 undefined on input line 489.
 
 [27] (../Bibliography/chapter.tex
 No file chapter.bbl.
@@ -488,7 +488,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
  )
-(\end occurred when \ifx on line 504 was incomplete) 
+(\end occurred when \ifx on line 507 was incomplete) 
 Here is how much of TeX's memory you used:
  3440 strings out of 494899
  47835 string characters out of 6175707
@@ -498,4 +498,4 @@ Here is how much of TeX's memory you used:
  107 hyphenation exceptions out of 8191
  29i,11n,43p,530b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (28 pages, 55496 bytes).
+Output written on chapter.dvi (28 pages, 55456 bytes).

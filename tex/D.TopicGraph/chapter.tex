@@ -1,0 +1,41 @@
+\expandafter\ifx\csname MasterFile\endcsname\relax
+\def\SubFile{hoge}
+\input{../thesis/thesis}
+\begin{document}
+\fi
+%-------------------------------------------------------------------------------
+\cleardoublepage
+\chapter[話題可視化]{話題可視化}
+以下に提案手法で作成した発言の繋がりを図示したものを示す．
+図\ref{Fig:Graph-Plain}に比較手法手法3(LDAベクトル)を用いて発言の繋がりを図示したものを，
+図\ref{Fig:Graph-Plain}に提案手法2(単語抽出なし)を用いて発言の繋がりを図示したものを，
+図\ref{Fig:Graph-FT}に提案手法2で発言の繋がりを図示したものを示す．
+
+図中の丸と菱形は発言を表し，話題を変える発言であると判定された発言は菱形になっている．
+また，同じ話題であると判定された発言間には線が引かれており，話題を変える発言であると判定された発言は最も類似度が高かった発言との間に線が引かれている．
+%\begin{comment}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{../images/D.TopicGraph/binary_tree_theme8-APPR_LDA-min.png}
+	\caption{比較手法3(LDAベクトル)による繋がりグラフ}
+	\label{Fig:Graph-LDA}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{../images/D.TopicGraph/binary_tree_theme8-APPR_PLAIN-min.png}
+	\caption{提案手法2(単語抽出なし)による繋がりグラフ}
+	\label{Fig:Graph-Plain}
+\end{figure}
+%\end{comment}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{../images/D.TopicGraph/binary_tree_theme8-APPR_FT-min.png}
+	\caption{提案手法1(単語抽出あり)による繋がりグラフ}
+	\label{Fig:Graph-FT}
+\end{figure}
+
+\clearpage
+%-------------------------------------------------------------------------------
+\expandafter\ifx\csname MasterFile\endcsname\relax
+\end{document}
+\fi

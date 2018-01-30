@@ -66,6 +66,12 @@ Taku Kudo.
 \newblock Mecab: Yet another part-of-speech and morphological analyzer.
 \newblock {\em http://mecab. sourceforge. net/}, 2005.
 
+\bibitem{kusner2015word}
+Matt Kusner, Yu~Sun, Nicholas Kolkin, and Kilian Weinberger.
+\newblock From word embeddings to document distances.
+\newblock In {\em International Conference on Machine Learning}, pages
+  957--966, 2015.
+
 \bibitem{CRF}
 John Lafferty, Andrew McCallum, and Fernando~CN Pereira.
 \newblock Conditional random fields: Probabilistic models for segmenting and

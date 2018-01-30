@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  18 JAN 2018 09:32
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  30 JAN 2018 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,9 +351,6 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred when \ifx on line 179 was incomplete) 
 Here is how much of TeX's memory you used:
@@ -365,4 +362,4 @@ Here is how much of TeX's memory you used:
  107 hyphenation exceptions out of 8191
  29i,9n,43p,476b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (7 pages, 16324 bytes).
+Output written on chapter.dvi (7 pages, 16316 bytes).

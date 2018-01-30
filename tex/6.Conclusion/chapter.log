@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  2 JAN 2018 14:53
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.2.10)  30 JAN 2018 18:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -278,13 +278,9 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
-
-LaTeX Warning: Reference `con:future_work' on page 1 undefined on input line 15
-.
-
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
@@ -293,39 +289,34 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 
 
 
-] [2]
-File: ../images/6.Conclusion/Graph-Remark&Time.png Graphic file (type bmp)
- <../images/6.Conclusion/Graph-Remark&Time.png>
+] [2] Excluding 'comment' comment. [3]
 
-LaTeX Warning: Citation `collagree_Experiment' on page 3 undefined on input lin
-e 61.
-
-[3] [4]
-
-LaTeX Warning: Citation `doc2vec2014' on page 5 undefined on input line 72.
+LaTeX Warning: Citation `kusner2015word' on page 4 undefined on input line 81.
 
 
-LaTeX Warning: Citation `seq2seq2014' on page 5 undefined on input line 72.
+LaTeX Warning: Citation `doc2vec2014' on page 4 undefined on input line 81.
 
 
-LaTeX Warning: Reference `exp:consideration' on page 5 undefined on input line 
-75.
+LaTeX Warning: Citation `seq2seq2014' on page 4 undefined on input line 81.
 
-[5] [6] (../Bibliography/chapter.tex
+[4] [5] (../Bibliography/chapter.tex
 No file chapter.bbl.
-) [7] (./chapter.aux)
+) [6] (./chapter.aux)
 
 LaTeX Warning: There were undefined references.
 
- )
-(\end occurred when \ifx on line 106 was incomplete) 
-Here is how much of TeX's memory you used:
- 3192 strings out of 494899
- 43021 string characters out of 6175707
- 109641 words of memory out of 5000000
- 6644 multiletter control sequences out of 15000+600000
- 13474 words of font info for 54 fonts, out of 8000000 for 9000
- 107 hyphenation exceptions out of 8191
- 29i,4n,43p,749b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter.dvi (7 pages, 16184 bytes).
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred when \ifx on line 118 was incomplete) 
+Here is how much of TeX's memory you used:
+ 3177 strings out of 494899
+ 42686 string characters out of 6175707
+ 107641 words of memory out of 5000000
+ 6634 multiletter control sequences out of 15000+600000
+ 12711 words of font info for 51 fonts, out of 8000000 for 9000
+ 107 hyphenation exceptions out of 8191
+ 29i,5n,43p,740b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on chapter.dvi (6 pages, 13744 bytes).

@@ -5,46 +5,46 @@ The style file: plain.bst
 Database file #1: ../Bibliography/database2.bib
 Warning--empty journal in CRF
 Warning--empty journal in SMO
-You've used 36 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            722 strings with 9795 characters,
-and the built_in function-call counts, 12657 in all, are:
-= -- 1258
-> -- 597
-< -- 12
-+ -- 238
-- -- 200
-* -- 827
-:= -- 2084
-add.period$ -- 110
-call.type$ -- 36
-change.case$ -- 204
+            727 strings with 9971 characters,
+and the built_in function-call counts, 13170 in all, are:
+= -- 1309
+> -- 620
+< -- 13
++ -- 247
+- -- 208
+* -- 860
+:= -- 2157
+add.period$ -- 113
+call.type$ -- 37
+change.case$ -- 211
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 506
-empty$ -- 942
-format.name$ -- 200
-if$ -- 2683
+cite$ -- 39
+duplicate$ -- 529
+empty$ -- 983
+format.name$ -- 208
+if$ -- 2799
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 37
-newline$ -- 183
-num.names$ -- 72
-pop$ -- 209
+int.to.str$ -- 37
+missing$ -- 38
+newline$ -- 188
+num.names$ -- 74
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 169
+purify$ -- 175
 quote$ -- 0
-skip$ -- 399
+skip$ -- 419
 stack$ -- 0
-substring$ -- 773
-swap$ -- 144
-text.length$ -- 12
+substring$ -- 810
+swap$ -- 155
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
+type$ -- 144
 warning$ -- 2
-while$ -- 121
-width$ -- 38
-write$ -- 386
+while$ -- 126
+width$ -- 39
+write$ -- 397
 is.kanji.str$ -- 0
 (There were 2 warnings)

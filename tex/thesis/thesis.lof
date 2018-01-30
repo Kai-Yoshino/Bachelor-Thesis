@@ -22,11 +22,11 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces 解析結果}}{52}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces 解析結果}}{53}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 提案手法２による繋がりグラフ-拡大図}}{67}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 比較手法２による繋がりグラフ}}{69}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 提案手法1による繋がりグラフ}}{70}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 発言数と処理時間}}{78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces 比較手法3(LDAベクトル)による繋がりグラフ}}{100}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces 提案手法2(単語抽出なし)による繋がりグラフ}}{100}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces 提案手法1(単語抽出あり)による繋がりグラフ}}{101}
